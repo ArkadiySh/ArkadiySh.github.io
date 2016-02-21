@@ -184,7 +184,7 @@ header{
 .tyres,
 .disks{
 	margin-right: 13px;
-	height: 134px;
+	height: 135px;
 	background-color: white;
 	float: left;
 	border: 1px #b6b6b7 solid;
@@ -195,12 +195,19 @@ header{
 	width: 415px;
 }
 
-.auto p{
+.auto-header{
+	width: 395px;
+	height: 20px;
+}
+
+.auto p,
+.tyres p,
+.disks p{
 	color: #154467;
 	font-weight: bold;
 }
 
-.disk-text{
+.h-disks{
 	padding-left: 20px;
 	padding-top: 5px;
 	display: block;
@@ -209,7 +216,7 @@ header{
 
 }
 
-.sort-header{
+.h-search{
 	padding-top: 2px;
 	margin-left: 55px;
 	margin-right: 55px;
@@ -218,7 +225,7 @@ header{
 	font-size: 14px;
 }
 
-.tyre-text{
+.h-tyre{
 	padding-left: 15px;
 	padding-top: 5px;
 	display: block;
@@ -234,14 +241,25 @@ header{
 	width: 267px;
 }
 
-.disk-form,
-.tyre-form{
+.disk-tyre-selection{
 	float: left;
 	margin-left: 10px;
-	margin-top: 10px;
 	width: 190px;
 }
 
+.search-button-block{
+	margin-right: 20px;
+	float: right;
+	width: 50px;
+	border-bottom: 2px solid #a6b1bc;
+}
+
+.search-button{
+	text-decoration: none;
+	font-size: 14px;
+	color: #154467;
+	font-style: italic;
+}
 .select1{
 	width: 100px;
 }
@@ -265,5 +283,46 @@ header{
 }
 
 .form-margin{
+	margin-top: 3px;
+}
+
+.tyre-header{
+	margin-left: 17px;
+	margin-top: 2px;
+	display: block;
+	font-size: 14px;
+	width: 80px;
+	height: 20px;
+}
+
+.select3{
+	width: 50px;
+}
+
+.tyre-size-text{
+	margin-left: 10px;
+	color: black;
+	font-size: 10px;
+	line-height: 10px;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.r-text{
+	margin-left: 41px;
+	margin-top: 3px;
+	color: black;
+	font-size: 10px;
+	line-height: 10px;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.tyre-form-margin{
 	margin-top: 5px;
+}
+
+.select4{
+	width: 45px;
+	margin-top: 3px;
 }

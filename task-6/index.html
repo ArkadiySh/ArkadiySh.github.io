@@ -28,11 +28,13 @@
 				<input class="pass" type="password" placeholder="пароль"></input>
 			</form>
 
+			<div>
 			<ul class="si-block">
-				<li class="acc-button"><a href="#">вход</a></li>
-				<li class="acc-button"><a href="#">регистрация</a></li>
-				<li class="acc-button"><a href="#">забыли пароль?</a></li>
+				<li class="acc-button"><a href="#">вход</li>
+				<li class="acc-button"><a href="#">регистрация</li>
+				<li class="acc-button"><a href="#">забыли пароль?</li>
 			</ul>
+			</div>
 		</div>
 
 		<div class="nav-block">
@@ -66,21 +68,22 @@
 				<li class="good">товаров:</li>
 				<li class="good-q">&nbsp;0</li>
 				<li class="sum">на сумму:</li>
-				<li class="sum-sum">0,0 грн.</li>
+				<li class="sum-sum">0,00 грн.</li>
 			</ul>
 		</div>
 	</nav>
 
 	<div class="sorting">
 		<div class="auto">
-			<div>
-				<p class="disk-text">Диски:</p>
-				<p class="sort-header">Поиск по автомобилю</p>
-				<p class="tyre-text">Шины:</p>
+
+			<div class="auto-header">
+				<p class="h-disks">Диски:</p>
+				<p class="h-search">Поиск по автомобилю</p>
+				<p class="h-tyre">Шины:</p>
 			</div>
 
-			<div class="auto-form">
-				<div class="disk-form">
+			
+				<div class="disk-tyre-selection">
 					
 					<div class="form-margin">
 					<div class="form-text-dimensions"><span class="form-text">Марка авто</span></div>
@@ -88,22 +91,23 @@
 					</div>
 
 					<div class="form-margin">
-					<div class="form-text-dimensions"><span class="form-text">Модель автомобиля</span></div>
+					<div class="form-text-dimensions"><span class="form-text">Модель автомобиля:</span></div>
 					<select class="select1"><option></option></select>
 					</div>
 
 					<div class="form-margin">
-					<div class="form-text-dimensions"><span class="form-text">Год выпуска автомобиля</span></div>
+					<div class="form-text-dimensions"><span class="form-text">Год выпуска автомобиля:</span></div>
 					<select class="select2"><option></option></select>
 					</div>
 
 					<div class="form-margin">
-					<div class="form-text-dimensions"><span class="form-text">Комплектация</span></div>
+					<div class="form-text-dimensions"><span class="form-text">Комплектация:</span></div>
 					<select class="select1"><option></option></select>
 					</div>
+
 				</div>
 
-				<div class="tyre-form">
+				<div class="disk-tyre-selection">
 					
 					<div class="form-margin">
 					<div class="form-text-dimensions"><span class="form-text">Марка авто</span></div>
@@ -111,28 +115,43 @@
 					</div>
 
 					<div class="form-margin">
-					<div class="form-text-dimensions"><span class="form-text">Модель автомобиля</span></div>
+					<div class="form-text-dimensions"><span class="form-text">Модель автомобиля:</span></div>
 					<select class="select1"><option></option></select>
 					</div>
 
 					<div class="form-margin">
-					<div class="form-text-dimensions"><span class="form-text">Год выпуска автомобиля</span></div>
+					<div class="form-text-dimensions"><span class="form-text">Год выпуска автомобиля:</span></div>
 					<select class="select2"><option></option></select>
 					</div>
 
 					<div class="form-margin">
-					<div class="form-text-dimensions"><span class="form-text">Комплектация</span></div>
+					<div class="form-text-dimensions"><span class="form-text">Комплектация:</span></div>
 					<select class="select1"><option></option></select>
+					</div>
+
+					<div class="search-button-block">
+					<a class="search-button" href="#">поиск...</a>
 					</div>
 
 				</div>
 				
 			</div>
 
-		</div>
-
 		<div class="tyres">
-			
+			<div><p class="tyre-header">поиск шин</p></div>
+
+			<div class="form-margin">
+
+				<div class="tyre-form">
+				<span class="tyre-size-text">Размер:</span>
+				<select class="select3"><option></option></select>&nbsp;/&nbsp;<select class="select3"><option></option></select>
+				</div>
+
+				<div>
+				<span class="r-text">R</span>
+				<select class="select4"><option></option></select>
+				</div>
+			</div>
 		</div>
 
 		<div class="disks">
