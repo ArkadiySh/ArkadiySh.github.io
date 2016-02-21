@@ -108,22 +108,24 @@ header{
 }
 
 .top-menu-button{
-	padding-left: 10px;
-	padding-right: 10px;
+	margin-top: 2px;
+	padding-left: 14px;
+	padding-right: 14px;
 	float: left;
 	text-transform: uppercase;
 }
 
 .top-menu-button a {
-	line-height: 30px;
+	font-size: 15px;
+	line-height: 29px;
 	color: #b1bcc0;
 	text-decoration: none;
 }
 
 .top-menu-button:hover{
-	 background: linear-gradient(180deg, rgb(31, 103, 135) 20%, rgb(12, 51, 87) 80%);
-	 border-radius: 20px;
-	 height: 25px;
+	background: linear-gradient(180deg, rgb(31, 103, 135) 20%, rgb(12, 51, 87) 80%);
+	border-radius: 20px;
+	height: 28px;
 }
 
 .top-menu-button:hover a{
@@ -131,7 +133,7 @@ header{
 }
 
 .cart-section{
-	padding-left: 65px;
+	margin-left: 60px;
 	float: left;
 }
 
@@ -252,6 +254,7 @@ header{
 	float: right;
 	width: 50px;
 	border-bottom: 2px solid #a6b1bc;
+	clear: both;
 }
 
 .search-button{
@@ -291,7 +294,7 @@ header{
 	margin-top: 2px;
 	display: block;
 	font-size: 14px;
-	width: 80px;
+	width: 100px;
 	height: 20px;
 }
 
@@ -325,4 +328,92 @@ header{
 .select4{
 	width: 45px;
 	margin-top: 3px;
+}
+
+.season-text{
+	display: block;
+	float: left;
+	margin-left: 13px;
+	margin-top: 3px;
+	color: black;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.season{
+	margin-top: 3px;
+	margin-left: 4px;
+	float: left;
+	font-size: 11px;
+}
+
+.season label{
+	vertical-align: text-bottom;
+}
+
+.season input{
+	margin-top: -2px;
+	height: 12px;
+}
+
+.disk-search{
+	width: 175px;
+	float: left;
+}
+
+.select5{
+	margin-bottom: 5px;
+	width: 56px;
+}
+
+.select6{
+	margin-bottom: 8px;
+	width: 50px;
+}
+
+.form3-margin{
+	margin-top: -1px;
+	margin-bottom: 3px;
+}
+
+.form3-1-text-dimensions{
+	margin-top: 1px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	width: 89px;
+	float: left;
+	line-height: 0px;
+}
+
+.form3-2-text-dimensions{
+	margin-top: -10px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	width: 89px;
+	float: left;
+	line-height: 0px;
+}
+
+.form3-3-text-dimensions{
+	margin-top: -5px;
+	margin-left: 10px;
+	width: 89px;
+	float: left;
+	line-height: 0px;
+}
+
+.dco-block{
+	margin-top: 4px;
+	padding-left: 10px;
+	float: left;
+	width: 78px;
+	border-left: 1px #bdc6ca solid;
+}
+
+.form3-text{
+	margin-top: 5px;
+	color: black;
+	font-size: 9px;
+	line-height: 10px;
+	vertical-align: text-top;
 }
