@@ -14,7 +14,7 @@ header{
 	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	height: 50px;
+	height: 30px;
 }
 
 .blue-circle{
@@ -69,7 +69,7 @@ header{
 .acc-button{
 	display: inline-block;
 	float: left;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 26px;
 }
 
@@ -176,6 +176,8 @@ header{
 	line-height: 30px;
 	font-weight: bold;
 }
+
+/*///////////////// START OF SORTING ///////////////////// */
 
 .sorting{
 	margin-left: 48px;
@@ -407,6 +409,7 @@ header{
 	padding-left: 10px;
 	float: left;
 	width: 78px;
+	height: 108px;
 	border-left: 1px #bdc6ca solid;
 }
 
@@ -414,6 +417,262 @@ header{
 	margin-top: 5px;
 	color: black;
 	font-size: 9px;
-	line-height: 10px;
-	vertical-align: text-top;
+	line-height: 0px;
+}
+
+.select7{
+	width: 56px;
+}
+
+.search-button-block3{
+	margin-top: -6px;
+	margin-right: 20px;
+	float: right;
+	width: 50px;
+	border-bottom: 2px solid #a6b1bc;
+	clear: both;
+}
+
+select{
+	height: 18px;
+}
+
+/*///////////////// END OF SORTING ///////////////////// */
+
+
+
+/*////////////////// LEFT SIDEBAR /////////////////////*/
+.catalog{
+	margin-left: 35px;
+	margin-top: 20px;
+	width: 190px;
+	height: 625px;
+	float: left;
+}
+
+.catalog-button{
+	margin-left: 3px;
+	margin-bottom: 10px;
+	width: 185px;
+	height: 25px;
+	border: 1px solid #8b979c;
+	border-radius: 13px;
+}
+
+.catalog-text{
+	margin-left: 5px;
+	font-size: 14px;
+	line-height: 24px;
+	float: left;
+	color: #114165;
+}
+
+.blue-circle2{
+	margin-top: 1px;
+	margin-left: 3px;
+	padding-top: 3px;
+	background: linear-gradient(180deg, rgb(30, 101, 132) 15%, rgb(12, 51, 87) 85%);
+	width: 22px;
+	height: 19px;
+	border-radius: 100%;
+	text-align: center;
+	float: left;
+}
+
+.prod-block{
+	width: 155px;
+	height: 115px;
+}
+
+.tyre-button{
+	margin-left: 5px;
+	width: 148px;
+	height: 25px;
+	border: 1px solid #8b979c;
+	border-radius: 13px;
+	clear: both;
+}
+
+.blue-circle3{
+	margin-top: 1px;
+	margin-left: 3px;
+	width: 10px;
+	height: 10px;
+	border: 6px solid #114165;
+	border-radius: 100%;
+	text-align: center;
+	float: left;
+}
+
+.list{
+	margin-top: 5px;
+	margin-left: 40px;
+	width: 148px;
+	height: 25px;	
+}
+
+.blue-marker{
+	margin-top: 7px;
+	margin-right: 3px;
+	width: 3px;
+	height: 3px;
+	border: 2px solid #79878d;
+	border-radius: 100%;
+	float: left;
+}
+
+.list-item{
+	color: #465961;
+	font-size: 13px;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.list li:hover .list-item{
+	color: #0c3256;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 20px;
+	text-decoration: underline;
+}
+
+.list li:hover .blue-marker{
+	border: 2px solid #313a55;
+	
+}
+
+/*///////////////////// CONTENT ///////////////////////*/
+
+.goods{
+	margin: 20px 10px 0 10px;
+	height: 626px;
+	width: 525px;
+	float: left;
+	background: linear-gradient(180deg, rgb(229, 231, 232) 5%, rgb(147, 167, 176) 85%);
+	border-radius: 4px;
+}
+
+.product{
+	float: left;
+	margin-top: 10px;
+	height: 190px;
+}
+
+.wheel1,
+.wheel2,
+.wheel3{
+	width: 136px;
+	height: 122px;
+	padding-top: 5px;
+	background-color: white;
+	border: 1px solid #b0b9bc;
+	border-radius: 7px;
+	text-align: center;
+}
+
+.wheel1{
+	margin: 40px 15px 0px 22px;
+	position: relative;
+}
+
+.wheel2{
+	margin: 40px 15px 0px 15px;
+	position: relative;
+}
+
+.wheel3{
+	margin: 40px 15px 0px 15px;
+	position: relative;
+}
+
+.w-name{
+	position: absolute;
+	display: block;
+	top: -31px;
+	left: 33px;
+	color: #206988;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.w-model{
+	position: absolute;
+	display: block;
+	font-size: 13px;
+	top: -15px;
+	left: 17px;
+}
+
+.w-price{
+	position: absolute;
+	top: 130px;
+	left: 30px;
+	display: block;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 15px;
+	color: #114165;
+}
+
+
+/*////////////////// RIGHT SIDEBAR /////////////////////*/
+.brands{
+	margin-right: 35px;
+	margin-top: 20px;
+	width: 190px;
+	height: 625px;
+	float: left;
+
+}
+
+.brand-check{
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.brand-check input{
+	height: 11px;
+}
+
+.brand-check label{
+	margin-left: 10px;
+}
+
+.choose-button{
+	margin-left: 10px;
+	width: 82px;
+	height: 26px;
+	background: linear-gradient(180deg, rgb(31, 103, 135) 10%, rgb(12, 51, 87) 60%);
+	border-radius: 12px;
+	border: 0;
+	color: white;
+	font-size: 12px;
+
+}
+
+/*///////////////////// COMPANIES' LOGOS /////////////////////*/
+
+.comp-bar{
+	margin-left: 155px;
+	padding-top: 40px;
+	display: block;
+	height: 50px;
+	clear: both;
+}
+
+.companies{
+	display: inline-block;
+	float: left;
+	margin-left: 5px;
+	margin-right: 8px; 
+}
+
+/*///////////////////// FOOTER /////////////////////*/
+.foot{
+	margin: 0 auto;
+	width: 910px;
+	height: 100px;
+	background-color: #213a4d;
 }
