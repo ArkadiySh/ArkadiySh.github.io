@@ -28,6 +28,8 @@ body{
 	background-color: #085393;
 	height: 36px;
 	width: 1215px;
+	position: relative;
+	z-index: 1;
 }
 
 .login{
@@ -115,21 +117,39 @@ body{
 	text-decoration: none;
 }
 
+.form{
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto;
+}
+
 .cadastre-top{
+	display: block;
 	width: 560px;
 	height: 65px;
 	background-color: rgba(0,0,0,0.65);
-	margin: 190px auto 0px;
 	color: white;
 	font-size: 30px;
 	line-height: 65px;
+	margin-top: -103px;
+}
+
+.fb{
+	display: block;
+	margin-top: 40px;
 }
 
 
 /*/////////// LOGIN BLOCK //////////////*/
 
 .cadastre-form{
-	margin: 3px auto;
+	margin-top: 103px;
 	padding-top: 35px;
 	padding-right: auto;
 	padding-left: auto;
