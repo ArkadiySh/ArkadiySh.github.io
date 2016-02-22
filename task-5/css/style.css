@@ -110,13 +110,9 @@ body{
 }
 
 .m-link{
+	display: block;
 	color: #60b5ed;
 	text-decoration: none;
-}
-
-.content{
-	display: block;
-	width: 100%;
 }
 
 .cadastre-top{
