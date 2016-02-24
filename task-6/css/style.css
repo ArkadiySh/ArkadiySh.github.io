@@ -143,6 +143,7 @@ header{
 }
 
 .top-menu-button a {
+	display: block;
 	font-size: 15px;
 	line-height: 29px;
 	color: #b1bcc0;
