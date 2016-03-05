@@ -21,6 +21,8 @@
 
 }
 
+@media (max-width: 960px){
+
 body{
   background-color: #f9f9f9;
   margin: 0 auto;
@@ -38,7 +40,6 @@ header{
   margin: 0 auto;
   width: 960px;
 }
-
 
 .logo{
   margin-left: -4px;
@@ -195,45 +196,41 @@ header{
 }
 
 .content-top__block{
-  margin: 76px 0 0 26px;
+  margin: 76px 0 0 22px;
   float: left;
   width: 290px;
   height: 170px;
 }
 
 .content-top__logo--1{
-  margin-top: 85px;
-  margin-left: 129px;
+  margin-top: 82px;
+  margin-left: 6px;
   float: left;
-  width: 25px;
-  height: 170px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
   background-repeat: no-repeat;
 }
 
 .content-top__logo--2{
-  margin-top: 85px;
-  margin-left: -2px;
+  margin-top: 82px;
+  margin-left: -4px;
   float: left;
-  width: 25px;
-  height: 170px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -72px 0;
   background-repeat: no-repeat;
-  left: 24px;
 }
 
 .content-top__logo--3{
-  margin-top: 85px;
-  margin-left: -4px;
+  margin: 82px 3px 0 -9px;
   float: left;
-  width: 25px;
-  height: 170px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -150px 0;
   background-repeat: no-repeat;
-  left: 48px;
 }
 
 .content-top__t1{
@@ -258,31 +255,30 @@ header{
 
 .content-top__buttons{
   clear: both;
-  margin-left: 662px;
   margin-top: -84px;
 }
 
 .content-top__button--1{
   float: left;
-  margin: -2px 144px 0 28px;
+  margin: -3px 0px 0 219px;
   text-align: right;
-  width: 170px;
+  width: 100px;
   height: 30px;
 }
 
 .content-top__button--2{
   float: left;
-  margin: -2px 144px 0 28px;
+  margin: -3px 0px 0 243px;
   text-align: right;
-  width: 170px;
+  width: 100px;
   height: 30px;
 }
 
 .content-top__button--3{
   float: left;
-  margin: -2px 144px 0 28px;
+  margin: -3px 0px 0 211px;
   text-align: right;
-  width: 170px;
+  width: 70px;
   height: 30px;
 }
 
@@ -330,7 +326,7 @@ header{
 
 .content-middle{
   clear: both;
-  height: 485px;
+  height: 486px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -338,7 +334,7 @@ header{
 .content-middle__wrapper{
   width: 1200px;
   height: inherit;
-  margin: 1px 0 0 472px;
+  margin: 0 auto;
 
 }
 
@@ -462,7 +458,6 @@ header{
 }
 
 .content-bottom__wrapper{
-  width: 768px;
   height: inherit;
   margin: 0 auto;
 }
@@ -470,6 +465,10 @@ header{
 .logos{
   padding-top: 24px;
   margin-left: 90px;
+}
+
+.logos768{
+  display: none;
 }
 
 .logos480{
@@ -503,7 +502,7 @@ header{
   float: left;
   width: 300px;
   height: 230px;
-  margin: 95px 38px 0 116px;
+  margin: 95px 38px 0 -5px;
 }
 
 .footer__block--1{
@@ -560,7 +559,7 @@ header{
 }
 
 .footer__menu{
-  margin: 47px 0px 0px 109px;
+  margin: 47px 0px 0px -12px;
   float: left;
 }
 
@@ -583,7 +582,7 @@ header{
 
 .footer__des{
   float: right;
-  margin: 54px 132px 0 0;
+  margin: 54px 252px 0 0;
   font-size: 12px;
 }
 
@@ -607,8 +606,22 @@ header{
   display: none;
 }
 
+}
 
-/*///////////////////////////////////// 768 PX WIDTH /////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////// 768PX WIDTH /////////////////////////////////*/
 
 @media (max-width: 768px){
 
@@ -691,18 +704,17 @@ header{
 }
 
 .content-top__logo--1{
-  margin-top: 81px;
-  margin-left: 24px;
+  margin-top: 78px;
+  margin-left: 20px;
   float: left;
-  width: 25px;
-  height: 170px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
   background-repeat: no-repeat;
 }
 
 .content-top__block{
-  margin: 77px 24px 0 24px;
+  margin: 77px 24px 0 21px;
   float: left;
   width: 180px;
   height: 170px;
@@ -729,27 +741,25 @@ header{
 }
 
 .content-top__logo--2{
-  margin-top: 81px;
-  margin-left: -1px;
+  margin-top: 77px;
+  margin-left: -4px;
   float: left;
-  width: 25px;
-  height: 170px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -72px 0;
   background-repeat: no-repeat;
-  left: 24px;
 }
 
 .content-top__logo--3{
-  margin-top: 81px;
-  margin-left: 8px;
+  margin-top: 78px;
+  margin-left: 4px;
   float: left;
-  width: 25px;
-  height: 170px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -150px 0;
   background-repeat: no-repeat;
-  left: 48px;
 }
 
 .content-top__buttons{
@@ -876,6 +886,15 @@ header{
   border-top: 1px solid #fefefe;
 }
 
+.logos{
+  display: none;
+}
+
+.logos768{
+  margin: 25px 0 0 101px;
+  display: block;
+}
+
 .footer__wrapper{
   width: 768px;
   height: inherit;
@@ -955,7 +974,20 @@ header{
 
 }
 
-/*////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////// 480PX WIDTH /////////////////////////////////*/
 
 @media (max-width: 480px){
   
@@ -1105,30 +1137,30 @@ header{
 }
 
 .content-top__block{
-  margin: 77px 0 0 23px;
+  margin: 77px 0 0 21px;
   width: 380px;
   height: 100px;
 }
 
 .content-top__block--2{
-  margin: 53px 0 0 23px;
-  width: 380px;
-  height: 100px;
-}
-
-.content-top__block--3{
   margin: 57px 0 0 23px;
   width: 380px;
   height: 100px;
 }
 
-.content-top__logo--1{
-  margin-top: 81px;
-  margin-left: 26px;
-  width: 25px;
+.content-top__block--3{
+  margin: 61px 0 0 23px;
+  width: 380px;
   height: 100px;
+}
+
+.content-top__logo--1{
+  margin-top: 78px;
+  margin-left: 22px;
+  float: left;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
   background-repeat: no-repeat;
 }
 
@@ -1153,29 +1185,25 @@ header{
 }
 
 .content-top__logo--2{
-  clear: both;
-  margin-top: 57px;
-  margin-left: 25px;
+  margin-top: 60px;
+  margin-left: 20px;
   float: left;
-  width: 25px;
-  height: 100px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -72px 0;
   background-repeat: no-repeat;
-  left: 24px;
 }
 
 .content-top__logo--3{
-  clear: both;
-  margin-top: 61px;
-  margin-left: 25px;
+  margin-top: 64px;
+  margin-left: 19px;
   float: left;
-  width: 25px;
-  height: 100px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -150px 0;
   background-repeat: no-repeat;
-  left: 48px;
 }
 
 .content-top__button--1{
@@ -1329,11 +1357,14 @@ header{
   display: none;
 }
 
+.logos768{
+  display: none;
+}
+
 .logos480{
   display: block;
   margin: 36px 0 0 219px;
 }
-
 
 .footer{
   background-color: #ececec;
@@ -1400,6 +1431,19 @@ header{
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////// 320PX WIDTH /////////////////////////////////*/
 
 @media (max-width: 320px){
 
@@ -1549,31 +1593,31 @@ header{
 }
 
 .content-top__block{
-  margin: 70px 0 0 24px;
+  margin: 70px 0 0 20px;
   width: 230px;
   height: 100px;
   overflow: hidden;
 }
 
 .content-top__block--2{
-  margin: 53px 0 0 23px;
+  margin: 57px 0 0 22px;
   width: 230px;
   height: 100px;
 }
 
 .content-top__block--3{
-  margin: 69px 0 0 23px;
+  margin: 73px 0 0 25px;
   width: 230px;
   height: 100px;
 }
 
 .content-top__logo--1{
-  margin-top: 74px;
-  margin-left: 24px;
-  width: 25px;
-  height: 100px;
+  margin-top: 71px;
+  margin-left: 21px;
+  float: left;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
   background-repeat: no-repeat;
 }
 
@@ -1599,29 +1643,25 @@ header{
 }
 
 .content-top__logo--2{
-  clear: both;
-  margin-top: 57px;
-  margin-left: 24px;
+  margin-top: 58px;
+  margin-left: 20px;
   float: left;
-  width: 25px;
-  height: 100px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -72px 0;
   background-repeat: no-repeat;
-  left: 24px;
 }
 
 .content-top__logo--3{
-  clear: both;
-  margin-top: 73px;
-  margin-left: 24px;
+  margin-top: 75px;
+  margin-left: 17px;
   float: left;
-  width: 25px;
-  height: 100px;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/sprite.png);
-  background-position: top left;
+  background-position: -150px 0;
   background-repeat: no-repeat;
-  left: 48px;
 }
 
 .content-top__button--1{
@@ -1674,7 +1714,7 @@ header{
 .content-middle__header{
   float: left;
   height: 39px;
-  margin: 24px 0 15px 10px;
+  margin: 23px 0 15px 10px;
   width: 120px;
   font-size: 24px;
   font-family: 'league_gothicregular';
@@ -1686,14 +1726,14 @@ header{
 .content-middle__text{
   clear: both;
   height: 140px;
-  margin: 0 15px 0 39px;
+  margin: 0 15px 0 38px;
   font-size: 17px;
   line-height: 20px;
   font-family: 'open_sanslight';
 }
 
 .sliders__selectors--middle{
-  margin: 76px 172px 0 30px;
+  margin: 77px 172px 0 30px;
 }
 
 .content-middle__block--1{
@@ -1725,7 +1765,7 @@ header{
 
 
 .content-middle__blog{
-  width: 330px;
+  width: 310px;
   margin: -1px 0 8px 15px;
   clear: both;
 }
@@ -1775,6 +1815,10 @@ header{
 }
 
 .logos480{
+  display: none;
+}
+
+.logos768{
   display: none;
 }
 
