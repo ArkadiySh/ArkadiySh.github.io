@@ -1428,6 +1428,12 @@ header{
   margin: 23px 152px 0 0;
 }
 
+.content-top__wrapper{
+  margin: 0 auto;
+  width: 768px;
+  height: inherit;
+}
+
 .content-top__logo--1{
   margin-top: 78px;
   margin-left: 20px;
@@ -1439,7 +1445,7 @@ header{
 }
 
 .content-top__block{
-  margin: 77px 24px 0 21px;
+  margin: 77px 0px 0 21px;
   float: left;
   width: 180px;
   height: 170px;
@@ -1469,7 +1475,7 @@ header{
 
 .content-top__logo--2{
   margin-top: 77px;
-  margin-left: -4px;
+  margin-left: 21px;
   float: left;
   width: 31px;
   height: 31px;
@@ -1480,7 +1486,7 @@ header{
 
 .content-top__logo--3{
   margin-top: 78px;
-  margin-left: 4px;
+  margin-left: 25px;
   float: left;
   width: 31px;
   height: 31px;
