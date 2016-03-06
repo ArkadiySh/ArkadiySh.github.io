@@ -80,6 +80,7 @@ header{
 
 .menu__item:hover{
   border-bottom: 2px solid #edbfff;
+    -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -178,18 +179,21 @@ header{
   border-radius: 100%;
   background: white;
   border: 1px solid gray;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .sliders__circle:hover{
   background: white;
   border: #383840 3px solid;
+    -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .sliders__circle--middle:hover{
   background: #555555;
   border: gray 2px solid;
+    -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -197,6 +201,7 @@ header{
 
 .content-top{
   height: 340px;
+  background: -moz-linear-gradient(270deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   background: linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -268,11 +273,6 @@ box-shadow:         0px 5px 19px -4px rgba(0, 0, 0, 0.75);
   line-height: 24px;
   letter-spacing: 0.31px;
   text-shadow: 1px 1px 0px black;
-}
-
-.content-top__buttons{
-  clear: both;
-  margin-top: -84px;
 }
 
 .content-top__button--1{
@@ -740,6 +740,7 @@ header{
 
 .menu__item:hover{
   border-bottom: 2px solid #edbfff;
+    -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -838,18 +839,21 @@ header{
   border-radius: 100%;
   background: white;
   border: 1px solid gray;
+    -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .sliders__circle:hover{
   background: white;
   border: #383840 3px solid;
+    -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .sliders__circle--middle:hover{
   background: #555555;
   border: gray 2px solid;
+    -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -857,6 +861,7 @@ header{
 
 .content-top{
   height: 340px;
+  background: -moz-linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   background: linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -1943,6 +1948,7 @@ header{
 
 .content-top{
   height: 596px;
+  background: -moz-linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   background: linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -2028,21 +2034,18 @@ header{
 .content-top__button--1{
   margin: 15px 0px 0 314px;
   text-align: right;
-  width: 170px;
   height: 30px;
 }
 
 .content-top__button--2{
   margin: 15px 0px 0 314px;
   text-align: right;
-  width: 170px;
   height: 30px;
 }
 
 .content-top__button--3{
   margin: 15px 0px 0 314px;
   text-align: right;
-  width: 170px;
   height: 30px;
 }
 
@@ -2471,6 +2474,7 @@ header{
 
 .content-top{
   height: 597px;
+  background: -moz-linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   background: linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -2556,21 +2560,18 @@ header{
 .content-top__button--1{
   margin: 7px 0px 0 156px;
   text-align: right;
-  width: 170px;
   height: 30px;
 }
 
 .content-top__button--2{
   margin: 7px 0px 0 155px;
   text-align: right;
-  width: 170px;
   height: 30px;
 }
 
 .content-top__button--3{
   margin: 7px 0px 0 155px;
   text-align: right;
-  width: 170px;
   height: 30px;
 }
 
