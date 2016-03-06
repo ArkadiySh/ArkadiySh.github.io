@@ -21,8 +21,21 @@
 
 }
 
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/open-sans.bold-webfont.eot');
+    src: url('../fonts/open-sans.bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans.bold-webfont.woff2') format('woff2'),
+         url('../fonts/open-sans.bold-webfont.woff') format('woff'),
+         url('../fonts/open-sans.bold-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans.bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @media (min-width: 961px){
-  
+
 body{
   background-color: #f9f9f9;
   margin: 0 auto;
@@ -415,7 +428,7 @@ header{
 
 .content-middle__blogheader{
   padding: 0px 0 0 17px;
-  font-family: 'open_sanslight';
+  font-family: 'open_sansbold';
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
@@ -464,7 +477,11 @@ header{
 
 .logos{
   padding-top: 24px;
-  margin-left: 90px;
+}
+
+.logos img{
+  display: block;
+  margin: 0 auto;
 }
 
 .logos768{
@@ -594,7 +611,7 @@ header{
 .footer__des a{
   text-decoration: none;
   font-weight: bold;
-  font-family: 'open_sanslight';
+  font-family: 'open_sansbold';
   color: white;
 }
 
@@ -741,7 +758,7 @@ header{
 }
 
 .sliders__selectors--middle{
-  margin: 62px 172px 0 0;
+  margin: 123px 172px 0 0;
 }
 
 .sliders__circle--middle{
@@ -840,14 +857,9 @@ header{
   text-shadow: 1px 1px 0px black;
 }
 
-.content-top__buttons{
-  clear: both;
-  margin-top: -84px;
-}
-
 .content-top__button--1{
   float: left;
-  margin: -3px 0px 0 219px;
+  margin: 19px 0px 0 158px;
   text-align: right;
   width: 100px;
   height: 30px;
@@ -855,7 +867,7 @@ header{
 
 .content-top__button--2{
   float: left;
-  margin: -3px 0px 0 243px;
+  margin: 19px 0px 0 162px;
   text-align: right;
   width: 100px;
   height: 30px;
@@ -863,7 +875,7 @@ header{
 
 .content-top__button--3{
   float: left;
-  margin: -3px 0px 0 211px;
+  margin: 19px 0px 0 162px;
   text-align: right;
   width: 70px;
   height: 30px;
@@ -888,7 +900,7 @@ header{
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'league_gothicregular';
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .content-top__button--2 a{
@@ -898,7 +910,7 @@ header{
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'league_gothicregular';
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .content-top__button--3 a{
@@ -908,7 +920,7 @@ header{
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'league_gothicregular';
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .content-middle{
@@ -1002,7 +1014,7 @@ header{
 
 .content-middle__blogheader{
   padding: 0px 0 0 17px;
-  font-family: 'open_sanslight';
+  font-family: 'open_sansbold';
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
@@ -1169,7 +1181,7 @@ header{
 
 .footer__des{
   float: right;
-  margin: 54px 252px 0 0;
+  margin: 54px 246px 0 0;
   font-size: 12px;
 }
 
@@ -1181,7 +1193,7 @@ header{
 .footer__des a{
   text-decoration: none;
   font-weight: bold;
-  font-family: 'open_sanslight';
+  font-family: 'open_sansbold';
   color: white;
 }
 
@@ -1319,6 +1331,8 @@ header{
 .content-top__t2{
   padding-top: 3px;
   display: block;
+  height: 147px;
+  overflow: hidden;
   font-family: 'open_sanslight';
   font-size: 16px;
   color: white;
@@ -1349,15 +1363,9 @@ header{
   background-repeat: no-repeat;
 }
 
-.content-top__buttons{
-  clear: both;
-  margin-left: 164px;
-  margin-top: -85px;
-}
-
 .content-top__button--1{
   float: left;
-  margin: 0px 0px 0 0px;
+  margin: 4px 0px 0 90px;
   text-align: right;
   width: auto;
   height: 30px;
@@ -1365,7 +1373,7 @@ header{
 
 .content-top__button--2{
   float: left;
-  margin: 0px 0px 0 197px;
+  margin: 4px 0px 0 90px;
   text-align: right;
   width: auto;
   height: 30px;
@@ -1373,7 +1381,7 @@ header{
 
 .content-top__button--3{
   float: left;
-  margin: 0px 0px 0 206px;
+  margin: 4px 0px 0 88px;
   text-align: right;
   width: auto;
   height: 30px;
@@ -1551,8 +1559,15 @@ header{
 .footer__des{
   clear: both;
   float: right;
-  margin: 28px 40px 0 0;
+  margin: 28px 33px 0 0;
   font-size: 12px;
+}
+
+.footer__des a{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'open_sansbold';
+  color: white;
 }
 
 .dropdown__home{
@@ -1601,7 +1616,7 @@ header{
 }
 
 .dropdown__home{
-  display: block;
+  display: inline-block;
   position: relative;
   margin: 0 0 0 207px;
   padding: 0 0 0 0;
@@ -1620,7 +1635,7 @@ header{
   position: absolute;
   z-index: 1;
   left: -100px;
-  top: 130px;
+  top: -10px;
   width: 245px;
   height: 257px;
   background-color: rgba(61,48,69, 0.9);
@@ -1736,7 +1751,7 @@ header{
 }
 
 .content-top__block--3{
-  margin: 61px 0 0 23px;
+  margin: 61px 0 0 21px;
   width: 380px;
   height: 100px;
 }
@@ -1763,6 +1778,7 @@ header{
 .content-top__t2{
   padding-top: 3px;
   display: block;
+  height: 72px;
   font-family: 'open_sanslight';
   font-size: 16px;
   color: white;
@@ -1794,21 +1810,21 @@ header{
 }
 
 .content-top__button--1{
-  margin: -319px 0px 0 224px;
+  margin: 15px 0px 0 314px;
   text-align: right;
   width: 170px;
   height: 30px;
 }
 
 .content-top__button--2{
-  margin: -161px 0px 0 224px;
+  margin: 15px 0px 0 314px;
   text-align: right;
   width: 170px;
   height: 30px;
 }
 
 .content-top__button--3{
-  margin: -1px 0px 0 225px;
+  margin: 15px 0px 0 314px;
   text-align: right;
   width: 170px;
   height: 30px;
@@ -1906,7 +1922,7 @@ header{
 
 .content-middle__blogheader{
   padding: 0px 0 0 17px;
-  font-family: 'open_sanslight';
+  font-family: 'open_sansbold';
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
@@ -2011,8 +2027,15 @@ header{
 }
 
 .footer__des{
-  margin: 28px 190px 0 0;
+  margin: 28px 182px 0 0;
   font-size: 12px;
+}
+
+.footer__des a{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'open_sansbold';
+  color: white;
 }
 
 }
@@ -2182,20 +2205,19 @@ header{
 .content-top__block{
   margin: 70px 0 0 20px;
   width: 230px;
-  height: 100px;
-  overflow: hidden;
+  height: 135px;
 }
 
 .content-top__block--2{
-  margin: 57px 0 0 22px;
+  margin: 22px 0 0 22px;
   width: 230px;
-  height: 100px;
+  height: 135px;
 }
 
 .content-top__block--3{
-  margin: 73px 0 0 25px;
+  margin: 38px 0 0 22px;
   width: 230px;
-  height: 100px;
+  height: 135px;
 }
 
 .content-top__logo--1{
@@ -2230,7 +2252,7 @@ header{
 }
 
 .content-top__logo--2{
-  margin-top: 58px;
+  margin-top: 22px;
   margin-left: 20px;
   float: left;
   width: 31px;
@@ -2241,7 +2263,7 @@ header{
 }
 
 .content-top__logo--3{
-  margin-top: 75px;
+  margin-top: 38px;
   margin-left: 17px;
   float: left;
   width: 31px;
@@ -2252,21 +2274,21 @@ header{
 }
 
 .content-top__button--1{
-  margin: -327px 0px 0 64px;
+  margin: 7px 0px 0 156px;
   text-align: right;
   width: 170px;
   height: 30px;
 }
 
 .content-top__button--2{
-  margin: -170px 0px 0 64px;
+  margin: 7px 0px 0 155px;
   text-align: right;
   width: 170px;
   height: 30px;
 }
 
 .content-top__button--3{
-  margin: 3px 0px 0 64px;
+  margin: 7px 0px 0 155px;
   text-align: right;
   width: 170px;
   height: 30px;
@@ -2372,7 +2394,7 @@ header{
 
 .content-middle__blogtext{
   padding: 8px 0 0 64px;
-  font-family: 'open_sanslight';
+  font-family: 'open_sansbold';
   font-size: 17px;
 }
 
@@ -2446,31 +2468,9 @@ header{
 
 .footer__des{
   display: block;
-  margin: 42px 109px 0 0;
+  margin: 41px 102px 0 0;
   font-size: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
