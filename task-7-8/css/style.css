@@ -204,7 +204,7 @@ header{
 .content-top{
   margin-top: -23px;
   height: 340px;
-  background: -moz-linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
+  background: -moz-linear-gradient(270deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   background: linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -1343,7 +1343,7 @@ header{
 
 .content-top{
   height: 597px;
-  background: -moz-linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
+  background: -moz-linear-gradient(270deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   background: linear-gradient(180deg, rgb(116, 80, 131) 15%, rgb(50, 37, 37) 85%);
   border-bottom: 1px solid black;
   border-top: 1px solid black;
