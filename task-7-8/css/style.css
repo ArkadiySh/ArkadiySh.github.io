@@ -933,8 +933,9 @@ header{
 }
 
 .sliders__picture img{
-  width: 99%;
+  max-width: 298px;
 }
+
 
 .sliders__selectors{
   margin: 37px 126px 0 0;
