@@ -112,7 +112,34 @@ header{
 .sliders__wrapper{
   margin: 0 auto;
   height: 400px;
+  position: relative;
 }
+
+.sliders__arrow--left{
+  display: none;
+}
+
+.sliders__arrow--right{
+  display: none;
+}
+
+@media (min-width: 1600px){
+
+.sliders__arrow--left{
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: 183px;
+}
+
+.sliders__arrow--right{
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 183px;
+}
+}
+
 
 .sliders__text{
   float: left;
@@ -185,14 +212,14 @@ header{
   box-sizing: border-box;
 }
 
-.sliders__circle:hover{
+.sliders__circle--active{
   background: white;
   border: #383840 3px solid;
     -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.sliders__circle--middle:hover{
+.sliders__circle--middle--active{
   background: #555555;
   border: gray 2px solid;
     -moz-box-sizing: border-box;
@@ -773,6 +800,21 @@ header{
 .sliders__wrapper{
   margin: 0 auto;
   height: 400px;
+  position: relative;
+}
+
+.sliders__arrow--left{
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: 183px;
+}
+
+.sliders__arrow--right{
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 183px;
 }
 
 .sliders__text{
@@ -1008,7 +1050,7 @@ header{
 .content-middle__blogheader--2{
   display: block;
   margin: 22px 0 0 65px;
-  padding: 5px 0 0 0px;
+  padding: 5px 0 0 1px;
   font-family: 'open_sansbold';
   font-size: 17px;
   letter-spacing: -0.2px;
@@ -1022,7 +1064,7 @@ header{
   width: 260px;
   height: 20px;
   overflow: hidden;
-  padding: 7px 0 0 15px;
+  padding: 7px 0 0 16px;
   font-family: 'open_sanslight';
   font-size: 17px;
   letter-spacing: -0.5px;
@@ -1039,7 +1081,7 @@ header{
 .content-middle__blogheader--3{
   display: block;
   margin: 20px 0 0 65px;
-  padding: 5px 0 0 0px;
+  padding: 5px 0 0 1px;
   font-family: 'open_sansbold';
   font-size: 17px;
   letter-spacing: -0.2px;
@@ -1294,6 +1336,19 @@ header{
 .sliders__wrapper{
   margin: 0 auto;
   height: 246px;
+  position: relative;
+}
+
+.sliders__arrow--left{
+  position: absolute;
+  left: 0;
+  top: 106px;
+}
+
+.sliders__arrow--right{
+  position: absolute;
+  right: 0;
+  top: 106px;
 }
 
 .sliders__text{
@@ -1688,6 +1743,19 @@ header{
 .sliders__wrapper{
   margin: 0 auto;
   height: 246px;
+  position: relative;
+}
+
+.sliders__arrow--left{
+  position: absolute;
+  left: 0;
+  top: 106px;
+}
+
+.sliders__arrow--right{
+  position: absolute;
+  right: 0;
+  top: 106px;
 }
 
 .sliders__text{
