@@ -1,0 +1,44 @@
+body{
+	background-color: gray;
+	font-family: sans-serif;
+}
+
+.wrapper{
+	width: 800px;
+	height: 600px;
+	background: white;
+	margin: 7% auto;
+	display: block;
+	border: 1px solid black;
+}
+
+.wrapper__header{
+	padding-top: 15px;
+	margin-left: 50px;
+}
+
+
+label {
+	display: block;
+	margin-left: 70px;
+}
+
+h2{
+	margin-left: 50px;
+}
+
+
+.wrapper__button{
+	margin: 30px 200px;
+	height: 50px;
+	width: 400px;
+	background: blue;
+	border-radius: 3px;
+	border: 2px black solid;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 46px;
+
+}
