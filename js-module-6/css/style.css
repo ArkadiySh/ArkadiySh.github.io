@@ -1,0 +1,69 @@
+.sw{
+	float: left;
+	width: 100px;
+	height: 30px;
+	border: 1px solid black;
+	margin: 10px;
+	text-align: center;
+}
+
+.buttons-block{
+	clear: both;
+}
+
+.button{
+	margin: 10px;
+	float: left;
+	display: block;
+	width: 100px;
+	height: 30px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid black;
+}
+
+
+.start{
+	background: green;
+	clear: both;	
+}
+
+.pause{
+	display: none;
+	background: yellow;
+}
+
+.stop{
+	background: red;
+}
+
+.lap{
+	background: yellow;
+}
+
+.secs,
+.mins,
+.milis{
+	margin: 0;
+	line-height: 32px;
+}
+
+.lapBlock{
+	clear: both;
+	height: 30px;
+	width: 280px;
+}
+
+.lapSection{
+	float: left;
+	margin: 1px;
+}
+
+.lapText{
+	float: left;
+	margin-right: 5px;
+}
