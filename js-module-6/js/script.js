@@ -50,7 +50,7 @@ function timer() {
 function stopTimer() {
   clearInterval(timerId);
 
-  var lapBlock = document.createElement('div');
+   lapBlock = document.createElement('div');
   lapBlock.classList.add('lapBlock');
   body.appendChild(lapBlock);
 
@@ -88,7 +88,7 @@ function stopTimer() {
 
 
 function newLap() {
-  var lapBlock = document.createElement('div');
+   lapBlock = document.createElement('div');
   lapBlock.classList.add('lapBlock');
   body.appendChild(lapBlock);
 
@@ -138,6 +138,8 @@ function resetTimer() {
   mil.innerHTML = milliseconds;
   min.innerHTML = minutes;
   sec.innerHTML = seconds;
+
+  body.removeChild(lapBlock);
 }
 
 
