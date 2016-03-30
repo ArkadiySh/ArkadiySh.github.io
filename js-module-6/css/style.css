@@ -1,3 +1,8 @@
+.top-block{
+	position: fixed;
+	left: 150px;
+}
+
 .sw{
 	float: left;
 	width: 100px;
@@ -32,13 +37,13 @@
 	clear: both;	
 }
 
-.pause{
+.stop{
 	display: none;
-	background: yellow;
+	background: red;
 }
 
-.stop{
-	background: red;
+.reset{
+	background: #6b919c;
 }
 
 .lap{
@@ -66,4 +71,9 @@
 .lapText{
 	float: left;
 	margin-right: 5px;
+}
+
+.lapContainer{
+	float: left;
+	margin-top: 15px;
 }
