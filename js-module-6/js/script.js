@@ -10,8 +10,18 @@ var lapContainer = document.querySelector('.lapContainer');
 var mil = document.querySelector('.milis');
 var sec = document.querySelector('.secs');
 var min = document.querySelector('.mins');
+var hours = document.querySelector('.hours');
+var flag = false;
+
 
 // Create blocks for time markers
+function createTimeSection(timeType) { // timeType = min/sec/ms/ :
+  var lapTime = document.createElement('div');
+  lapTime.classList.add('lapSection');
+  lapBlock.appendChild(lapTime);
+  lapTime.innerHTML = (timeType);
+}
+
 function createTimeBlock(type) {
   lapBlock = document.createElement('div');
   lapBlock.classList.add('lapBlock');
@@ -22,30 +32,13 @@ function createTimeBlock(type) {
   lapBlock.appendChild(lapText);
   lapText.innerHTML = (type);
 
-  var lapMin = document.createElement('div');
-  lapMin.classList.add('lapSection');
-  lapBlock.appendChild(lapMin);
-  lapMin.innerHTML = (minutes);
-
-  var lapDiv = document.createElement('div');
-  lapDiv.classList.add('lapSection');
-  lapBlock.appendChild(lapDiv);
-  lapDiv.innerHTML = (':');
-
-  var lapSec = document.createElement('div');
-  lapSec.classList.add('lapSection');
-  lapBlock.appendChild(lapSec);
-  lapSec.innerHTML = (seconds);
-
-  var lapDiv = document.createElement('div');
-  lapDiv.classList.add('lapSection');
-  lapBlock.appendChild(lapDiv);
-  lapDiv.innerHTML = (':');
-
-  var lapMilis = document.createElement('div');
-  lapMilis.classList.add('lapSection');
-  lapBlock.appendChild(lapMilis);
-  lapMilis.innerHTML = (milliseconds);
+  createTimeSection(hours);
+  createTimeSection(':');
+  createTimeSection(minutes);
+  createTimeSection(':');
+  createTimeSection(seconds);
+  createTimeSection(':');
+  createTimeSection(milliseconds);
 }
 
 // hide/display START/STOP buttons
@@ -62,28 +55,21 @@ function displayStartButton() {
 
 // Get Date start point
 function startStopwatch() {
+  flag = true;
   initialDate = new Date;
 }
 
 
-
+// calculate timer
 function getTime() {
 
   var currentDate = new Date;
-  var timer = currentDate - initialDate;
-
-  milliseconds = (timer % 1000);
-  timer -= milliseconds;
-  milliseconds = Math.floor(milliseconds / 10);
-  timer = Math.floor(timer / 1000);
-
-  seconds = Math.floor (timer % 60);
-  timer -= seconds;
-  timer = Math.floor(timer / 60);
-
-  minutes = Math.floor (timer % 60);
-  timer -= minutes;
-  timer = Math.floor(timer / 60);
+  timer = new Date (currentDate - initialDate);
+  
+  milliseconds = timer.getMilliseconds();
+  seconds = timer.getSeconds();
+  minutes = timer.getMinutes();
+  hours = timer.getUTCHours();
 
   if(milliseconds < 100){
     milliseconds = '0' + milliseconds;
@@ -94,46 +80,52 @@ function getTime() {
   if (minutes < 10){
     minutes = '0' + minutes;
   }
+  if (hours < 10){
+    hours = '0' + hours;
+  }
 }
 
-
+// display timer in document
 function counter() {
   getTime();
   mil.innerHTML = milliseconds;
   sec.innerHTML = seconds;
   min.innerHTML = minutes;
+  hours.innerHTML = hours;
 }
 
-
+// interval for display
 function displayTimer() {
   timerId = setInterval(counter, 10);
 }
 
 
-function pauseStopwatch() {
-  start.style.display = 'block';
-  stop.style.display = 'none';
-}
-
-
-function newLap() {
-  var currentDate = new Date;
-  var timer = currentDate - initialDate;
-  getTime();
-  createTimeBlock('LAP')
-}
-
-
 function stopTimer() {
   clearInterval(timerId);
-  var currentDate = new Date;
-  var timer = currentDate - initialDate;
   getTime();
   createTimeBlock('STOP');
+  flag = false;
+}
+
+function newLap() {
+  if (flag == true){
+    getTime();
+    createTimeBlock('LAP');
+  } else {
+    lapBlock = document.createElement('div');
+    lapBlock.classList.add('lapBlock');
+    lapContainer.appendChild(lapBlock);
+    var lapText = document.createElement('div');
+
+    lapText.classList.add('lapText');
+    lapBlock.appendChild(lapText);
+    lapText.innerHTML = ('PRESS START FIRST');
+  }
 }
 
 
 function resetTimer() {
+  flag = false;
   clearInterval(timerId);
   start.style.display = 'block';
   stop.style.display = 'none';
