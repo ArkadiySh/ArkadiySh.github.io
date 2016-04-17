@@ -3,33 +3,28 @@ var submenu = document.querySelector('.submenu');
 var submenu2 = document.querySelector('.submenu2');
 var submenuDropdown = document.querySelector('.submenu__dropdown');
 
-// var submenuItem = document.querySelectorAll('.submenu__item');
-// console.log(submenuItem);
-// console.log(submenuItem.length);
-
 function displaySubmenu(el) {
+  var submenuItem = document.querySelectorAll('.submenu__item')[0];
+  var submenuList = document.querySelectorAll('.submenu__item');
   var height = 0;
 
-  // console.log(submenuItem);
-  // var itemHeight = parseInt(submenuItem.style.height);
-  // console.log(itemHeight);
+  var submenuItemHeight = submenuItem.offsetHeight;
 
-	if (el.style.height == 0 || el.style.height == '0px') {
-		var displayInt = setInterval(function(){
-			height += 15;
-			el.style.height = height + 'px'
-      // if (height > (itemHeight * submenuItem.length) {
-			if (height > 250){
-				clearInterval(displayInt);
-			};	
-		}, 10);
-	};
+  if (el.style.height == 0 || el.style.height == '0px') {
+    var displayInt = setInterval(function(){
+      height += 15;
+      el.style.height = height + 'px';
+      if (height > (submenuItemHeight * submenuList.length)) {
+        clearInterval(displayInt);
+      };  
+    }, 10);
+  };
 };
 
 function hideSubmenu(el){
-  var height = parseInt(el.style.height);
+  var height = el.offsetHeight;
 
-  if (parseInt(el.style.height) > 0) {
+  if (el.offsetHeight > 0) {
     var hideInt = setInterval(function(){
       height -= 15;
       el.style.height = height + 'px'
@@ -41,11 +36,11 @@ function hideSubmenu(el){
 };
 
 dropdown.addEventListener('mouseover', function(){
-	displaySubmenu(submenu);
+  displaySubmenu(submenu);
 });
 
 dropdown.addEventListener('mouseleave', function(){
-	hideSubmenu(submenu);
+  hideSubmenu(submenu);
 });
 
 submenuDropdown.addEventListener('mouseover', function(){
