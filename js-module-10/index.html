@@ -14,6 +14,7 @@
   <script type="text/javascript" src="js/jquery.bxslider.js"></script>
   <script type="text/javascript" src="js/jquery.uniform.js"></script>
   <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
   <script type="text/javascript">
     $(document).ready(function(){
       $('.bxslider').bxSlider({
@@ -99,15 +100,29 @@
     </form>
     
     <div class="checkbox__block">
-      <form class="checkbox__wrapper">
-        <input type="checkbox" checked id="cb1">
-        <label for="cb1">option 1</label>
+      <form>
 
-        <input type="checkbox" id="cb2">
-        <label for="cb2">option 2</label>
+      <div class="checkbox__css">
+        <span class="niceCheck"><input type="checkbox" checked id="cb1"></span>
+        <label for="cb1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS__Check 1</label>
 
-        <input type="checkbox" id="cb3">
-        <label for="cb3">option 3</label>
+        <span class="niceCheck"><input type="checkbox" id="cb2"></span>
+        <label for="cb2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS__Check 2</label>
+
+        <span class="niceCheck"><input type="checkbox" id="cb3"></span>
+        <label for="cb3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS__Check 3</label>
+      </div>
+
+      <div class="checkbox__jquery">
+        <input type="checkbox" id="cb4">
+        <label for="cb4">jQuery__Check 1</label>
+
+        <input type="checkbox" id="cb5">
+        <label for="cb5">jQuery__Check 2</label>
+
+        <input type="checkbox" id="cb6">
+        <label for="cb6">jQuery__Check 3</label>
+      </div>
       </form>
     </div>
   </div>
@@ -116,31 +131,35 @@
     <ul class="menu">
 
       <li class="menu__item"><a href="#" class="menu__link">menu item 1</a></li>
-
       <li class="menu__item"><a href="#" class="menu__link">menu item 2</a></li>
+      <li class="menu__item dropdown"><a href="#" class="menu__link">menu item 3</a>
 
-      <li class="menu__item dropdown"><a href="" class="menu__link">menu item 3</a>
         <ul class="submenu">
+
           <li class="submenu__item"><a href="#" class="menu__link">menu item 3.1</a></li>
           <li class="submenu__item"><a href="#" class="menu__link">menu item 3.2</a></li>
-          <li class="submenu__item submenu__dropdown">
-            <a href="#" class="menu__link">menu item 3.3</a>
+
+          <li class="submenu__item submenu__dropdown"><a href="#" class="menu__link">menu item 3.3</a>
+
             <ul class="submenu2">
+
               <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.1</a></li>
               <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.2</a></li>
               <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.3</a></li>
               <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.4</a></li>
               <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.5</a></li>
+
             </ul>
           </li>
+
           <li class="submenu__item"><a href="#" class="menu__link">menu item 3.4</a></li>
           <li class="submenu__item"><a href="#" class="menu__link">menu item 3.5</a></li>
         </ul>
       </li>
 
-      <li class="menu__item"><a href="#" class="menu__link">menu item 1</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">menu item 4</a></li>
 
-      <li class="menu__item"><a href="#" class="menu__link">menu item 1</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">menu item 5</a></li>
     </ul>
   </div>
 

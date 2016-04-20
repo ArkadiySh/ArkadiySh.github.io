@@ -55,13 +55,14 @@ background: linear-gradient(0deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
 }
 
 .select__wrapper{
-  width: 1000px;
+  width: 1010px;
   margin: 0 auto;
 }
 
 .select__form{
   display: block;
   float: left;
+  margin-top: 10px;
 }
 
 .select__block{
@@ -80,32 +81,14 @@ background: linear-gradient(0deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
   margin: 20px;
 }
 
-input[type=checkbox] {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
+.checkbox__css{
+  margin: 0px 0 10px 0;
 }
-label {
-  cursor: pointer;
+
+.checkbox__jquery{
+  margin: 10px 0;
 }
-label:after {
-  content: " ";
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  background: url(../img/checkbox-2.png);
-  position: relative;
-  top: 3px;
-  margin-left: 15px;
-}
-input[type=checkbox]:checked + label:after {
-background-position: 0 -17px;
-}
-label:hover:after {
-background-position: 0 -34px;
-}
-input[type=checkbox]:checked + label:hover:after {
-background-position: 0 -51px;
-}
+
 
 
 .menu__container{
@@ -173,4 +156,45 @@ background: linear-gradient(0deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
 .footer{
   height: 500px;
   width: 100%;
+}
+
+/*
+.niceCheck {
+width: 17px;
+height: 17px;
+display: inline-block;
+cursor: pointer;
+background: url(../img/checkbox-sprite.png);
+}
+
+.niceCheck input {
+display: none;
+}
+*/
+
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+label {
+  cursor: pointer;
+}
+label:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox-2.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+label:hover:after {
+background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
 }
