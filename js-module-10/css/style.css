@@ -158,28 +158,18 @@ background: linear-gradient(0deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
   width: 100%;
 }
 
-/*
-.niceCheck {
-width: 17px;
-height: 17px;
-display: inline-block;
-cursor: pointer;
-background: url(../img/checkbox-sprite.png);
-}
 
-.niceCheck input {
-display: none;
-}
-*/
 
-input[type=checkbox] {
+
+
+.checkbox__jquery input[type=checkbox] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
-label {
+.checkbox__jquery label {
   cursor: pointer;
 }
-label:after {
+.checkbox__jquery label:after {
   content: " ";
   display: inline-block;
   width: 17px;
@@ -189,12 +179,33 @@ label:after {
   top: 3px;
   margin-left: 15px;
 }
-input[type=checkbox]:checked + label:after {
+.checkbox__jquery input[type=checkbox]:checked + label:after {
 background-position: 0 -17px;
 }
-label:hover:after {
+.checkbox__jquery label:hover:after {
 background-position: 0 -34px;
 }
-input[type=checkbox]:checked + label:hover:after {
+.checkbox__jquery input[type=checkbox]:checked + label:hover:after {
 background-position: 0 -51px;
+}
+
+
+.niceCheck {
+width: 17px;
+height: 17px;
+display: inline-block;
+cursor: pointer;
+background: url(../img/checkbox-sprite.png);
+}
+
+.niceCheck #cb1 {
+display: none;
+}
+
+.niceCheck #cb2 {
+display: none;
+}
+
+.niceCheck #cb3 {
+display: none;
 }

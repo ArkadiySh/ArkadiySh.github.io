@@ -1,28 +1,3 @@
-// var menuItem = document.querySelector('.menu__item');
-// console.log(menuItem.firstChild);
-
-// function showSubmenu() {
-//   var submenuItem = document.querySelectorAll('.submenu__item')[0];
-//   var submenuList = document.querySelectorAll('.submenu__item');
-//   var height = 0;
-//   var submenuItemHeight = submenuItem.offsetHeight;
-
-//   if (menuItem.childNodes.style.height == 0 || menuItem.childNodes.style.height == '0px') {
-//     var displayInt = setInterval(function(){
-//       height += 15;
-//       menuItem.childNodes.style.height = height + 'px';
-//       if (height > (submenuItemHeight * submenuList.length)) {
-//         clearInterval(displayInt);
-//       };
-//     }, 10);     
-//   }
-// }
-
-// menuItem.addEventListener('mouseover', function(){
-//   showSubmenu();
-// });
-
-
 var dropdown = document.querySelector('.dropdown');
 var submenu = document.querySelector('.submenu');
 var submenu2 = document.querySelector('.submenu2');
