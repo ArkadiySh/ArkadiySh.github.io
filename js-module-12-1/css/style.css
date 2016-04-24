@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ddd;
+  font-family: sans-serif;
+}
+
+.header__title{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 4px 4px 12px;
+}
+
+.wrapper{
+  height: 260px;
+  background: rgb(31, 37, 50);
+  background: -moz-linear-gradient(270deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
+  background: -webkit-linear-gradient(270deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
+  background: -o-linear-gradient(270deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
+  background: -ms-linear-gradient(270deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
+  background: linear-gradient(0deg, rgb(31, 37, 50) 22%, rgb(98, 102, 111) 90%);
+}
+
+.carousel__wrapper{
+  padding: 60px;
+  margin: 20px auto;
+  width: 1120px;
+}
+
+.carousel__list{
+  list-style: none;
+  width: 10000px;
+  position: relative;
+}
+ 
+.carousel__element{
+  display: block;
+  margin-right: 25px;
+  float: left;
+ }
+
+.carousel__element img{
+  max-width: 220px;
+}
+
+.carousel__block{
+  float: left;
+  margin: auto;
+  width: 955px;
+  overflow: hidden;
+}
+
+.carousel__arrow{
+  margin: 50px 20px;
+  float: left;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/fancybox_sprite.png);
+}
+
+.carousel__arrow--left{
+  background-position: 0 -36px;
+}
+
+.carousel__arrow--right{
+  background-position: 0 -72px;
+}
