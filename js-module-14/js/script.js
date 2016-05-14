@@ -7,26 +7,22 @@ $(function() {
 
     {
       question: 'Question 1',
-      answer1: 'Answer 1',
-      answer2: 'Answer 2',
-      answer3: 'Answer 3'
+      answers: ['Answer 1', 'Answer 2', 'Answer 3'],
+      correctAnswer: 3
     },
 
     {
       question: 'Question 2',
-      answer1: 'Answer 1',
-      answer2: 'Answer 2',
-      answer3: 'Answer 3'
+      answers: ['Answer 1', 'Answer 2', 'Answer 3'],
+      correctAnswer: 1
     },
 
     {
       question: 'Question 3',
-      answer1: 'Answer 1',
-      answer2: 'Answer 2',
-      answer3: 'Answer 3'
+      answers: ['Answer 1', 'Answer 2', 'Answer 3'],
+      correctAnswer: 3
     }
   ];
-
 
   localStorage.setItem('preQuestions', JSON.stringify(preQuestions));
 
@@ -69,37 +65,30 @@ $(function() {
   $('.test__button').on('click', showModal);
 
 
-  $('.test__button').on('click', function(){
+  $(".test__button").on("click", function() {
+    var $result = true;
 
-    var $result;
+    var index = questions.map(function(el, i) {
+      return el.correctAnswer - 1 + i * 3
+    });
 
-    $('input').each(function() {
-
-      if ($(this).prop('checked')) {
-
-        if ($(this).attr('value') == 'correct') {
-          $result = true;
-        } else { 
-          $result = false
-        }
+    $("input").each(function(i) {
+      if (~index.indexOf(i) && !this.checked || !~index.indexOf(i) && this.checked) {
+        $result = false
       }
     });
 
     if ($result) {
-      $('.results').html('Everything is correct');
-      $('input').removeAttr('checked');
+
+      $(".results").html("Everything is correct");
+      $("input").removeAttr("checked");
 
     } else {
-      $('.results').html('Wrong answer');
-      $('input').removeAttr('checked');
-    }
-  });
 
+        $(".results").html("Wrong answer");
+        $("input").removeAttr("checked");
+
+      }
+
+    });
 });
-
-
-
-// questions
-
-// 1. Как сделать проверку по всем вопросам (сейчас даже при одном выбранном правильном варианте фиксируется правильный результат)?
-// 2. Можно ли задать атрибут через шаблонизатор, а не вручную?
