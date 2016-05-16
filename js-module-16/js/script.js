@@ -1,9 +1,9 @@
-function Human() {
-  this.name = 'John';
-  this.age = 25;
-  this.sex = 'Male';
-  this.height = '180cm';
-  this.weight = '75kg';
+function Human(name, age, sex, height, weight) {
+  this.name = name || 'John';
+  this.age = age || 25;
+  this.sex = sex || 'Male';
+  this.height = height || '180cm';
+  this.weight = weight || '75kg';
 }
 
 function Worker() {
@@ -14,20 +14,25 @@ function Worker() {
   }
 }
 
-function Student(){
+function Student() {
   this.university = 'MIT';
   this.scholarship = 100;
   this.watchTvShows = function(){
-    console.log('I won`t stop talking about Breaking Bad (and the Wire)');
+    console.log(this.name + ' says: I won`t stop talking about Breaking Bad (and the Wire)');
   }
 }
 
-Worker.prototype = new Human();
-Student.prototype = new Human();
+Student();
+console.log(Student.weight);
 
-var Ivanych = new Worker()
-var Alex = new Student()
+Worker.prototype = new Human('Ivan', 35, 'male', 180, 90);
+Student.prototype = new Human('Olga', 20, 'female', 165, 50);
 
-console.log(Ivanych.name);
-console.log(Ivanych.weight);
-console.log(Alex.sex);
+
+var ivan = new Worker();
+var olga = new Student();
+
+
+console.log('Worker`s name is ' + ivan.name);
+console.log('He is ' + ivan.age + ' years old ' + ivan.sex);
+olga.watchTvShows();
