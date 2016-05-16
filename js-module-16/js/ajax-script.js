@@ -13,13 +13,13 @@ $(function() {
 
         $.each(data.results, function(i, res) {
             var item = document.createElement('li');
-            item.innerHTML = '<a href="' + res.url + '" title="' + res.url + '" target="_blank">' + res.title + '</br>' + '<img class="image-output" src="' + res.url + '">' + "</a>";
+            item.innerHTML = '<a href="' + res.url + '" title="' + res.url + '" target="_blank">' + res.title + '<div><img src="' + res.url + '"><div>' + "</a>";
             ul.appendChild(item);                   
         });
 
         $('#search-results').html(ul);
 
       },
-    });    
+    });  
   });   
 });
