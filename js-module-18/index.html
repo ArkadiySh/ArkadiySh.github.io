@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <title>Carousel / grunt</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/dist/style.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+  <script type="text/javascript" src="js/dist/script.main.min.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        speed: 800,
+      });
+    });
+    $(function(){ 
+      $("select").uniform(); 
+    });
+  </script>
+
+</head>
+<body>
+
+  <div class="wrapper">
+  
+  <header class="header">
+    <p class="header__title">
+      js module 17-18 / grunt
+    </p>
+  </header>
+  
+  <div class="slider__wrapper">
+    <div class="slider__container">
+      <ul class="bxslider">
+        <li><img src="img/1.jpg" alt="pic1"></li>
+        <li><img src="img/2.jpg" alt="pic2"></li>
+        <li><img src="img/3.jpg" alt="pic3"></li>
+        <li><img src="img/4.jpg" alt="pic4"></li>
+        <li><img src="img/5.jpg" alt="pic5"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="select__wrapper">
+    <form class="select__form" action="">
+
+      <div class="select__block">
+      <select name="select" id="s1">
+        <option value="option1">option 1</option>
+        <option value="option2">option 2</option>
+        <option value="option3">option 3</option>
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+        <option value="option6">option 6</option>
+        <option value="option7">option 7</option>
+        <option value="option8">option 8</option>
+        <option value="option9">option 9</option>
+        <option value="option10">option 10</option>
+      </select>
+      </div>
+      
+      <div class="select__block">
+      <select name="select" id="s2">
+        <option value="option1">option 1</option>
+        <option value="option2">option 2</option>
+        <option value="option3">option 3</option>
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+        <option value="option6">option 6</option>
+        <option value="option7">option 7</option>
+        <option value="option8">option 8</option>
+        <option value="option9">option 9</option>
+        <option value="option10">option 10</option>
+      </select>
+      </div>
+
+      <div class="select__block">
+      <select name="select" id="s3">
+        <option value="option1">option 1</option>
+        <option value="option2">option 2</option>
+        <option value="option3">option 3</option>
+        <option value="option4">option 4</option>
+        <option value="option5">option 5</option>
+        <option value="option6">option 6</option>
+        <option value="option7">option 7</option>
+        <option value="option8">option 8</option>
+        <option value="option9">option 9</option>
+        <option value="option10">option 10</option>
+      </select>
+      </div>
+    </form>
+    
+    <div class="checkbox__block">
+      <form>
+
+      <div class="checkbox__css">
+        <span class="niceCheck"><input type="checkbox" checked id="cb1"></span>
+        <label for="cb1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS__Check 1</label>
+
+        <span class="niceCheck"><input type="checkbox" id="cb2"></span>
+        <label for="cb2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS__Check 2</label>
+
+        <span class="niceCheck"><input type="checkbox" id="cb3"></span>
+        <label for="cb3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS__Check 3</label>
+      </div>
+
+      <div class="checkbox__jquery">
+        <input type="checkbox" id="cb4">
+        <label for="cb4">jQuery__Check 1</label>
+
+        <input type="checkbox" id="cb5">
+        <label for="cb5">jQuery__Check 2</label>
+
+        <input type="checkbox" id="cb6">
+        <label for="cb6">jQuery__Check 3</label>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="menu__container">
+    <ul class="menu">
+
+      <li class="menu__item"><a href="#" class="menu__link">menu item 1</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">menu item 2</a></li>
+      <li class="menu__item dropdown"><a href="#" class="menu__link">menu item 3</a>
+
+        <ul class="submenu">
+
+          <li class="submenu__item"><a href="#" class="menu__link">menu item 3.1</a></li>
+          <li class="submenu__item"><a href="#" class="menu__link">menu item 3.2</a></li>
+
+          <li class="submenu__item submenu__dropdown"><a href="#" class="menu__link">menu item 3.3</a>
+
+            <ul class="submenu2">
+
+              <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.1</a></li>
+              <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.2</a></li>
+              <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.3</a></li>
+              <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.4</a></li>
+              <li class="submenu2__item"><a href="#" class="menu__link">menu item 3.3.5</a></li>
+
+            </ul>
+          </li>
+
+          <li class="submenu__item"><a href="#" class="menu__link">menu item 3.4</a></li>
+          <li class="submenu__item"><a href="#" class="menu__link">menu item 3.5</a></li>
+        </ul>
+      </li>
+
+      <li class="menu__item"><a href="#" class="menu__link">menu item 4</a></li>
+
+      <li class="menu__item"><a href="#" class="menu__link">menu item 5</a></li>
+    </ul>
+  </div>
+
+  </div>
+
+
+  <div class="footer"></div>
+</body>
+</html>
