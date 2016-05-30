@@ -284,7 +284,9 @@ _.forEach(skills, function (key, value) {
 });
 
 uniqueSkills = _.uniq(skillsList);
-var skillsSorted = _.sortBy(uniqueSkills);
+var skillsSorted = _.sortBy(uniqueSkills, function (value) { 
+  return _.toLower(value); 
+});
 
 console.log('Skills sorted ascending:', skillsSorted);
 
