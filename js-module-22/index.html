@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Module 22</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/src/template.js"></script>
+  <script src="js/src/es6_script.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="test__container">
+    <h1 class="test__header">Programming test</h1>
+    <div class="questions__block">
+
+    <script type="text/html" id="test">
+
+      <% for (var i = 0; i < data.length; i++) { %>
+  
+        <h2>  <%= data[i].question %>   </h2>
+
+        <input type="checkbox"> <%= data[i].answers[0] %>  
+        <input type="checkbox"> <%= data[i].answers[1] %>  
+        <input type="checkbox"> <%= data[i].answers[2] %>  
+
+      <% }; %>
+
+    </script>
+    </div>
+
+    <a href="#" class="test__button">Review my results</a>
+  </div>
+
+
+</body>
+</html>
