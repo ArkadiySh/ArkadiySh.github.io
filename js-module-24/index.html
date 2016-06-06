@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ToDo List</title>
+  
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet'>
+  <link rel="stylesheet" href="css/src/style.css">
+  <script data-main="js/src/script" src="js/src/require.js"></script>
+</head>
+
+<body>
+  
+  <div class="todolist">
+
+    <script type="text/template" id="wrapper-template">
+      <div class="todolist__container">
+      <h1 class="todolist__header">ToDo List</h1>
+        <ol class="todolist__list"></ol>
+        <div class="todolist__controllers">
+          <input type="text" class="todolist__value">
+          <button class="todolist__button todolist__button-add">Add Task</button>
+          <button class="todolist__button todolist__button--apply">Confirm</button>
+        </div>
+      </div>
+    </script>
+
+
+    <script type="text/template" id="list-template">
+      <% for (var i = 0; i < data.length; i++) { %>
+        <li><span><%= data[i] %> </span>          
+          <img class="todolist__pic todolist__pic--edit" data-value="<%= data[i] %>" src="img/edit.png" title="Edit task" alt="edit">
+          <img class="todolist__pic todolist__pic--ok" src="img/ok.png" title="Apply changes" alt="task">
+          <img src="img/remove.png" alt="remove" title="Delete task" data-value="<%= data[i] %>" class="todolist__pic--delete todolist__pic">
+        </li>
+      <% }; %>
+    </script>
+  </div>
+
+</body>
+</html>
