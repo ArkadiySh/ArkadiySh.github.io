@@ -31,8 +31,8 @@ define(
         // body...
         $(this).prev().attr('contenteditable','true');
         $(this).prev().focus();
-        $('.todolist__pic--edit').css('display', 'none');
-        $('.todolist__pic--ok').css('display', 'inline');
+        $(this).css('display', 'none');
+        $(this).next().css('display', 'inline');
         $(this).prevAll().addClass('todolist__edit');
         
         $('.todolist__pic--ok').on('click', function(){
