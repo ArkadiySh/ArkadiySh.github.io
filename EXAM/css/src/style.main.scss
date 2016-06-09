@@ -1223,6 +1223,24 @@ $mon-r: 'Montserrat-Regular', sans-serif;;
 
   }
 
+  .slider__container{
+    float: left;
+    width: 320px;
+    height: 445px;
+    overflow: hidden;
+  }
+
+  .carousel__list--1,
+  .carousel__list--2,
+  .carousel__list--3,{
+    position: relative;
+    width: 10000px;
+  }
+
+  .slider__slide{
+    float: left;
+  }
+
   .howitworks{
     position: relative;
     margin-top: 97px;

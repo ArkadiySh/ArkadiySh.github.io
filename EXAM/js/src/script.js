@@ -8,9 +8,7 @@ $(function(){
     itemSelector: '.ideas__link'
   });
 
-
-  $('carousel__wrapper').carousel({
+  $('.slider__container').carousel({
       
-  });
-
+    });
 });
