@@ -96,42 +96,64 @@
 
   }
 
+  .howitworks__steps-320{
+    display: none;
+  }
+
+  .slider__container{
+    position: relative;
+    float: left;
+    width: 256px;
+    height: 445px;
+    overflow: hidden;
+  }
+
+  .carousel__list--1,
+  .carousel__list--2,
+  .carousel__list--3,{
+    position: relative;
+    width: 10000px;
+  }
+
+  .carousel__list--2{
+    left: -256px;
+  }
+
+  .carousel__list--3{
+    left: -512px;
+  }
+
+  .slider__slide{
+    float: left;
+  }
   .howitworks{
     position: relative;
     margin-top: 97px;
     height: 520px;
     background-color: #fff;
 
-      .howitworks__left,
-      .howitworks__right{
+      .howitworks__left{
         position: absolute;
-        top: 97px;
+        top: 75px;
         z-index: 1000;
-      }
-
-      .howitworks__left--1{
         left: 30px;
       }
 
       .howitworks__left--2{
-        left: 276px;
+        left: 20px;
       }
 
-      .howitworks__left--3{
-        left: 543px;
-      }
-
-      .howitworks__right--1{
-        right: 543px;
+      .howitworks__right{
+        position: absolute;
+        top: 75px;
+        z-index: 1000;
+        right: 30px;
       }
 
       .howitworks__right--2{
-        right: 276px;
+        right: 20px;
       }
 
-      .howitworks__right--3{
-        right: 30px;
-      }
 
     .howitworks__header{
       margin-left: 7px;
@@ -423,10 +445,10 @@
     margin: 34px 0px 0px 11px;
 
     .ideas__link{
-      background-color: rgba(0,255,0,0.6);
-      display: block;
-      width: 32%;
-      height: 311px;
+      background-color: rgba(100,31,31,0.6);
+      // display: block;
+      width: 235px;
+      height: 310px;
       border-radius: 4px;
       margin-bottom: 20px;
       text-align: center;
@@ -434,27 +456,41 @@
       font-size: 22px;
       color: #fff;
       text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       img{
         max-width: 100%;
       }
     }
+    
+    .ideas__link--2{
+      margin-left: 5px;
+    }
+
+    .ideas__link--3{
+      margin-left: 10px;
+    }
+
+    .ideas__link--5{
+      margin-left: 4px;
+    }
+
 
     .ideas__link--6,
     .ideas__link--5{
-      width: 65%;
-      height: 311px;
+      width: 491px;
+      height: 310px;
     }
 
-    .ideas__name{
-      position: absolute;
-      top: 50px;
-      left: auto;
-    }
+    .ideas__link--7{
+      margin-left: 10px;
+    }    
   }
 
   .ideas__header--bottom{
-    margin: 73px 0px 0px -3px;
+    margin: 76px 0px 0px -3px;
     line-height: 26px;
   }
 

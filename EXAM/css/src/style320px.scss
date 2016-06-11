@@ -90,6 +90,11 @@
 
   }
 
+  .slider__container{
+    display: none;
+  }
+
+
   .howitworks{
     margin-top: 37px;
     width: 100%;
@@ -377,8 +382,7 @@
     width: 300px; 
 
     .ideas__link{
-      display: block;
-      background-color: rgba(0,255,0,0.6);
+      background-color: rgba(100,31,31,0.6);
       width: 300px;
       height: 121px;
       margin-bottom: 5px;
@@ -386,18 +390,20 @@
       font-family: $mon-b;
       font-size: 22px;
       color: #fff;
-      text-decoration: none;   
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
     }
 
-    .ideas__name{
-      position: absolute;
-      top: 50px;
-      left: auto;
+    .ideas__link:not(:first-child){
+      margin-top: 5px;
     }
   }
 
   .ideas__header--bottom{
-    margin: 55px 0px 0px -3px;
+    margin: 25px 0px 0px -3px;
     line-height: 26px;
   }
 

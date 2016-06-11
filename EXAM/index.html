@@ -6,7 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
   
   <script src="js/src/jquery.carousel.js"></script>
   <script src="js/src/masonry.pkgd.js"></script>
@@ -51,107 +52,143 @@
     <h1 class="howitworks__header">How Urlaubsglück works?</h1>
     
     <div class="howitworks__steps">
-      <a href="#" class="howitworks__left howitworks__left--1"><img src="img/arr-left.png" alt=""></a>
-      <a href="#" class="howitworks__right howitworks__right--1"><img src="img/arr-right.png" alt=""></a>
-      <a href="#" class="howitworks__left howitworks__left--2"><img src="img/arr-left.png" alt=""></a>
-      <a href="#" class="howitworks__right howitworks__right--2"><img src="img/arr-right.png" alt=""></a>
-      <a href="#" class="howitworks__left howitworks__left--3"><img src="img/arr-left.png" alt=""></a>
-      <a href="#" class="howitworks__right howitworks__right--3"><img src="img/arr-right.png" alt=""></a>
+      
+      <div class="howitworks__steps-320">
+        <a href="#" class="howitworks__step howitworks__step--1">
+          <div class="howitworks__button">step 1</div>
+          <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+          <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+        </a>
 
+        <a href="#" class="howitworks__step howitworks__step--2">
+          <div class="howitworks__button howitworks__button--2">step 2</div>
+          <h2 class="howitworks__blockheader howitworks__blockheader--2">Morbi velit risus</h2>
+          <p class="howitworks__text howitworks__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+        </a>
 
+<a href="#" class="howitworks__step howitworks__step--3">
+            <div class="howitworks__button">step 3</div>
+            <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+            <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          </a>
+      </div>
 
 
 <!-- ====================== SLIDER ======================= -->
     <div class="slider__container">
-      <ul class=" carousel__list--1">
-        <li class="slider__slide"><a href="#" class="howitworks__step howitworks__step--1">
-      <div class="howitworks__button">step 1</div>
-      <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
-      <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </a></li>
+
+      <img class="howitworks__left howitworks__left--1" src="img/arr-left.png" alt="">
+
+      <ul class="carousel__list--1">
+
+        <li class="slider__slide">
+          <a href="#" class="howitworks__step howitworks__step--1">
+            <div class="howitworks__button">step 1</div>
+            <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+            <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          </a>
+        </li>
 
         <li class="slider__slide">
           <a href="#" class="howitworks__step howitworks__step--2">
-      <div class="howitworks__button howitworks__button--2">step 2</div>
-      <h2 class="howitworks__blockheader howitworks__blockheader--2">Morbi velit risus</h2>
-      <p class="howitworks__text howitworks__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-    </a>
+            <div class="howitworks__button howitworks__button--2">step 2</div>
+            <h2 class="howitworks__blockheader howitworks__blockheader--2">Morbi velit risus</h2>
+            <p class="howitworks__text howitworks__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+          </a>
         </li>
 
 
-        <li class="slider__slide"><a href="#" class="howitworks__step howitworks__step--3">
-      <div class="howitworks__button">step 3</div>
-      <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
-      <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </a></li>
+        <li class="slider__slide">
+          <a href="#" class="howitworks__step howitworks__step--3">
+            <div class="howitworks__button">step 3</div>
+            <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+            <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          </a>
+        </li>
       </ul>
+      <a href="#" class="howitworks__right howitworks__right--1"><img src="img/arr-right.png" alt=""></a>
     </div>  
 
 
 
 
     <div class="slider__container">
-      <ul class="  carousel__list--2">
+      <a href="#" class="howitworks__left howitworks__left--2"><img src="img/arr-left.png" alt=""></a>
+      <ul class="carousel__list--2">
 
-        <li class="slider__slide"><a href="#" class="howitworks__step howitworks__step--1">
-      <div class="howitworks__button">step 1</div>
-      <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
-      <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </a></li>
+        <li class="slider__slide">
+          <a href="#" class="howitworks__step howitworks__step--1">
+            <div class="howitworks__button">step 1</div>
+            <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+            <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          </a>
+        </li>
 
         <li class="slider__slide">
           <a href="#" class="howitworks__step howitworks__step--2">
-      <div class="howitworks__button howitworks__button--2">step 2</div>
-      <h2 class="howitworks__blockheader howitworks__blockheader--2">Morbi velit risus</h2>
-      <p class="howitworks__text howitworks__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-    </a>
+            <div class="howitworks__button howitworks__button--2">step 2</div>
+            <h2 class="howitworks__blockheader howitworks__blockheader--2">Morbi velit risus</h2>
+            <p class="howitworks__text howitworks__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+          </a>
         </li>
 
 
-        <li class="slider__slide"><a href="#" class="howitworks__step howitworks__step--3">
-      <div class="howitworks__button">step 3</div>
-      <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
-      <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </a></li>
+        <li class="slider__slide">
+          <a href="#" class="howitworks__step howitworks__step--3">
+            <div class="howitworks__button">step 3</div>
+            <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+            <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          </a>
+        </li>
+
       </ul>
+      <a href="#" class="howitworks__right howitworks__right--2"><img src="img/arr-right.png" alt=""></a>
     </div>  
 
 
 
     <div class="slider__container">
-      <ul class="  carousel__list--3">
-        <li class="slider__slide"><a href="#" class="howitworks__step howitworks__step--1">
-      <div class="howitworks__button">step 1</div>
-      <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
-      <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </a></li>
+      <a href="#" class="howitworks__left howitworks__left--3"><img src="img/arr-left.png" alt=""></a>
+
+      <ul class="carousel__list--3">
+        <li class="slider__slide">
+          <a href="#" class="howitworks__step howitworks__step--1">
+            <div class="howitworks__button">step 1</div>
+            <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+            <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          </a>
+        </li>
 
         <li class="slider__slide">
           <a href="#" class="howitworks__step howitworks__step--2">
-      <div class="howitworks__button howitworks__button--2">step 2</div>
-      <h2 class="howitworks__blockheader howitworks__blockheader--2">Morbi velit risus</h2>
-      <p class="howitworks__text howitworks__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-    </a>
+            <div class="howitworks__button howitworks__button--2">step 2</div>
+            <h2 class="howitworks__blockheader howitworks__blockheader--2">Morbi velit risus</h2>
+            <p class="howitworks__text howitworks__text--2">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+          </a>
         </li>
 
 
-        <li class="slider__slide"><a href="#" class="howitworks__step howitworks__step--3">
-      <div class="howitworks__button">step 3</div>
-      <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
-      <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-    </a></li>
+        <li class="slider__slide">
+          <a href="#" class="howitworks__step howitworks__step--3">
+            <div class="howitworks__button">step 3</div>
+            <h2 class="howitworks__blockheader">Sed leo enim, condimentum</h2>
+            <p class="howitworks__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+          </a>
+        </li>
+
       </ul>
+      <a href="#" class="howitworks__right howitworks__right--3"><img src="img/arr-right.png" alt=""></a>
     </div>  
 
-    
-
-    
-
+  </div>
 <!-- ====================== END OF SLIDER ======================= -->
+  </div>
+    
+
+    
 
 
-  </div>
-  </div>
+
 
 
 
@@ -216,39 +253,32 @@
     <h1 class="ideas__header">Discover holiday activity ideas</h1>
     
     <div class="ideas__container" id="container">
-
+      
       <a href="#" class="ideas__link ideas__link--1">
-        <!-- <img class="ideas__img" src="img/idea1.jpg" alt=""> -->
         <p class="ideas__name">Sport and Activity</p>
       </a>
 
       <a href="#" class="ideas__link ideas__link--2">
-        <!-- <img src="img/idea2.jpg" alt=""> -->
         <p class="ideas__name">Wellnes and Health</p>
       </a>
 
       <a href="#" class="ideas__link ideas__link--3">
-        <!-- <img src="img/idea3.jpg" alt=""> -->
         <p class="ideas__name">Extreme Sports and Expeditions</p>
       </a>
 
       <a href="#" class="ideas__link ideas__link--4">
-        <!-- <img src="img/idea4.jpg" alt=""> -->
         <p class="ideas__name">Games</p>
       </a>
+
       <a href="#" class="ideas__link ideas__link--5">
-        <!-- <img src="img/idea5.jpg" alt=""> -->
         <p class="ideas__name">Culture and Educaton</p>
       </a>
       
-
       <a href="#" class="ideas__link ideas__link--6">
-        <!-- <img src="img/idea6.jpg" alt=""> -->
         <p class="ideas__name">Relaxation</p>
       </a>
 
       <a href="#" class="ideas__link ideas__link--7">
-        <!-- <img src="img/idea7.jpg" alt=""> -->
         <p class="ideas__name">Travelling</p>
       </a>
     </div>
@@ -257,8 +287,8 @@
     <form class="ideas__form">
       <h1 class="ideas__header ideas__header--bottom">Discover holiday activity ideas</h1>
       <p class="ideas__question">Hi! What are your holiday interests?</p>
-      <input class="ideas__input" type="text" name="interests" id="int" placeholder="Enter your interests">
-      <button class="ideas__button">Search partners</button>
+      <input class="ideas__input" type="text" id="int" placeholder="Enter your interests">
+      <button id="idbtn" class="ideas__button">Search partners</button>
     </form>
   </div>
 

@@ -20,6 +20,92 @@
     var slideRight3 = $('.howitworks__right--3');
     var carousel3 = $('.carousel__list--3');
 
+
+    if ($( document ).width() < 1439) {
+
+    var itemWidth = 256;
+    var currentLeftValue = 0;
+    var carouselItem = $('.slider__slide');
+
+    var minOffset = - ((carouselItem.length - 7) * itemWidth);
+    var maxOffset = 0;
+
+    slideLeft1.on('click', function(e) {
+      e.preventDefault();
+      if (currentLeftValue != maxOffset) {
+        currentLeftValue += 256;
+        carousel1.animate({
+        left: currentLeftValue + 'px'
+        }, 700);
+      }
+    }); 
+
+    slideRight1.on('click', function(e) {
+      e.preventDefault();
+      if (currentLeftValue != minOffset) {
+        currentLeftValue -= 256;
+        carousel1.animate({
+          left: currentLeftValue + 'px'
+        }, 700);
+      }
+    });
+
+
+
+
+
+    slideLeft2.on('click', function(e) {
+      e.preventDefault();
+      if (currentLeftValue != maxOffset) {
+        currentLeftValue += 256;
+        carousel2.animate({
+        left: currentLeftValue + 'px'
+        }, 700);
+      }
+    }); 
+
+    slideRight2.on('click', function(e) {
+      e.preventDefault();
+      if (currentLeftValue != minOffset) {
+        currentLeftValue -= 256;
+        carousel2.animate({
+          left: currentLeftValue + 'px'
+        }, 700);
+      }
+    });
+
+
+
+
+
+
+    slideLeft3.on('click', function(e) {
+      e.preventDefault();
+      if (currentLeftValue != maxOffset) {
+        currentLeftValue += 256;
+        carousel3.animate({
+        left: currentLeftValue + 'px'
+        }, 700);
+      }
+    }); 
+
+    slideRight3.on('click', function(e) {
+      e.preventDefault();
+      if (currentLeftValue != minOffset) {
+        currentLeftValue -= 256;
+        carousel3.animate({
+          left: currentLeftValue + 'px'
+        }, 700);
+      }
+    });
+
+    } // END IF 768+
+
+
+
+
+    if ($( document ).width() > 1439) {
+
     var itemWidth = 320;
     var currentLeftValue = 0;
     var carouselItem = $('.slider__slide');
@@ -27,7 +113,7 @@
     var minOffset = - ((carouselItem.length - 7) * itemWidth);
     var maxOffset = 0;
 
-    slideLeft1.click(function(e) {
+    slideLeft1.on('click', function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 320;
@@ -37,7 +123,7 @@
       }
     }); 
 
-    slideRight1.click(function(e) {
+    slideRight1.on('click', function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 320;
@@ -51,7 +137,7 @@
 
 
 
-    slideLeft2.click(function(e) {
+    slideLeft2.on('click', function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 320;
@@ -61,7 +147,7 @@
       }
     }); 
 
-    slideRight2.click(function(e) {
+    slideRight2.on('click', function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 320;
@@ -76,7 +162,7 @@
 
 
 
-    slideLeft3.click(function(e) {
+    slideLeft3.on('click', function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 320;
@@ -86,7 +172,7 @@
       }
     }); 
 
-    slideRight3.click(function(e) {
+    slideRight3.on('click', function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 320;
@@ -96,4 +182,5 @@
       }
     });
   }
+}
 })(jQuery);
