@@ -28,12 +28,16 @@ $(function(){
       $.each(data.hits, function (i) {        
         $('.ideas__link').each(function(i){
           $(this).css('backgroundImage', 'url(' +data.hits[i].webformatURL+ ')');          
-        })
+        });
+
+
+        $('.ideas__name').each(function(i){
+          $(this).text(data.hits[i].tags)
+        });
       });
     },
 
     error: function(){
-      // ошибка в IE8 IE9 не работает 
       console.log('Error: ', data);
     }
   });
@@ -56,18 +60,23 @@ $(function(){
         dataType: 'jsonp',
 
         success: function(data){
-          $.each(data.hits, function (i) {        
+          $.each(data.hits, function (i) { 
+
             $('.ideas__link').each(function(i){
               $(this).css('backgroundImage', 'url(' +data.hits[i].webformatURL+ ')');          
-            })
+            });
+
+            $('.ideas__name').each(function(i){
+              $(this).text(data.hits[i].tags)
+            });
+
           });
         },
 
         error: function(){
-          // ошибка в IE8 IE9 не работает 
           console.log('Error: ', data);
         }
-  });
+      });
     }
   });
 
