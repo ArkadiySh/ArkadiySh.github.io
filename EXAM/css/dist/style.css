@@ -760,8 +760,6 @@ table {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .ideas__container .ideas__link img {
-        max-width: 100%; }
     .ideas__container .ideas__link--2 {
       margin-left: 5px; }
     .ideas__container .ideas__link--3 {
@@ -1193,8 +1191,6 @@ table {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .ideas__container .ideas__link img {
-        max-width: 100%; }
     .ideas__container .ideas__link--6,
     .ideas__container .ideas__link--5 {
       width: 620px; }
