@@ -1,17 +1,6 @@
 $(function(){
 
 
-  $('.slider__container').carousel({});
-
-
-
-
-
-
-
-
-
-
 // ============= AJAX ================ 
 
   var queriesArray = ['football', 'paris', 'sun', 'audio', 'dogs', 'programmer', 'sysadmin'];
@@ -44,9 +33,9 @@ $(function(){
 
 
 
-  $('#idbtn').on('click', function(e){
+  $('#idbtn').on('click', function(event){
 
-    e.preventDefault();
+    event.preventDefault();
 
     var query = $('.ideas__input').val(); 
     
@@ -85,6 +74,8 @@ $(function(){
 
 
 
+
+
   // ============= MASONRY ===============
 
   if ($( document ).width() > 1439) {
@@ -113,4 +104,12 @@ $(function(){
   };
 
   // ============= END OF === MASONRY === END OF ==================
+
+
+
+
+  $('.slider__container').carousel({});
 });
+
+
+

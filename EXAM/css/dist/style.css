@@ -383,10 +383,10 @@ table {
       color: #fff;
       border: none; }
 
-  footer {
+  .footer {
     border-top: 4px solid #ff4e50;
     text-align: center; }
-    footer .footer__logo {
+    .footer .footer__logo {
       display: block;
       margin: 17px 0px 0px -4px;
       font-family: "Montserrat", sans-serif;
@@ -394,7 +394,7 @@ table {
       font-size: 17px;
       text-decoration: none;
       color: #ff4e50; }
-    footer .footer__company {
+    .footer .footer__company {
       display: block;
       margin: 14px 0px 0px -4px;
       font-family: "Montserrat", sans-serif;
@@ -402,19 +402,19 @@ table {
       font-weight: bold;
       text-decoration: none;
       color: #333; }
-    footer .footer__links {
+    .footer .footer__links {
       width: 220px;
       height: 17px;
       margin: -45px auto; }
-      footer .footer__links .footer__link {
+      .footer .footer__links .footer__link {
         margin: 10px 5px 0px 5px;
         font-family: "Roboto-Light", sans-serif;
         font-size: 14px;
         color: #666;
         text-decoration: none; }
-    footer .footer__company--partners {
+    .footer .footer__company--partners {
       margin-top: 36px; }
-    footer .footer__design {
+    .footer .footer__design {
       margin-top: 90px;
       color: #ccc;
       font-family: "Montserrat", sans-serif;
@@ -422,7 +422,7 @@ table {
       text-transform: uppercase;
       margin-bottom: 8px;
       letter-spacing: 1px; }
-    footer .footer__des-logo {
+    .footer .footer__des-logo {
       margin-top: 10px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1439px) {
   .main-container {
@@ -809,10 +809,10 @@ table {
       color: #fff;
       border: none; }
 
-  footer {
+  .footer {
     border-top: 4px solid #ff4e50;
     text-align: center; }
-    footer .footer__logo {
+    .footer .footer__logo {
       display: block;
       float: left;
       margin: 37px 0px 0px 39px;
@@ -821,7 +821,7 @@ table {
       font-size: 17px;
       text-decoration: none;
       color: #ff4e50; }
-    footer .footer__company {
+    .footer .footer__company {
       display: block;
       float: left;
       margin: 38px 0px 0px 85px;
@@ -830,21 +830,21 @@ table {
       font-weight: bold;
       text-decoration: none;
       color: #333; }
-    footer .footer__company--partners {
+    .footer .footer__company--partners {
       margin: 38px 0px 0px 103px; }
-    footer .footer__links {
+    .footer .footer__links {
       margin: 68px 260px;
       text-align: left; }
-      footer .footer__links .footer__link {
+      .footer .footer__links .footer__link {
         display: block;
         margin: 10px 5px 0px 5px;
         font-family: "Roboto-Light", sans-serif;
         font-size: 14px;
         color: #666;
         text-decoration: none; }
-    footer .footer__block {
+    .footer .footer__block {
       margin: -183px 0 0 577px; }
-      footer .footer__block .footer__design {
+      .footer .footer__block .footer__design {
         margin-left: 32px;
         color: #ccc;
         font-family: "Montserrat", sans-serif;
@@ -852,7 +852,7 @@ table {
         text-transform: uppercase;
         margin-bottom: 8px;
         letter-spacing: 1px; }
-      footer .footer__block .footer__des-logo {
+      .footer .footer__block .footer__des-logo {
         margin-top: 10px; } }
 @media only screen and (min-device-width: 1440px) {
   .main-container {
@@ -1230,10 +1230,10 @@ table {
       color: #fff;
       border: none; }
 
-  footer {
+  .footer {
     border-top: 4px solid #ff4e50;
     text-align: center; }
-    footer .footer__logo {
+    .footer .footer__logo {
       display: block;
       float: left;
       margin: 37px 0px 0px 249px;
@@ -1242,7 +1242,7 @@ table {
       font-size: 17px;
       text-decoration: none;
       color: #ff4e50; }
-    footer .footer__company {
+    .footer .footer__company {
       display: block;
       float: left;
       margin: 38px 0px 0px 99px;
@@ -1251,21 +1251,21 @@ table {
       font-weight: bold;
       text-decoration: none;
       color: #333; }
-    footer .footer__company--partners {
+    .footer .footer__company--partners {
       margin: 38px 0px 0px 92px; }
-    footer .footer__links {
+    .footer .footer__links {
       margin: 68px 485px;
       text-align: left; }
-      footer .footer__links .footer__link {
+      .footer .footer__links .footer__link {
         display: block;
         margin: 10px 5px 0px 5px;
         font-family: "Roboto-Light", sans-serif;
         font-size: 14px;
         color: #666;
         text-decoration: none; }
-    footer .footer__block {
+    .footer .footer__block {
       margin: -183px 0 0 830px; }
-      footer .footer__block .footer__design {
+      .footer .footer__block .footer__design {
         margin-left: 32px;
         color: #ccc;
         font-family: "Montserrat", sans-serif;
@@ -1273,7 +1273,7 @@ table {
         text-transform: uppercase;
         margin-bottom: 8px;
         letter-spacing: 1px; }
-      footer .footer__block .footer__des-logo {
+      .footer .footer__block .footer__des-logo {
         margin-top: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

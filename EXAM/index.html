@@ -6,8 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!--[if lte IE 9]><link href="css/dist/style-ie8.css" rel="stylesheet"/><![endif]-->
+  
+  <!--[if IE 8]><script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><![endif]-->
+
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   
   <script src="js/src/jquery.carousel.js"></script>
   <script src="js/src/masonry.pkgd.js"></script>
@@ -16,6 +20,8 @@
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/dist/style.css">
+
+
 </head>
 
 
@@ -295,7 +301,8 @@
 
 <!-- ============= FOOTER ============= -->
 
-<footer class="footer">
+<footer>
+<div class="footer">
   <a href="#" class="footer__logo">URLAUBSGLÜCK</a>
   <a href="#" class="footer__company">Company</a>
   <a href="#" class="footer__company footer__company--partners">Partners</a>
@@ -310,6 +317,7 @@
   <div class="footer__block">
     <p class="footer__design">designed by</p>
     <a href="#" class="footer__des-logo"><img src="img/areto.png" alt="Areto"></a>
+  </div>
   </div>
 </footer>
 

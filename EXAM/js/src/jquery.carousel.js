@@ -30,7 +30,7 @@
     var minOffset = - ((carouselItem.length - 7) * itemWidth);
     var maxOffset = 0;
 
-    slideLeft1.on('click', function(e) {
+    slideLeft1.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 256;
@@ -38,9 +38,10 @@
         left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     }); 
 
-    slideRight1.on('click', function(e) {
+    slideRight1.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 256;
@@ -48,13 +49,14 @@
           left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     });
 
 
 
 
 
-    slideLeft2.on('click', function(e) {
+    slideLeft2.click(function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 256;
@@ -62,9 +64,10 @@
         left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     }); 
 
-    slideRight2.on('click', function(e) {
+    slideRight2.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 256;
@@ -72,6 +75,7 @@
           left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     });
 
 
@@ -79,7 +83,7 @@
 
 
 
-    slideLeft3.on('click', function(e) {
+    slideLeft3.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 256;
@@ -87,9 +91,10 @@
         left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     }); 
 
-    slideRight3.on('click', function(e) {
+    slideRight3.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 256;
@@ -97,6 +102,7 @@
           left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     });
 
     } // END IF 768+
@@ -113,7 +119,7 @@
     var minOffset = - ((carouselItem.length - 7) * itemWidth);
     var maxOffset = 0;
 
-    slideLeft1.on('click', function(e) {
+    slideLeft1.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 320;
@@ -121,9 +127,10 @@
         left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     }); 
 
-    slideRight1.on('click', function(e) {
+    slideRight1.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 320;
@@ -131,13 +138,14 @@
           left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     });
 
 
 
 
 
-    slideLeft2.on('click', function(e) {
+    slideLeft2.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 320;
@@ -145,9 +153,10 @@
         left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     }); 
 
-    slideRight2.on('click', function(e) {
+    slideRight2.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 320;
@@ -155,6 +164,7 @@
           left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     });
 
 
@@ -162,7 +172,7 @@
 
 
 
-    slideLeft3.on('click', function(e) {
+    slideLeft3.click(function(e) {
       e.preventDefault();
       if (currentLeftValue != maxOffset) {
         currentLeftValue += 320;
@@ -170,16 +180,18 @@
         left: currentLeftValue + 'px'
         }, 700);
       }
+      return false;
     }); 
 
-    slideRight3.on('click', function(e) {
+    slideRight3.click( function(e) {
       e.preventDefault();
       if (currentLeftValue != minOffset) {
         currentLeftValue -= 320;
         carousel3.animate({
           left: currentLeftValue + 'px'
         }, 700);
-      }
+      };
+      return false;
     });
   }
 }
