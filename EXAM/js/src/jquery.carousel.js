@@ -20,179 +20,65 @@
     var slideRight3 = $('.howitworks__right--3');
     var carousel3 = $('.carousel__list--3');
 
-
-    if ($( document ).width() < 1439) {
-
-    var itemWidth = 256;
-    var currentLeftValue = 0;
     var carouselItem = $('.slider__slide');
 
-    var minOffset = - ((carouselItem.length - 7) * itemWidth);
     var maxOffset = 0;
 
-    slideLeft1.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != maxOffset) {
-        currentLeftValue += 256;
-        carousel1.animate({
-        left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    }); 
-
-    slideRight1.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != minOffset) {
-        currentLeftValue -= 256;
-        carousel1.animate({
-          left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    });
 
 
-
-
-
-    slideLeft2.click(function(e) {
-      e.preventDefault();
-      if (currentLeftValue != maxOffset) {
-        currentLeftValue += 256;
-        carousel2.animate({
-        left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    }); 
-
-    slideRight2.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != minOffset) {
-        currentLeftValue -= 256;
-        carousel2.animate({
-          left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    });
-
-
-
-
-
-
-    slideLeft3.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != maxOffset) {
-        currentLeftValue += 256;
-        carousel3.animate({
-        left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    }); 
-
-    slideRight3.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != minOffset) {
-        currentLeftValue -= 256;
-        carousel3.animate({
-          left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    });
-
-    } // END IF 768+
-
-
-
-
-    if ($( document ).width() > 1439) {
-
-    var itemWidth = 320;
-    var currentLeftValue = 0;
-    var carouselItem = $('.slider__slide');
-
+    var itemWidth = ($('.howitworks__step').outerWidth(true) + 10);
     var minOffset = - ((carouselItem.length - 7) * itemWidth);
-    var maxOffset = 0;
 
-    slideLeft1.click( function(e) {
-      e.preventDefault();
+
+    function slideLeft(carouselItem) {
+      var currentLeftValue = carouselItem.position().left;
+      // body...
       if (currentLeftValue != maxOffset) {
-        currentLeftValue += 320;
-        carousel1.animate({
+        currentLeftValue += itemWidth;
+        carouselItem.animate({
         left: currentLeftValue + 'px'
         }, 700);
       }
-      return false;
-    }); 
+    };
 
-    slideRight1.click( function(e) {
-      e.preventDefault();
+
+
+    function slideRight(carouselItem) {
+      // body...
+      var currentLeftValue = carouselItem.position().left;
       if (currentLeftValue != minOffset) {
-        currentLeftValue -= 320;
-        carousel1.animate({
+        currentLeftValue -= itemWidth;
+        carouselItem.animate({
           left: currentLeftValue + 'px'
         }, 700);
       }
-      return false;
-    });
+    }
 
 
+    $('.howitworks__left--1').on('click', function(){
+      slideLeft(carousel1);
+    })
+
+    $('.howitworks__right--1').on('click', function(){
+      slideRight(carousel1);
+    })
+
+    $('.howitworks__left--2').on('click', function(){
+      slideLeft(carousel2);
+    })
+
+    $('.howitworks__right--2').on('click', function(){
+      slideRight(carousel2);
+    })
+
+    $('.howitworks__left--3').on('click', function(){
+      slideLeft(carousel3);
+    })
+
+    $('.howitworks__right--3').on('click', function(){
+      slideRight(carousel3);
+    })
 
 
-
-    slideLeft2.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != maxOffset) {
-        currentLeftValue += 320;
-        carousel2.animate({
-        left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    }); 
-
-    slideRight2.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != minOffset) {
-        currentLeftValue -= 320;
-        carousel2.animate({
-          left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    });
-
-
-
-
-
-
-    slideLeft3.click(function(e) {
-      e.preventDefault();
-      if (currentLeftValue != maxOffset) {
-        currentLeftValue += 320;
-        carousel3.animate({
-        left: currentLeftValue + 'px'
-        }, 700);
-      }
-      return false;
-    }); 
-
-    slideRight3.click( function(e) {
-      e.preventDefault();
-      if (currentLeftValue != minOffset) {
-        currentLeftValue -= 320;
-        carousel3.animate({
-          left: currentLeftValue + 'px'
-        }, 700);
-      };
-      return false;
-    });
   }
-}
 })(jQuery);

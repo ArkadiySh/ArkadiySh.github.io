@@ -1,5 +1,8 @@
 $(function(){
 
+  $('.slider__container').carousel({});
+
+  
 
 // ============= AJAX ================ 
 
@@ -69,8 +72,9 @@ $(function(){
     }
   });
 
-
   // ============= END OF === AJAX === END OF =================== 
+
+
 
 
 
@@ -106,9 +110,6 @@ $(function(){
   // ============= END OF === MASONRY === END OF ==================
 
 
-
-
-  $('.slider__container').carousel({});
 });
 
 

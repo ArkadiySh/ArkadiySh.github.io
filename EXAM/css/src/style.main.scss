@@ -709,6 +709,7 @@ $mon-r: 'Montserrat-Regular', sans-serif;;
         top: 75px;
         z-index: 1000;
         left: 30px;
+        cursor: pointer;
       }
 
       .howitworks__left--2{
@@ -720,10 +721,22 @@ $mon-r: 'Montserrat-Regular', sans-serif;;
         top: 75px;
         z-index: 1000;
         right: 30px;
+        cursor: pointer;
       }
 
       .howitworks__right--2{
         right: 20px;
+      }
+
+
+      .howitworks__left:hover{
+        transform: scale(1.2);
+        transition: 0.4s;
+      }
+
+      .howitworks__right:hover{
+        transform: scale(1.2);
+        transition: 0.4s;
       }
 
 
@@ -1298,13 +1311,29 @@ $mon-r: 'Montserrat-Regular', sans-serif;;
         top: 188px;
         z-index: 1000;
         left: 31px;
+        cursor: pointer;
       }
+
       .howitworks__right{
         position: absolute;
         top: 188px;
         z-index: 1000;
         right: 31px;
+        cursor: pointer;
       }
+
+
+      .howitworks__left:hover{
+        transform: scale(1.2);
+        transition: 0.4s;
+      }
+
+      .howitworks__right:hover{
+        transform: scale(1.2);
+        transition: 0.4s;
+      }
+
+      
       
     .howitworks__header{
       margin-left: -2px;
