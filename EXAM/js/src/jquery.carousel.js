@@ -22,10 +22,9 @@
 
     var carouselItem = $('.slider__slide');
 
+    
+
     var maxOffset = 0;
-
-
-
     var itemWidth = ($('.howitworks__step').outerWidth(true) + 10);
     var minOffset = - ((carouselItem.length - 7) * itemWidth);
 
@@ -52,7 +51,7 @@
           left: currentLeftValue + 'px'
         }, 700);
       }
-    }
+    };
 
 
     $('.howitworks__left--1').on('click', function(){
