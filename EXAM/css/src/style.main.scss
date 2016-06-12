@@ -1156,6 +1156,10 @@ $mon-r: 'Montserrat-Regular', sans-serif;;
         color: #666;
         text-decoration: none;
       }
+
+      .footer__link:hover{
+        text-decoration: underline;
+      }
     }
 
     .footer__block{
@@ -1745,6 +1749,11 @@ $mon-r: 'Montserrat-Regular', sans-serif;;
         font-size: 14px;
         color: #666;
         text-decoration: none;
+      }
+
+      .footer__link:hover{
+        text-decoration: underline;
+        color: $redBtn;
       }
     }
 

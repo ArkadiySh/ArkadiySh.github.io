@@ -850,6 +850,8 @@ table {
         font-size: 14px;
         color: #666;
         text-decoration: none; }
+      .footer .footer__links .footer__link:hover {
+        text-decoration: underline; }
     .footer .footer__block {
       margin: -183px 0 0 577px; }
       .footer .footer__block .footer__design {
@@ -1279,6 +1281,9 @@ table {
         font-size: 14px;
         color: #666;
         text-decoration: none; }
+      .footer .footer__links .footer__link:hover {
+        text-decoration: underline;
+        color: #ff4e50; }
     .footer .footer__block {
       margin: -183px 0 0 830px; }
       .footer .footer__block .footer__design {

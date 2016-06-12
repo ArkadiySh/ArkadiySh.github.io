@@ -567,6 +567,11 @@
         color: #666;
         text-decoration: none;
       }
+
+      .footer__link:hover{
+        text-decoration: underline;
+        color: $redBtn;
+      }
     }
 
     .footer__block{

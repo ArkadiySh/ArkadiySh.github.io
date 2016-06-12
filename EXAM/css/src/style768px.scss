@@ -584,6 +584,10 @@
         color: #666;
         text-decoration: none;
       }
+
+      .footer__link:hover{
+        text-decoration: underline;
+      }
     }
 
     .footer__block{
