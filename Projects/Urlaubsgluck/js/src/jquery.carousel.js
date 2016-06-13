@@ -32,7 +32,9 @@
     function slideLeft(carouselItem) {
       var currentLeftValue = carouselItem.position().left;
       // body...
-      if (currentLeftValue != maxOffset) {
+      if (carouselItem.is(':animated')) {
+        return false;
+      } else if (currentLeftValue != maxOffset) {
         currentLeftValue += itemWidth;
         carouselItem.animate({
         left: currentLeftValue + 'px'
@@ -45,7 +47,9 @@
     function slideRight(carouselItem) {
       // body...
       var currentLeftValue = carouselItem.position().left;
-      if (currentLeftValue != minOffset) {
+      if (carouselItem.is(':animated')) {
+        return false;
+      } else if (currentLeftValue != minOffset) {
         currentLeftValue -= itemWidth;
         carouselItem.animate({
           left: currentLeftValue + 'px'
