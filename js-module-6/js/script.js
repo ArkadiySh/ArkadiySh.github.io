@@ -12,7 +12,7 @@ var sec = document.querySelector('.secs');
 var min = document.querySelector('.mins');
 var hours = document.querySelector('.hours');
 var flag = false;
-
+var firstStart = true;
 
 // Create blocks for time markers
 function createTimeSection(timeType) { // timeType = min/sec/ms/ :
@@ -56,8 +56,13 @@ function displayStartButton() {
 // Get Date start point
 function startStopwatch() {
   flag = true;
-  initialDate = new Date;
-}
+  if (firstStart) {
+    initialDate = new Date;
+    firstStart = false;
+  } else {
+    initialDate.setMilliseconds(initialDate.getMilliseconds() + (new Date - pauseTime));
+  }
+}  
 
 
 // calculate timer
@@ -105,6 +110,7 @@ function stopTimer() {
   getTime();
   createTimeBlock('STOP');
   flag = false;
+  pauseTime = new Date;
 }
 
 function newLap() {
@@ -126,6 +132,7 @@ function newLap() {
 
 function resetTimer() {
   flag = false;
+  firstStart = true;
   clearInterval(timerId);
   start.style.display = 'block';
   stop.style.display = 'none';
