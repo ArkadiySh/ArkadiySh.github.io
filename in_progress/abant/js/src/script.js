@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var menu = $('.menu-device__menu');
+  var menu = $('.device-menu__menu');
 
   $('.menu__button').click(
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
 
-  $('.menu-device__item').hover(
+  $('.device-menu__item').hover(
     function(){
       var n = $(this).find('.submenu__item').length;
 
@@ -29,9 +29,6 @@ $(document).ready(function(){
       $(this).find('.submenu').slideUp('fast');
 
     }
-
-
-
-    )
+  )
 
 })
