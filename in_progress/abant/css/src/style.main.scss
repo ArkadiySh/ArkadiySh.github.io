@@ -61,7 +61,7 @@ $mon-b: 'Montserrat', sans-serif;
 $mon-r: 'Montserrat-Regular', sans-serif;;
  // =========== MOBILE 320PX ===========
 
-@media only screen and (min-width: 240px) and (max-width: 767px) {
+// @media only screen and (min-width: 240px) and (max-width: 767px) {
 
   body{
     font-family: 'Open sans', sans-serif;
@@ -143,30 +143,36 @@ $mon-r: 'Montserrat-Regular', sans-serif;;
 box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
 z-index: 1000;
 
-
-  .menu__button:hover + .menu-device__menu{
-    visibility: visible;
-    // padding: 10px;
+  .menu__button{
+    text-align: center;
+    margin-top: 37px;
+    width: 105px;
+    height: 58px;
     float: right;
-    text-align: right;
-    display: block;
-    box-shadow: -3px 0 10px #ababab inset;
   }
 
-
   .menu-device__menu{
-    visibility: hidden;
+    width: 282px;
+    border: 1px solid #ddd;
+    display: none;
     position: absolute;
     top: 95px;
     right: 0;
     box-shadow: -3px 0 10px #ababab inset;
-    // overflow: hidden;
 
     .menu-device__item{
+      background-image: url("../../img/menu_icon.png");
+      background-position: right center;
+      background-repeat: no-repeat;
+      position: relative;
+      line-height: 35px;
+      padding-right: 30px;
       border-bottom: 1px solid #e5e5e5;
       background-color: #FFF;
-      width: 282px;
+      width: 252px;
       height: 35px;
+      float: right;
+      text-align: right;
 
       .menu__link{
         color: #494949;
@@ -175,15 +181,59 @@ z-index: 1000;
       }
 
       .submenu{
+        background-color: #FFF;
+        position: absolute;
+        left: 0;
+        top: 35px;
         display: none;
+
+        .submenu__item{
+          line-height: 35px;
+          padding-right: 30px;
+          background-color: #FFF;
+          width: 252px;
+          height: 35px;
+          float: right;
+          text-align: right;
+
+          .submenu__link{
+            font-size: 14px;
+            text-decoration: none;
+            color: #494949;
+          }
+        }
+
+        .submenu__item:hover{
+          background-color: #a90027;
+
+          .submenu__link{
+            color: #fff;
+          }
+        }
+      }
+
+    }
+
+    .menu-device__item:nth-child(1),
+    .menu-device__item:nth-child(3),
+    .menu-device__item:nth-child(6){
+      background-image: none;
+    }
+    
+    .menu-device__item:hover{
+      background-color: #a90027;
+      .menu__link{
+        color: #fff;
       }
     }
   }
 
   .menu__logo{
+    position: absolute;
     float: left;
     width: 135px;
     margin-left: 91px;
+    z-index: 2000;
     
     img{
       margin-top: -20px;
@@ -191,13 +241,6 @@ z-index: 1000;
     }
   }
 
-  .menu__button{
-    margin-right: 40px;
-    margin-top: 37px;
-    width: 25px;
-    height: 25px;
-    float: right;
-  }
 
 }
   
@@ -209,7 +252,6 @@ z-index: 1000;
   background-color: #FFF;
 
   .promo__image{
-    margin-top: -22px;
     max-width: 100%;
   }
 }
@@ -468,7 +510,7 @@ box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
 
 
 
-};
+// };
  // =========== TABLET 768PX ===========
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
 
