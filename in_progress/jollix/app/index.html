@@ -9,22 +9,120 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="js/jquery.carousel.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
 <body>
 
 	<header class="header">
-		<a href="#" class="header__menubtn"><img src="img/svg/mobile__menu-button.svg" alt="Menu">
-			<div class="header__menu"></div>
+
+		<a href="#" class="header__menubtn">
+			<img src="img/svg/mobile__menu-button.svg" alt="Menu">
 		</a>
-		<a href="#" class="header__logo"><img src="img/svg/logo-name.svg" alt="any.cash"></a>
-		<a href="#" class="header__login">ВХОД</a>
+
+		<div class="header__menu">
+
+			<div class="header__block">
+				<a href="#" class="header__back">назад</a>
+			</div>
+			<div class="border border--gray2"></div>
+
+			<div class="header__block">
+				<a href="#" class="header__lang">RU</a>
+				<a href="#" class="header__lang header__lang--en">EN</a>
+			</div>
+			<div class="border border--gray2"></div>
+
+			<div class="header__block">
+				<a href="#" class="header__item header__item--exchange">обмен валют</a>
+				<ul class="submenu">
+					<li class="submenu__item"><a href="#" class="submenu__link">Курсы валют</a></li>
+					<li class="submenu__item"><a href="#" class="submenu__link">Партнерство</a></li>
+					<li class="submenu__item"><a href="#" class="submenu__link">Бонусы</a></li>
+				</ul>
+			</div>
+			<div class="border border--gray2"></div>
+
+			<div class="header__block">
+				<a href="#" class="header__item header__item--guarant">гарант сделок</a>
+			</div>
+			<div class="border border--gray2"></div>
+
+			<div class="header__block">
+				<a href="#" class="header__item header__item--pay">оплата сервисов</a>
+			</div>
+			<div class="border border--gray2"></div>
+
+			<div class="header__block">
+				<a href="#" class="header__item header__item--online">онлайн ломбард</a>
+			</div>
+			<div class="border border--gray2"></div>
+
+			<div class="header__block">
+				<a href="#" class="header__item header__item--knowledge">база знаний</a>
+			</div>
+			<div class="border border--gray2"></div>
+			
+			<div class="header__buttons">
+				<a href="#" class="header__link">настройки</a>
+				<a href="#" class="header__link">поддержка</a>
+				<a href="#" class="header__link">выход</a>
+			</div>
+		</div>
+
+
+		<a href="#" class="header__logo">
+			<img src="img/svg/logo-name.svg" alt="any.cash">
+		</a>
+
+		
+		<div class="header__options">
+			<div class="header__lang header__login">RU</div>
+			<div class="header__support header__login">поддержка</div>
+			<div class="header__set header__login"><img src="img/svg/desktop__settings.svg" alt=""></div>
+			<a href="#" class="header__login header__login--desktop">выход</a>			
+		</div>
+
 		<div class="border border--gray"></div>
+		<div class="border--gray--long"></div>
+
+		<div class="dmenu">
+			<ul>
+				<li class="dmenu__item">
+					<div class="dmenu__img"></div>
+					<a href="#" class="dmenu__link">обмен валют</a>
+				</li>
+
+				<li class="dmenu__item">
+					<div class="dmenu__img dmenu__img--guarant"></div>
+					<a href="#" class="dmenu__link dmenu__link--guarant">гарант сделок</a>
+				</li>
+
+				<li class="dmenu__item">
+					<div class="dmenu__img dmenu__img--pay"></div>
+					<a href="#" class="dmenu__link dmenu__link--pay">оплата сервисов</a>
+				</li>
+
+				<li class="dmenu__item">
+					<div class="dmenu__img dmenu__img--online"></div>
+					<a href="#" class="dmenu__link dmenu__link--online">онлайн ломбард</a>
+				</li>
+
+				<li class="dmenu__item">
+					<div class="dmenu__img dmenu__img--base"></div>
+					<a href="#" class="dmenu__link dmenu__link--base">база знаний</a>
+				</li>
+
+			</ul>
+		</div>
+
+
 	</header>
 	
 	<main>
@@ -38,8 +136,18 @@
 						<p class="autoexcange__price">0,00.....</p>
 					</div>
 
-					<div class="autoexcange__service">
-						<a href="#" class="autoexcange__dropdown"><img src="img/svg/mobile__down.svg" alt=""></a>
+					<div class="container">
+						<div class="autoexcange__service">
+							<a href="#" class="autoexcange__dropdown"><img src="img/svg/mobile__down.svg" alt=""></a>
+							<div class="autoexcange__menu">
+								<div class="autoexcange__item"><p>BTC-e</p></div>
+								<div class="autoexcange__item autoexcange__item--2"><p>Perfect money</p></div>
+								<div class="autoexcange__item autoexcange__item--3"><p>Paymer</p></div>
+								<div class="autoexcange__item autoexcange__item--4"><p>Okpay</p></div>
+								<div class="autoexcange__item autoexcange__item--5"><p>Z-payement</p></div>
+								<div class="autoexcange__item autoexcange__item--6"><p>Приват 24</p></div>
+							</div>
+						</div>
 					</div>
 
 					<div class="autoexcange__currency">
@@ -48,14 +156,24 @@
 					</div>
 				</div>
 
-				<div class="autoexcange__section">
+				<div class="autoexcange__section autoexcange__section--get">
 					<div class="autoexcange__numbers">
 						<p class="autoexcange__sell autoexcange__sell--get">получаете</p>
 						<p class="autoexcange__price autoexcange__price--get">0,00.....</p>
 					</div>
-
-					<div class="autoexcange__service autoexcange__service--get">
-						<a href="#" class="autoexcange__dropdown"><img src="img/svg/mobile__down.svg" alt=""></a>
+					
+					<div class="container">
+						<div class="autoexcange__service autoexcange__service--get">
+							<a href="#" class="autoexcange__dropdown"><img src="img/svg/mobile__down.svg" alt=""></a>
+							<div class="autoexcange__menu">
+								<div class="autoexcange__item"><p>BTC-e</p></div>
+								<div class="autoexcange__item autoexcange__item--2"><p>Perfect money</p></div>
+								<div class="autoexcange__item autoexcange__item--3"><p>Paymer</p></div>
+								<div class="autoexcange__item autoexcange__item--4"><p>Okpay</p></div>
+								<div class="autoexcange__item autoexcange__item--5"><p>Z-payement</p></div>
+								<div class="autoexcange__item autoexcange__item--6"><p>Приват 24</p></div>
+							</div>
+						</div>
 					</div>
 
 					<div class="autoexcange__currency autoexcange__currency--get">
@@ -83,11 +201,20 @@
 	</main>
 	<div class="border border--gray"></div>
 	
+
+	<section class="info">
+		<a href="#" class="info__item info__item--currency">курсы валют</a>
+		<a href="#" class="info__item info__item--partnership">партнерство</a>
+		<a href="#" class="info__item info__item--bonuses">бонусы</a>
+	</section>
+
+
+	<div class="news-container">
 	<section class="news">
 		<h3 class="news__header">новости проекта</h3>
 
 		<div class="carousel">
-			<a href="#" class="carousel__left"><img src="img/svg/slider-left.svg" alt="prev"></a>
+			<img class="carousel__left" src="img/svg/slider-left.svg" alt="prev">
 
 			<ul class="carousel__list">
 				<li class="carousel__item">
@@ -96,57 +223,65 @@
 					<button class="news__btn">ДАЛЕЕ</button>
 				</li>
 				<li class="carousel__item">
-					<img src="img/img1.jpg" alt="NEWS" class="news__img">
+					<img src="img/img2.jpg" alt="NEWS" class="news__img">
 					<p class="news__text">Вдруг это какая-нибудь новая разновидность баобаба? Но кустик быстро перестал тянуться ввысь, и на нем появился бутон. Маленький принц никогда еще не видал таких огромных бутонов.</p>
 					<button class="news__btn">ДАЛЕЕ</button>
 				</li>
 			</ul>
 
-			<a href="#" class="carousel__right"><img src="img/svg/slider-right.svg" alt="next"></a>
+			<img class="carousel__right" src="img/svg/slider-right.svg" alt="next">
 		</div>
 	</section>
 
 	<div class="border border--gray"></div>
 
+
 	<section class="news news--base">
-		<h3 class="news__header">база знаний</h3>
+		<h3 class="news__header news__header--base">база знаний</h3>
 
 		<div class="carousel">
-			<a href="#" class="carousel__left carousel__left--base"><img src="img/svg/slider-left.svg" alt="prev"></a>
+			<img class="carousel__left--base" src="img/svg/slider-left.svg" alt="prev">
 			
-			<ul class="carousel__list">
+			<ul class="carousel__list--base">
 				<li class="carousel__item">
 					<img src="img/img2.jpg" alt="NEWS" class="news__img news__img--base">
 					<p class="news__text">Вдруг это какая-нибудь новая разновидность баобаба? Но кустик быстро перестал тянуться ввысь, и на нем появился бутон. Маленький принц никогда еще не видал таких огромных бутонов.</p>
 					<button class="news__btn news__btn--base">ДАЛЕЕ</button>
 				</li>
 				<li class="carousel__item">
-					<img src="img/img2.jpg" alt="NEWS" class="news__img news__img--base">
+					<img src="img/img1.jpg" alt="NEWS" class="news__img">
 					<p class="news__text">Вдруг это какая-нибудь новая разновидность баобаба? Но кустик быстро перестал тянуться ввысь, и на нем появился бутон. Маленький принц никогда еще не видал таких огромных бутонов.</p>
 					<button class="news__btn news__btn--base">ДАЛЕЕ</button>
 				</li>
 			</ul>
 
-			<a href="#" class="carousel__right carousel__right--base"><img src="img/svg/slider-right.svg" alt="next"></a>
+			<img class="carousel__right--base" src="img/svg/slider-right.svg" alt="next">
 		</div>
 
 	</section>
+	</div>
 
 	<div class="border border--blue"></div>
 
 	<section class="ways">
 		<h3 class="ways__header">НАШИ НАПРАВЛЕНИЯ ОБМЕНА</h3>
 		<ul class="ways__list">
-			<li class="ways__item"><a href="#" class="ways__link">Perfect Money</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">OK Pay</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">Приват 24</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">Яндекс Деньги</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">Wallet 1</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">EXMO</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">QIWI</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">Bitcoin</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">Litecoin</a></li>
-			<li class="ways__item"><a href="#" class="ways__link">Payeer</a></li>
+			<li class="ways__item ways__item--pm"><a href="#" class="ways__link ways__link--pm">Perfect Money</a></li>
+			<li class="ways__item ways__item--ok"><a href="#" class="ways__link ways__link--ok">OK Pay</a></li>
+			<li class="ways__item ways__item--p24"><a href="#" class="ways__link ways__link--p24">Приват <span>24</span></a></li>
+			<li class="ways__item ways__item--ym"><a href="#" class="ways__link ways__link--ym">Яндекс.Деньги</a></li>
+			<li class="ways__item ways__item--mob"><a href="#" class="ways__link">Wallet 1</a></li>
+			<li class="ways__item ways__item--w1"><a href="#" class="ways__link ways__link--w1">W<span>1</span></a></li>
+			<li class="ways__item ways__item--ex"><a href="#" class="ways__link ways__link--ex">EXMO</a></li>
+			<li class="ways__item ways__item--qi"><a href="#" class="ways__link ways__link--qi">QIWI</a></li>
+			<li class="ways__item ways__item--bc"><a href="#" class="ways__link ways__link--bc">Bitcoin</a></li>
+			<li class="ways__item ways__item--lc"><a href="#" class="ways__link ways__link--lc">Litecoin</a></li>
+			<li class="ways__item ways__item--payeer"><a href="#" class="ways__link ways__link--payeer">Payeer</a></li>
+
+			<li class="ways__item ways__item--btc"><a href="#" class="ways__link ways__link--btc">BTC-E</a></li>
+			<li class="ways__item ways__item--paymer"><a href="#" class="ways__link ways__link--paymer">Paymer</a></li>
+			<li class="ways__item ways__item--ad"><a href="#" class="ways__link ways__link--ad">AdvCash</a></li>
+			<li class="ways__item ways__item--wm"><a href="#" class="ways__link ways__link--wm">WebMoney</a></li>
 		</ul>
 	</section>
 
@@ -156,87 +291,87 @@
 
 		<h3 class="howto__header">Как это работает?</h3>
 		<div class="howto__textblock">
-		<p class="howto__text">Если вы думаете, что ширина текстовой 
-			колонки в вашем блоге это забота 
-			вашего веб- дизайнера, то ошибаетесь. 
-			Существует оптимальная ширина 
-			текстовой колонки блога, и я скажу вам 
-			какова она и почему. Но для начала 
-			давайте поговорим о том, какова первая 
-			задача, стоящая перед вашим веб-
-			сайтом. Первейшая задача состоит в том, 
-			чтобы люди прочли несколько 
-			начальных предложений вашего текста
-			.
-			Специалисты – копирайтеры, такие как 
-			Джо Шугарман (Joe Sugarman), давно 
-			знают об этом интересном аспекте 
-			читательского поведения, теперь об 
-			этом узнаете и вы. Если вам удалось 
-			сделать так, чтобы потребитель прочел 
-			несколько первых предложений статьи 
-			на вашем сайте или вашего 
-			коммерческого предложения, он с 
-			гораздо большей вероятностью дочитает 
-			их до конца.
+			<p class="howto__text">Если вы думаете, что ширина текстовой 
+				колонки в вашем блоге это забота 
+				вашего веб- дизайнера, то ошибаетесь. 
+				Существует оптимальная ширина 
+				текстовой колонки блога, и я скажу вам 
+				какова она и почему. Но для начала 
+				давайте поговорим о том, какова первая 
+				задача, стоящая перед вашим веб-
+				сайтом. Первейшая задача состоит в том, 
+				чтобы люди прочли несколько 
+				начальных предложений вашего текста
+				.
+				Специалисты – копирайтеры, такие как 
+				Джо Шугарман (Joe Sugarman), давно 
+				знают об этом интересном аспекте 
+				читательского поведения, теперь об 
+				этом узнаете и вы. Если вам удалось 
+				сделать так, чтобы потребитель прочел 
+				несколько первых предложений статьи 
+				на вашем сайте или вашего 
+				коммерческого предложения, он с 
+				гораздо большей вероятностью дочитает 
+				их до конца.
 
-			Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть всего несколько секунд, чтобы заинтересовать их. Если вам это не удается, вы их теряете.
-			Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста, а значит, с большей вероятностью дочитывали до конца.
-		</p>
-		<p class="howto__text">Если вы думаете, что ширина текстовой 
-			колонки в вашем блоге это забота 
-			вашего веб- дизайнера, то ошибаетесь. 
-			Существует оптимальная ширина 
-			текстовой колонки блога, и я скажу вам 
-			какова она и почему. Но для начала 
-			давайте поговорим о том, какова первая 
-			задача, стоящая перед вашим веб-
-			сайтом. Первейшая задача состоит в том, 
-			чтобы люди прочли несколько 
-			начальных предложений вашего текста
-			.
-			Специалисты – копирайтеры, такие как 
-			Джо Шугарман (Joe Sugarman), давно 
-			знают об этом интересном аспекте 
-			читательского поведения, теперь об 
-			этом узнаете и вы. Если вам удалось 
-			сделать так, чтобы потребитель прочел 
-			несколько первых предложений статьи 
-			на вашем сайте или вашего 
-			коммерческого предложения, он с 
-			гораздо большей вероятностью дочитает 
-			их до конца.
+				Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть всего несколько секунд, чтобы заинтересовать их. Если вам это не удается, вы их теряете.
+				Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста, а значит, с большей вероятностью дочитывали до конца.
+			</p>
+			<p class="howto__text">Если вы думаете, что ширина текстовой 
+				колонки в вашем блоге это забота 
+				вашего веб- дизайнера, то ошибаетесь. 
+				Существует оптимальная ширина 
+				текстовой колонки блога, и я скажу вам 
+				какова она и почему. Но для начала 
+				давайте поговорим о том, какова первая 
+				задача, стоящая перед вашим веб-
+				сайтом. Первейшая задача состоит в том, 
+				чтобы люди прочли несколько 
+				начальных предложений вашего текста
+				.
+				Специалисты – копирайтеры, такие как 
+				Джо Шугарман (Joe Sugarman), давно 
+				знают об этом интересном аспекте 
+				читательского поведения, теперь об 
+				этом узнаете и вы. Если вам удалось 
+				сделать так, чтобы потребитель прочел 
+				несколько первых предложений статьи 
+				на вашем сайте или вашего 
+				коммерческого предложения, он с 
+				гораздо большей вероятностью дочитает 
+				их до конца.
 
-			Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть всего несколько секунд, чтобы заинтересовать их. Если вам это не удается, вы их теряете.
-			Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста, а значит, с большей вероятностью дочитывали до конца.
-		</p>
-		<p class="howto__text">Если вы думаете, что ширина текстовой 
-			колонки в вашем блоге это забота 
-			вашего веб- дизайнера, то ошибаетесь. 
-			Существует оптимальная ширина 
-			текстовой колонки блога, и я скажу вам 
-			какова она и почему. Но для начала 
-			давайте поговорим о том, какова первая 
-			задача, стоящая перед вашим веб-
-			сайтом. Первейшая задача состоит в том, 
-			чтобы люди прочли несколько 
-			начальных предложений вашего текста
-			.
-			Специалисты – копирайтеры, такие как 
-			Джо Шугарман (Joe Sugarman), давно 
-			знают об этом интересном аспекте 
-			читательского поведения, теперь об 
-			этом узнаете и вы. Если вам удалось 
-			сделать так, чтобы потребитель прочел 
-			несколько первых предложений статьи 
-			на вашем сайте или вашего 
-			коммерческого предложения, он с 
-			гораздо большей вероятностью дочитает 
-			их до конца.
+				Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть всего несколько секунд, чтобы заинтересовать их. Если вам это не удается, вы их теряете.
+				Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста, а значит, с большей вероятностью дочитывали до конца.
+			</p>
+			<p class="howto__text">Если вы думаете, что ширина текстовой 
+				колонки в вашем блоге это забота 
+				вашего веб- дизайнера, то ошибаетесь. 
+				Существует оптимальная ширина 
+				текстовой колонки блога, и я скажу вам 
+				какова она и почему. Но для начала 
+				давайте поговорим о том, какова первая 
+				задача, стоящая перед вашим веб-
+				сайтом. Первейшая задача состоит в том, 
+				чтобы люди прочли несколько 
+				начальных предложений вашего текста
+				.
+				Специалисты – копирайтеры, такие как 
+				Джо Шугарман (Joe Sugarman), давно 
+				знают об этом интересном аспекте 
+				читательского поведения, теперь об 
+				этом узнаете и вы. Если вам удалось 
+				сделать так, чтобы потребитель прочел 
+				несколько первых предложений статьи 
+				на вашем сайте или вашего 
+				коммерческого предложения, он с 
+				гораздо большей вероятностью дочитает 
+				их до конца.
 
-			Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть всего несколько секунд, чтобы заинтересовать их. Если вам это не удается, вы их теряете.
-			Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста, а значит, с большей вероятностью дочитывали до конца.
-		</p>
+				Проблема состоит в том, что заставить потребителя прочесть эти первые несколько предложений весьма сложно. Помните, что когда люди заходят на ваш сайт, у вас есть всего несколько секунд, чтобы заинтересовать их. Если вам это не удается, вы их теряете.
+				Вот тут то и вступает в игру оптимальная ширина текстовой колонки. При правильной подаче материала вы можете сделать так, чтобы случайные посетители читали вводные предложения вашего текста, а значит, с большей вероятностью дочитывали до конца.
+			</p>
 		</div>
 	</section>
 
