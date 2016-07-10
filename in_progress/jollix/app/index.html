@@ -84,7 +84,17 @@
 		
 		<div class="header__options">
 			<div class="header__lang header__login">RU</div>
-			<div class="header__support header__login">поддержка</div>
+			<div class="header__support header__login">
+				<span>поддержка</span>
+
+				<div>
+					<ul class="dropdown">
+						<li class="dropdown__item"><a href="#" class="dropdown__link">вопрос/ответ</a></li>
+						<li class="dropdown__item"><a href="#" class="dropdown__link">инструкции</a></li>
+						<li class="dropdown__item"><a href="#" class="dropdown__link">тикеты</a></li>
+					</ul>
+				</div>
+			</div>
 			<div class="header__set header__login"><img src="img/svg/desktop__settings.svg" alt=""></div>
 			<a href="#" class="header__login header__login--desktop">выход</a>			
 		</div>
@@ -140,12 +150,19 @@
 						<div class="autoexcange__service">
 							<a href="#" class="autoexcange__dropdown"><img src="img/svg/mobile__down.svg" alt=""></a>
 							<div class="autoexcange__menu">
-								<div class="autoexcange__item"><p>BTC-e</p></div>
+								<div class="autoexcange__item autoexcange__item--1"><p>BTC-e</p></div>
 								<div class="autoexcange__item autoexcange__item--2"><p>Perfect money</p></div>
 								<div class="autoexcange__item autoexcange__item--3"><p>Paymer</p></div>
 								<div class="autoexcange__item autoexcange__item--4"><p>Okpay</p></div>
 								<div class="autoexcange__item autoexcange__item--5"><p>Z-payement</p></div>
 								<div class="autoexcange__item autoexcange__item--6"><p>Приват 24</p></div>
+
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--7"><p>Яндекс.Деньги</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--8"><p>Qiwi</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--9"><p>Egopay</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--10"><p>W1</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--11"><p>Visa/MC</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--12"><p>Anycash</p></div>
 							</div>
 						</div>
 					</div>
@@ -166,12 +183,19 @@
 						<div class="autoexcange__service autoexcange__service--get">
 							<a href="#" class="autoexcange__dropdown"><img src="img/svg/mobile__down.svg" alt=""></a>
 							<div class="autoexcange__menu">
-								<div class="autoexcange__item"><p>BTC-e</p></div>
+								<div class="autoexcange__item autoexcange__item--1"><p>BTC-e</p></div>
 								<div class="autoexcange__item autoexcange__item--2"><p>Perfect money</p></div>
 								<div class="autoexcange__item autoexcange__item--3"><p>Paymer</p></div>
 								<div class="autoexcange__item autoexcange__item--4"><p>Okpay</p></div>
 								<div class="autoexcange__item autoexcange__item--5"><p>Z-payement</p></div>
 								<div class="autoexcange__item autoexcange__item--6"><p>Приват 24</p></div>
+
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--7"><p>Яндекс.Деньги</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--8"><p>Qiwi</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--9"><p>Egopay</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--10"><p>W1</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--11"><p>Visa/MC</p></div>
+								<div class="autoexcange__item autoexcange__item--desktop autoexcange__item--12"><p>Anycash</p></div>
 							</div>
 						</div>
 					</div>
@@ -378,6 +402,7 @@
 	<div class="border border--gray"></div>
 
 	<section class="social">
+		<h3 class="social__header">расскажи о нас</h3>
 		<ul>
 			<li class="social__item">
 				<a href="#" class="social__link"><img src="img/svg/social--vk.svg" alt=""></a>
@@ -395,7 +420,7 @@
 	</section>
 
 	<footer class="footer">
-		<nav>
+		<nav class="mobmenu">
 			<div class="menu__block">
 				<p class="menu__header">поддержка</p>
 				<ul>
@@ -443,6 +468,66 @@
 				<p class="menu__link">+380504345568</p>
 			</div>
 		</nav>
+
+
+
+		<nav class="devmenu">
+			<div class="menu__block">
+				<p class="menu__header menu__header--support">поддержка</p>
+				<ul>
+					<li class="menu__item"><a href="#" class="menu__link">Тикеты</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Вопросы и ответы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Инструкция</a></li>
+				</ul>
+			</div>
+
+			<div class="menu__block">
+				<p class="menu__header menu__header--projects">проекты</p>
+				<ul>
+					<li class="menu__item menu__item--projects"><a href="#" class="menu__link">Обмен валют</a></li>
+					<li class="menu__item menu__item--projects"><a href="#" class="menu__link">Гарант сделок</a></li>
+					<li class="menu__item menu__item--projects"><a href="#" class="menu__link">Оплата сервисов</a></li>
+					<li class="menu__item menu__item--projects"><a href="#" class="menu__link">Онлайн ломбард</a></li>
+					<li class="menu__item menu__item--projects"><a href="#" class="menu__link">База знаний</a></li>
+				</ul>
+			</div>
+
+			<div class="menu__block menu__block--clients">
+				<p class="menu__header">клиентам</p>
+				<ul>
+					<li class="menu__item"><a href="#" class="menu__link">Депозитная программа</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Партнерство</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Бонусная система</a></li>
+				</ul>
+			</div>
+
+			<div class="menu__block menu__block--conditions">
+				<p class="menu__header">условия</p>
+				<ul>
+					<li class="menu__item"><a href="#" class="menu__link">Безопасность</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Соглашение</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
+				</ul>
+			</div>
+
+			<div class="menu__block menu__block--contacts">
+				<p class="menu__header menu__header--contacts">контакты</p>
+				<a href="mailto:office@any.cash" class="menu__link">office@any.cash</a>
+				<p class="menu__link">+380504345568</p>
+			</div>
+
+			<div class="menu__block menu__block--social">
+				<p class="menu__header menu__header--social"></p>
+				<ul>
+					<li class="menu__item"><a href="#" class="menu__link"><img src="img/svg/social--vk.svg" alt=""></a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><img src="img/svg/social--fb.svg" alt=""></a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><img src="img/svg/social--twi.svg" alt=""></a></li>
+					<li class="menu__item"><a href="#" class="menu__link"><img src="img/svg/social--goo.svg" alt=""></a></li>
+				</ul>
+			</div>
+
+		</nav>
+
 	</footer>
 </body>
 </html>
