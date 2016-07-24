@@ -1,0 +1,171 @@
+@media only screen and (min-width: 240px){
+/*
+
+================================================================================
+|                                   MAIN STYLES                                |
+================================================================================
+*/
+
+body{
+	font-family: 'PT Sans', sans-serif;
+	overflow-x:hidden;
+}
+
+.main-wrapper{
+	width: 320px;
+	margin: 0px auto;
+}
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+
+header{
+	height: 94px;
+
+	.wrapper{
+		width: 320px;
+		margin: 0px auto;
+
+		.mobile-nav{
+
+			.menu{
+				height: 40px;
+				background-color: #f0f1f6;   
+
+				.menu__item{
+					width: 37px;
+					padding-top: 11px;
+					padding-left: 17px;
+					height: 29px;
+					float: left;
+
+					&:hover{
+						background-color: #3eade2;
+					}
+
+					&:first-of-type{
+						background-color: #3eade2;   
+					}
+
+					&:last-of-type{
+						width: 33px;  
+					}
+
+					.menu__link{
+						display: block;
+						width: 20px;
+						height: 18px;
+						background-image: url("../img/sprite.png");
+						background-repeat: no-repeat;
+					}
+
+					.menu__link--menu{
+						background-position: -5px -266px;
+					}
+
+					.menu__link--home{
+						background-position: -7px -207px;
+					}
+
+					.menu__link--search{
+						background-position: -5px -295px;
+					}
+
+					.menu__link--cart{
+						background-position: -5px -146px;
+					}
+
+					.menu__link--login{
+						background-position: -7px -237px;
+					}
+
+					.menu__link--contacts{
+						background-position: -7px -176px;
+					}
+				}             
+			}            
+		}
+
+		.logo{
+			float: none;
+			margin-top: 13px;
+			margin-left: 21px;
+
+			img{
+				max-width: 190px;    
+			}            
+
+			.logo__title{
+				padding-top: 4px;
+				display: block;
+				text-decoration: none;
+				color: #747688;
+				font-size: 13px;
+				letter-spacing: -0.2px;
+			}
+		}
+
+		.search{
+			display: none;
+		}
+
+		.contacts{
+			display: none;
+		}
+	}
+}
+
+.menu-wrapper{
+	display: none;
+}
+
+
+
+/*
+================================================================================
+|                                     SLIDER                                   |
+================================================================================
+*/
+
+.slider{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+
+	.slider__slide{
+		position: relative;
+		height: 124px;
+
+		.slider__image{
+			margin-top: -71px;
+			margin-left: 0px;
+			max-width: 320px;
+		}
+
+		.slider__info{
+			background-color: rgb(210, 166, 107);
+			color: #fff;
+			font-size: 16px;
+			left: 28px;
+			line-height: 18px;
+			opacity: 0.8;
+			padding-left: 6px;
+			padding-top: 2px;
+			position: absolute;
+			top: 42px;
+			width: 184px;
+			height: 41px;
+			letter-spacing: 0.2px;
+		}
+	}
+
+	.dot{
+		display: none;
+	}
+}
+
+}
