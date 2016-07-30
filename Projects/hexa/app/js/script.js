@@ -10,7 +10,7 @@ var i = 0;
 $right.on('click', function(){
 	if (i < ($dot.length - 1)) {
 		i++;
-		$('.main-wrapper').css('background-image', 'url(../img/room-' + i + '.jpg)');
+		$('.main-wrapper').css('background-image', 'url(img/room-' + i + '.jpg)');
 		$dot.removeClass('slider__dot--active');
 		$dot[i].classList.add('slider__dot--active');
 		$('.slider__room > p').html(room[i]);
@@ -21,7 +21,7 @@ $right.on('click', function(){
 $left.on('click', function(){
 	if (i > 0) {
 		i--;
-		$('.main-wrapper').css('background-image', 'url(../img/room-' + i + '.jpg)');
+		$('.main-wrapper').css('background-image', 'url(img/room-' + i + '.jpg)');
 		$dot.removeClass('slider__dot--active');
 		$dot[i].classList.add('slider__dot--active');
 		$('.slider__room > p').html(room[i]);
@@ -37,5 +37,5 @@ $dot.on('click', function () {
 	i = $(this).index();
 	$('.slider__room > p').html(room[i]);
 	$('.slider__price > p > span').html(price[i]);
-	$('.main-wrapper').css('background-image', 'url(../img/room-' + i + '.jpg)');
+	$('.main-wrapper').css('background-image', 'url(img/room-' + i + '.jpg)');
 })
