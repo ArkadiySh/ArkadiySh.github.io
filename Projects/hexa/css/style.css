@@ -226,8 +226,8 @@ table {
 
 .main-wrapper {
   height: 800px;
-  background-image: url("../../img/room-3.jpg");
-  background-position: 2px -56px;
+  background-image: url("../img/room-0.jpg");
+  background-position: 0px -56px;
   transition: 0.7s;
 }
 
@@ -475,12 +475,12 @@ table {
 
 .main-wrapper .slider-wrapper .slider .slider__arrow--left {
   margin-left: 21px;
-  background-image: url("../../img/slider-left.png");
+  background-image: url("../img/slider-left.png");
 }
 
 .main-wrapper .slider-wrapper .slider .slider__arrow--right {
   margin-left: 19px;
-  background-image: url("../../img/slider-right.png");
+  background-image: url("../img/slider-right.png");
 }
 
 .main-wrapper .slider-wrapper .slider .slider__dots {
@@ -493,7 +493,7 @@ table {
   display: block;
   float: left;
   cursor: pointer;
-  background-image: url("../../img/dot.png");
+  background-image: url("../img/dot.png");
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
@@ -501,7 +501,7 @@ table {
 }
 
 .main-wrapper .slider-wrapper .slider .slider__dot--active {
-  background-image: url("../../img/dot-active.png");
+  background-image: url("../img/dot-active.png");
 }
 
 .main-wrapper .advantages {
@@ -527,7 +527,7 @@ table {
   margin: 15px auto;
   width: 110px;
   height: 103px;
-  background-image: url("../../img/sprite_icons.png");
+  background-image: url("../img/sprite_icons.png");
   background-repeat: no-repeat;
   background-position: 5px 0px;
 }
