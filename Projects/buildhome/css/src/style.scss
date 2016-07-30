@@ -1,0 +1,481 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: arial, sans-serif; 
+}
+
+.wrapper{
+  width: 100%;
+  background-color: #fff; 
+
+  .header{
+    margin: 0 auto;
+    padding-top: 36px;
+    width: 1160px;
+    height: 964px;
+  }
+
+  .social{
+    float: right;
+    height: 50px;
+    width: 240px;
+
+    .social__link{
+      height: 38px;
+      width: 38px;
+      margin: 5px;
+      display: block;
+      float: left;
+      background: url("../../img/sprite.png") no-repeat;
+    }
+
+    .social__link--fb{
+      background-position: -57px 0px;
+    }
+
+    .social__link--twi{
+      background-position: -174px 0px;
+    }
+
+    .social__link--rss{
+      background-position: 0px -1px;
+    }
+
+    .social__link--in{
+      background-position: -230px 0px;
+    }
+
+    .social__link--skype{
+      background-position: -115px 0px;
+    }
+
+    .social__link--fb:hover{
+      background-position: -57px -75px;
+    }
+
+    .social__link--twi:hover{
+      background-position: -174px -75px;
+    }
+
+    .social__link--rss:hover{
+      background-position: 0px -75px;
+    }
+
+    .social__link--in:hover{
+      background-position: -230px -75px;
+    }
+
+    .social__link--skype:hover{
+      background-position: -115px -75px;
+    }
+  }
+}
+
+.logo{
+  float: left;
+  width: 205px;
+}
+
+.menu{
+  width: 1160px;
+  height: 54px;
+  background: #2B2E34;
+  clear: both;
+  margin-bottom: 36px;
+
+  .menu__item{
+    float: left;
+    padding: 20px 20px 0 20px;
+    list-style: none;
+    height: 34px;
+    border-right: 1px solid #17191C;
+  }
+
+  .menu__item:active{
+    background: #288CEA;
+  }
+
+  .menu__link{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu__link:hover{
+    color: #F3B519;
+  }
+
+  .menu__search{
+    float: right;
+    width: 268px;
+    height: 42px;
+    margin: 6px;
+
+    .menu__input{
+      border: 1px solid #17191C;
+      width: 240px;
+      height: 40px;
+      background: #373A3E;
+      color: #63717f;
+      padding: 0 12px;
+    }
+  }
+}
+
+.jR3DCarouselGallery {
+  position: relative;
+  width: 100%;
+  height: 468px;
+  margin-bottom: 50px;
+
+  .motto {
+  position: absolute;
+  top: 230px;
+  left: 36px;
+  z-index: 2;
+  width: 308px;
+  height: 197px;
+  background: url("../../img/bg.png") no-repeat;
+  font-family: arial, sans-serif;
+  font-size: 54px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 27px;
+  text-transform: uppercase;
+
+    p:first-of-type {
+      color: #F3B519;
+    }
+  }
+}
+
+.features{
+  width: 100%;
+  height: 268px;
+  clear: both;
+
+  .features__block{
+    float: left;
+    width: 386px;
+    height: 265px;
+
+    .features__no{
+      float: left;
+      font-size: 90px;
+      color: #E8E8E9;
+    }
+
+    .features__textblock{
+      width: 240px;
+      float: right;
+      margin-right: 20px;
+    }
+
+    .features__icon{
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
+
+    .features__title{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .features__text{
+      font-size: 13px;
+      color: #898989;
+      margin-bottom: 18px;
+    }
+
+    .features__link{
+      display: inline;
+      text-decoration: none;
+      color: #2B2C2F;
+      font-size: 13px;
+      font-weight: bold;
+      background: url("../../img/arrow.png") no-repeat 67px 3px;
+    }
+
+    .features__link:hover{
+      color: #288CEA;
+      background: url("../../img/arrow-active.png") no-repeat 67px 3px;
+    }
+  }
+}
+
+.wrapper-services{
+  width: 100%;
+  height: 500px;
+  background: #2B2E34;
+}
+
+.services{
+  content: "";
+  overflow: hidden;
+  clear: both;
+  width: 1160px;
+  height: 460px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  .services__title--main{
+    margin-left: 20px;
+    margin-bottom: 55px;
+    font-family: "Ubuntu Medium", arial, sans-serif;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .services__title{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .services__block{
+    float: left;
+    width: 260px;
+    height: 310px;
+    margin: 0 15px;
+
+    .services__link {
+      position: relative;
+      text-decoration: none; 
+    } 
+
+    .services__pict {
+      margin-bottom: 30px; 
+    }
+
+    .services__opacity-plus {
+      position: absolute;
+      display: none;
+      width: 260px;
+      height: 260px;
+      background: url("../../img/service-hover.png") no-repeat 0 0;
+    }
+
+    .services__link:hover .services__opacity-plus {
+      display: block;
+      color: #F3B519; 
+    }
+    
+    .services__link:hover .services__title {
+      color: #F3B519; 
+    }
+  }
+}
+
+.wrapper-news{
+  width: 100%;
+  height: 544px;
+  background: #F6F6F6;
+
+  .news {
+    padding-top: 60px;
+    content: "";
+    overflow: hidden;
+    clear: both;
+    width: 1160px;
+    height: 484px;
+    margin: 0 auto;
+
+    .news__container{
+      float: left;
+      width: 579px;
+      height: 482px;
+
+      .news__title--main {
+      margin-left: 20px;
+      margin-bottom: 45px; 
+      }
+
+      .news__post {
+        content: "";
+        overflow: hidden;
+        clear: both;
+        position: relative;
+        display: block;
+        width: 577px;
+        height: 150px;
+        margin-bottom: 30px;
+
+        .news__month{
+          position: absolute;
+          top: 10px;
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: #288CEA;
+          font-size: 15px;
+          line-height: 40px;
+          color: #fff;
+          text-align: center; 
+        }
+
+        .news__day{
+          position: absolute;
+          top: 50px;
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: #F3B519;
+          font-size: 15px;
+          line-height: 40px;
+          color: #000;
+          text-align: center; 
+        }
+        
+        .news__pic{
+          float: left;
+          margin-left: 20px; 
+        }
+
+        .news__textblock {
+          float: left;
+          margin-left: 25px; 
+          width: 370px;
+        }
+
+        .news__title {          
+          font-size: 16px;
+          margin-bottom: 8px; 
+        }
+
+        .news__link:hover{
+          color: #2A90F2;
+        }
+
+        .news__link {
+          margin-bottom: 5px;
+          font-weight: bold;
+          text-decoration: none;
+          color: #33363B; 
+        }
+
+        .news__author--text{
+          font-family: arial, sans-serif;
+          font-size: 13px;
+          color: #9D9D9D;
+          margin-bottom: 20px; 
+        }
+
+        .news__author{
+          color: #2A90F2;
+          text-decoration: none;
+        }
+
+        .news__text{       
+          font-family: arial, sans-serif;
+          font-size: 13px;
+          color: #9D9D9D;
+          width: 380px;
+          height: 80px; 
+        }
+      }
+    }
+  }
+
+  .banners {
+    float: left;
+    width: 536px;
+    height: 482px;
+    margin-left: 43px; 
+  }
+
+  .banners__title {
+    margin-left: 20px;
+    margin-bottom: 45px; 
+  }
+}
+
+.brands__wrapper{
+  width: 100%;
+  height: 240px;
+  background: #fff;
+
+  .brands__logos{
+    width: 1160px;
+    height: 155px;
+    margin: 0 auto;
+    padding-top: 85px; 
+  }
+}
+
+.footer__wrapper{
+  width: 100%;
+  height: 325px;
+  background: #2B2E34;
+
+  .footer{
+    width: 1160px;
+    height: 265px;
+    margin: 0 auto;
+    padding-top: 60px; 
+
+    .footer__block{
+      float: left;
+      width: 290px;
+      height: 240px;
+
+      .footer__title{
+        font-family: "Ubuntu Medium", arial, sans-serif;
+        font-size: 16px;
+        color: #fff;
+        margin-left: 20px;
+        margin-bottom: 45px;
+      }
+
+      .footer__menu{
+        list-style: none;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .footer__item:not(:last-child) {
+        border-bottom: 1px solid #393c40;
+      }
+
+      .footer__link{
+        text-decoration: none;
+        font-family: arial, sans-serif;
+        line-height: 40px;
+        font-size: 13px;
+        color: #828385;
+      }
+
+      .footer__link:hover{
+        color: #2582da;
+      }
+    }
+  }
+}
+
+.contacts__wrapper{
+  width: 100%;
+  height: 60px;
+  background: #35383c;
+
+  .contacts{
+    width: 1160px;
+    height: 44px;
+    margin: 0 auto;
+    padding-top: 16px;
+    color: #868789;
+    font-size: 12px;
+    
+    .contacts__copy{
+      float: right;
+    }
+
+    .contacts__item{
+      margin-right: 20px;
+      color: #868789;
+      text-decoration: none;
+    }
+  }
+}

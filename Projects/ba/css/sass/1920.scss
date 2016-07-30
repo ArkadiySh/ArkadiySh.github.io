@@ -1,0 +1,257 @@
+@media only screen and (min-width: 1372px){
+/*
+
+================================================================================
+|                                   MAIN STYLES                                |
+================================================================================
+*/
+
+.main-wrapper{
+	width: 1355px;
+	margin: 0px auto;
+}
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+
+header{
+
+	.wrapper{
+		width: 1240px;
+		margin: 35px auto;
+
+		.mobile-nav{
+			display: none;
+		}
+
+		.logo{
+			margin-left: 13px;
+
+			img{
+				max-width: 100%;
+			}
+
+			.logo__title{
+				padding-top: 4px;
+				font-size: 14px;
+				letter-spacing: 0;
+			}
+		}
+
+		.search{
+			margin-top: -6px;
+			margin-left: 43px;
+			width: 520px;
+
+			.search__field{
+				width: 485px;
+				height: 36px;
+				padding-left: 9px;
+				font-size: 13px;			
+				letter-spacing: 0px;
+			}
+
+			.search__button{
+				top: 8px;
+				right: 32px;
+				transform: none;
+			}
+		}
+
+		.contacts{
+			display: block;
+			margin-top: -2px;
+			margin-left: 67px;
+			float: left;
+			width: 342px;
+
+			.contacts__phone{
+				padding-top: 5px;
+				letter-spacing: -0.2px;
+				font-size: 23px;
+			}
+
+			.contacts__info{
+				font-size: 14px;
+				margin-left: 16px;
+			}
+			.contacts__info--del{
+				color: #2b3056;
+			}
+		}
+	}
+}
+
+.menu-wrapper{
+	margin: 0px auto;
+	width: 1240px;
+	height: 54px;
+
+	.menu{
+		background-position: -7px -118px;
+		margin-top: 18px;
+		margin-left: 12px;
+		width: 845px;
+		height: 29px;
+
+		.menu__item{
+			margin-right: 23px;
+
+			.menu__link{
+				font-size: 16px;
+				letter-spacing: 0;
+			}
+
+			.submenu{
+				top: 45px;
+				left: -40px;
+
+				&:before{
+					content: "";
+					display: block;
+					position: absolute;
+					top: -50px;
+					width: 100%;
+					height: 50px;
+				}
+
+				.submenu__header{
+					color: #ce9b58;
+					display: block;
+					font-size: 16px;
+					font-weight: bold;
+					margin-bottom: 10px;
+					padding-left: 14px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+
+				.submenu__item{
+
+					.submenu{
+						display: none;
+						left: 102%;
+						padding-top: 20px;
+						position: absolute;
+						top: 35%;
+						width: 242px;
+						height: 134px;
+
+						&:before{
+							content: "";
+							display: block;
+							position: absolute;
+							left: -10px;
+							width: 10px;
+							height: 100%;
+							top: 0;
+						}
+					}
+
+					&:hover{
+						background-color: #e9e9ea;
+					}
+
+					.submenu__link{
+						padding-left: 16px;
+					}
+				}
+
+				.submenu__item--last{
+					height: 45px;
+					margin-top: 6px;
+
+					.submenu__link{
+						line-height: 18px;
+						background-position: 1px 6px;
+					}
+				}
+
+				.dropdown{
+					background-image: url("../img/sprite.png");
+					background-repeat: no-repeat;
+					background-position: 212px -58px;
+				}
+			}
+		}
+
+		.menu__item--catalog{
+			margin-right: 16px;
+			width: 160px;
+			background-position: 137px -39px;
+		}
+
+		.menu__item--contacts{
+			margin-left: 0;
+		}
+	}
+
+	.cart{	
+		margin-top: 8px;
+		margin-left: 56px;
+		width: 217px;
+		transform: none;
+	}
+
+	.login{
+		margin-left: 10px;
+		margin-top: 8px;
+		transform: none;
+	}
+}
+
+
+
+/*
+================================================================================
+|                                     SLIDER                                   |
+================================================================================
+*/
+
+.slider{
+	margin-top: 31px;
+	margin-left: 0;
+	margin-right: 0;
+	width: auto;
+
+	.slider__slide{
+		position: relative;
+		height: 326px;
+
+		.slider__image{
+			margin-top: -567px;
+			max-width: 100%;
+		}
+
+		.slider__info{
+			font-size: 42px;
+			left: 70px;
+			line-height: 48px;
+			padding-left: 32px;
+			padding-top: 12px;
+			top: 99px;
+			width: 468px;
+			height: 116px;
+		}
+	}
+
+	.dot{
+		display: block;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: rgb(203, 148, 76);
+		opacity: 0.329;
+
+		&:hover,
+		&:active,
+		&:focus{
+			opacity: 1;
+		}
+	}
+}
+
+}
