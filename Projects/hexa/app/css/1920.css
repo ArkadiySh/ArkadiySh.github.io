@@ -39,313 +39,314 @@
   font-weight: normal;
   font-style: normal; }
 
-@media only screen and (width: 1920px) {
-  * {
-    text-decoration: none;
-    background-repeat: no-repeat; }
-  .header {
-    background-color: #FFF;
-    height: 56px; }
-    .header .header-wrapper {
-      width: 1187px;
-      margin: 0px auto; }
-      .header .header-wrapper .header__logo {
-        font-family: "Proxima Nova Regular", sans-serif;
-        float: left;
-        padding-top: 13px;
-        margin-left: 22px;
-        font-size: 30px;
-        letter-spacing: 10px;
-        color: #000;
-        font-weight: bold; }
-      .header .header-wrapper .header__info {
-        margin-left: 20px;
-        margin-top: 15px;
-        float: left;
+* {
+  text-decoration: none;
+  background-repeat: no-repeat; }
+
+.header {
+  background-color: #FFF;
+  height: 56px; }
+  .header .header-wrapper {
+    width: 1187px;
+    margin: 0px auto; }
+    .header .header-wrapper .header__logo {
+      font-family: "Proxima Nova Regular", sans-serif;
+      float: left;
+      padding-top: 13px;
+      margin-left: 22px;
+      font-size: 30px;
+      letter-spacing: 10px;
+      color: #000;
+      font-weight: bold; }
+    .header .header-wrapper .header__info {
+      margin-left: 20px;
+      margin-top: 15px;
+      float: left;
+      text-transform: uppercase;
+      width: 212px;
+      font-family: "Proxima Nova Regular", sans-serif;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0px; }
+    .header .header-wrapper .header__phone {
+      float: left;
+      display: block;
+      margin-top: 13px;
+      margin-left: 412px;
+      font-size: 35px;
+      font-family: "Proxima Nova Bold", sans-serif;
+      color: #000; }
+    .header .header-wrapper .header__callback {
+      margin-left: 16px;
+      margin-top: 15px;
+      border-radius: 4px;
+      background: -moz-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
+      background: -webkit-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
+      background: -ms-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
+      border: none;
+      width: 130px;
+      height: 30px;
+      color: #fff;
+      font-family: "Proxima Nova Bold", sans-serif;
+      font-size: 13px;
+      cursor: pointer; }
+
+.main-wrapper {
+  height: 800px;
+  background-image: url(../img/room-0.jpg);
+  background-position: 0px 0px;
+  transition: 0.7s; }
+  .main-wrapper .menu-wrapper {
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .main-wrapper .menu {
+    width: 1100px;
+    margin: 0px auto; }
+    .main-wrapper .menu .menu__item {
+      position: relative;
+      float: left;
+      width: 230px;
+      text-align: center;
+      padding-top: 2px;
+      height: 32px; }
+      .main-wrapper .menu .menu__item:after {
+        position: absolute;
+        color: #fff;
+        content: "|";
+        font-size: 18px;
+        line-height: 28px;
+        right: 0px; }
+      .main-wrapper .menu .menu__item .menu__link {
+        color: #fff;
         text-transform: uppercase;
-        width: 212px;
         font-family: "Proxima Nova Regular", sans-serif;
-        font-size: 13px;
-        line-height: 16px;
-        letter-spacing: 0px; }
-      .header .header-wrapper .header__phone {
+        font-size: 14px;
+        line-height: 35px;
+        letter-spacing: 1px; }
+    .main-wrapper .menu .menu__item--main {
+      margin-left: 21px;
+      width: 200px; }
+      .main-wrapper .menu .menu__item--main .menu__link {
+        font-family: "Proxima Nova Bold", sans-serif; }
+    .main-wrapper .menu .menu__item--children {
+      margin-left: 2px; }
+    .main-wrapper .menu .menu__item--bedroom {
+      margin-left: 3px; }
+    .main-wrapper .menu .menu__item--kitchen {
+      width: 210px;
+      margin-left: 3px; }
+    .main-wrapper .menu .menu__item--contacts {
+      width: 200px; }
+      .main-wrapper .menu .menu__item--contacts:after {
+        content: ""; }
+  .main-wrapper .slider-wrapper {
+    height: 483px;
+    position: relative; }
+    .main-wrapper .slider-wrapper .cover {
+      position: absolute;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 794px;
+      height: 483px;
+      background-color: rgba(0, 0, 0, 0.4);
+      shape-outside: polygon(0 0, 100% 0, 83% 100%, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 83% 100%, 0 100%); }
+    .main-wrapper .slider-wrapper .slider {
+      position: absolute;
+      z-index: 10000;
+      padding-top: 35px;
+      margin-left: 365px;
+      width: 630px;
+      height: 448px; }
+      .main-wrapper .slider-wrapper .slider .slider__line {
         float: left;
-        display: block;
-        margin-top: 13px;
-        margin-left: 412px;
-        font-size: 35px;
+        margin-left: 5px;
+        width: 3px;
+        height: 183px;
+        background-color: white;
+        transform: skew(-16deg);
+        -webkit-transform: skew(-16deg);
+        -moz-transform: skew(-16deg);
+        -o-transform: skew(-16deg); }
+      .main-wrapper .slider-wrapper .slider .slider__header {
+        margin-left: 28px;
+        width: 582px;
+        height: 97px;
+        padding-top: 12px;
+        background-color: rgba(255, 255, 255, 0.7);
+        transform: skew(-16deg);
+        -webkit-transform: skew(-16deg);
+        -moz-transform: skew(-16deg);
+        -o-transform: skew(-16deg); }
+        .main-wrapper .slider-wrapper .slider .slider__header p {
+          padding-left: 16px;
+          font-size: 90px;
+          font-family: "Intro", sans-serif;
+          transform: skew(16deg);
+          -webkit-transform: skew(16deg);
+          -moz-transform: skew(16deg);
+          -o-transform: skew(16deg);
+          letter-spacing: -2px; }
+      .main-wrapper .slider-wrapper .slider .slider__room {
+        float: left;
+        margin-left: -7px;
+        margin-top: 11px;
+        padding-top: 8px;
+        width: 275px;
+        height: 55px;
+        background-color: rgba(255, 255, 255, 0.7);
+        transform: skew(-16deg);
+        -webkit-transform: skew(-16deg);
+        -moz-transform: skew(-16deg);
+        -o-transform: skew(-16deg); }
+        .main-wrapper .slider-wrapper .slider .slider__room p {
+          margin: 0px auto;
+          width: 240px;
+          height: 41px;
+          border-bottom: 3px solid black;
+          font-size: 34px;
+          text-align: center;
+          font-family: "Intro Black Italic", sans-serif;
+          transform: skew(16deg);
+          -webkit-transform: skew(16deg);
+          -moz-transform: skew(16deg);
+          -o-transform: skew(16deg);
+          font-style: italic;
+          font-weight: bold;
+          letter-spacing: 1px; }
+      .main-wrapper .slider-wrapper .slider .slider__price {
+        position: relative;
+        float: left;
+        margin-top: 19px;
+        margin-left: 10px;
+        width: 179px;
+        height: 50px;
+        background: -moz-linear-gradient(0deg, #2aeb2a 0%, #007500 100%);
+        background: -webkit-linear-gradient(0deg, #2aeb2a 0%, #007500 100%);
+        background: -ms-linear-gradient(0deg, #2aeb2a 0%, #007500 100%);
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        transform: skew(-16deg);
+        -webkit-transform: skew(-16deg);
+        -moz-transform: skew(-16deg);
+        -o-transform: skew(-16deg); }
+        .main-wrapper .slider-wrapper .slider .slider__price p {
+          transform: skew(16deg);
+          -webkit-transform: skew(16deg);
+          -moz-transform: skew(16deg);
+          -o-transform: skew(16deg);
+          font-family: "Intro", sans-serif;
+          color: #fff;
+          font-size: 16px;
+          position: absolute;
+          bottom: 2px;
+          left: 8px; }
+          .main-wrapper .slider-wrapper .slider .slider__price p span {
+            font-family: "Intro Black", sans-serif;
+            margin-left: 14px;
+            margin-right: 9px;
+            font-size: 45px; }
+          .main-wrapper .slider-wrapper .slider .slider__price p sup {
+            font-family: "Intro", sans-serif;
+            font-size: 12px;
+            vertical-align: super; }
+      .main-wrapper .slider-wrapper .slider .slider__info {
+        clear: both;
+        width: 305px;
+        padding-top: 24px;
+        margin-left: 25px;
+        text-transform: uppercase;
         font-family: "Proxima Nova Bold", sans-serif;
-        color: #000; }
-      .header .header-wrapper .header__callback {
-        margin-left: 16px;
-        margin-top: 15px;
+        color: #fff;
+        line-height: 23px;
+        font-size: 19px; }
+      .main-wrapper .slider-wrapper .slider .slider__link {
+        margin-top: 20px;
+        margin-left: 25px;
+        display: block;
+        border: 2px solid white;
         border-radius: 4px;
+        width: 225px;
+        height: 45px;
         background: -moz-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
         background: -webkit-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
         background: -ms-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
-        border: none;
-        width: 130px;
-        height: 30px;
-        color: #fff;
+        text-transform: uppercase;
+        color: white;
+        line-height: 46px;
         font-family: "Proxima Nova Bold", sans-serif;
-        font-size: 13px;
-        cursor: pointer; }
-  .main-wrapper {
-    height: 800px;
-    background-image: url(../img/room-0.jpg);
-    background-position: 0px 0px;
-    transition: 0.7s; }
-    .main-wrapper .menu-wrapper {
-      height: 35px;
-      background-color: rgba(0, 0, 0, 0.6); }
-    .main-wrapper .menu {
-      width: 1100px;
-      margin: 0px auto; }
-      .main-wrapper .menu .menu__item {
-        position: relative;
-        float: left;
-        width: 230px;
+        font-weight: bold;
+        font-size: 20px;
         text-align: center;
-        padding-top: 2px;
-        height: 32px; }
-        .main-wrapper .menu .menu__item:after {
-          position: absolute;
-          color: #fff;
-          content: "|";
-          font-size: 18px;
-          line-height: 28px;
-          right: 0px; }
-        .main-wrapper .menu .menu__item .menu__link {
-          color: #fff;
-          text-transform: uppercase;
-          font-family: "Proxima Nova Regular", sans-serif;
-          font-size: 14px;
-          line-height: 35px;
-          letter-spacing: 1px; }
-      .main-wrapper .menu .menu__item--main {
+        letter-spacing: 2px; }
+      .main-wrapper .slider-wrapper .slider .slider__arrow {
+        display: block;
+        float: left;
+        margin-top: 48px;
+        width: 33px;
+        height: 47px;
+        background-repeat: no-repeat;
+        cursor: pointer; }
+      .main-wrapper .slider-wrapper .slider .slider__arrow--left {
         margin-left: 21px;
-        width: 200px; }
-        .main-wrapper .menu .menu__item--main .menu__link {
-          font-family: "Proxima Nova Bold", sans-serif; }
-      .main-wrapper .menu .menu__item--children {
-        margin-left: 2px; }
-      .main-wrapper .menu .menu__item--bedroom {
-        margin-left: 3px; }
-      .main-wrapper .menu .menu__item--kitchen {
-        width: 210px;
-        margin-left: 3px; }
-      .main-wrapper .menu .menu__item--contacts {
-        width: 200px; }
-        .main-wrapper .menu .menu__item--contacts:after {
-          content: ""; }
-    .main-wrapper .slider-wrapper {
-      height: 483px;
-      position: relative; }
-      .main-wrapper .slider-wrapper .cover {
-        position: absolute;
-        z-index: 1000;
-        top: 0;
-        left: 0;
-        width: 794px;
-        height: 483px;
-        background-color: rgba(0, 0, 0, 0.4);
-        shape-outside: polygon(0 0, 100% 0, 83% 100%, 0 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 83% 100%, 0 100%); }
-      .main-wrapper .slider-wrapper .slider {
-        position: absolute;
-        z-index: 10000;
-        padding-top: 35px;
-        margin-left: 365px;
-        width: 630px;
-        height: 448px; }
-        .main-wrapper .slider-wrapper .slider .slider__line {
-          float: left;
-          margin-left: 5px;
-          width: 3px;
-          height: 183px;
-          background-color: white;
-          transform: skew(-16deg);
-          -webkit-transform: skew(-16deg);
-          -moz-transform: skew(-16deg);
-          -o-transform: skew(-16deg); }
-        .main-wrapper .slider-wrapper .slider .slider__header {
-          margin-left: 28px;
-          width: 582px;
-          height: 97px;
-          padding-top: 12px;
-          background-color: rgba(255, 255, 255, 0.7);
-          transform: skew(-16deg);
-          -webkit-transform: skew(-16deg);
-          -moz-transform: skew(-16deg);
-          -o-transform: skew(-16deg); }
-          .main-wrapper .slider-wrapper .slider .slider__header p {
-            padding-left: 16px;
-            font-size: 90px;
-            font-family: "Intro", sans-serif;
-            transform: skew(16deg);
-            -webkit-transform: skew(16deg);
-            -moz-transform: skew(16deg);
-            -o-transform: skew(16deg);
-            letter-spacing: -2px; }
-        .main-wrapper .slider-wrapper .slider .slider__room {
-          float: left;
-          margin-left: -7px;
-          margin-top: 11px;
-          padding-top: 8px;
-          width: 275px;
-          height: 55px;
-          background-color: rgba(255, 255, 255, 0.7);
-          transform: skew(-16deg);
-          -webkit-transform: skew(-16deg);
-          -moz-transform: skew(-16deg);
-          -o-transform: skew(-16deg); }
-          .main-wrapper .slider-wrapper .slider .slider__room p {
-            margin: 0px auto;
-            width: 240px;
-            height: 41px;
-            border-bottom: 3px solid black;
-            font-size: 34px;
-            text-align: center;
-            font-family: "Intro Black Italic", sans-serif;
-            transform: skew(16deg);
-            -webkit-transform: skew(16deg);
-            -moz-transform: skew(16deg);
-            -o-transform: skew(16deg);
-            font-style: italic;
-            font-weight: bold;
-            letter-spacing: 1px; }
-        .main-wrapper .slider-wrapper .slider .slider__price {
-          position: relative;
-          float: left;
-          margin-top: 19px;
-          margin-left: 10px;
-          width: 179px;
-          height: 50px;
-          background: -moz-linear-gradient(0deg, #2aeb2a 0%, #007500 100%);
-          background: -webkit-linear-gradient(0deg, #2aeb2a 0%, #007500 100%);
-          background: -ms-linear-gradient(0deg, #2aeb2a 0%, #007500 100%);
-          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
-          transform: skew(-16deg);
-          -webkit-transform: skew(-16deg);
-          -moz-transform: skew(-16deg);
-          -o-transform: skew(-16deg); }
-          .main-wrapper .slider-wrapper .slider .slider__price p {
-            transform: skew(16deg);
-            -webkit-transform: skew(16deg);
-            -moz-transform: skew(16deg);
-            -o-transform: skew(16deg);
-            font-family: "Intro", sans-serif;
-            color: #fff;
-            font-size: 16px;
-            position: absolute;
-            bottom: 2px;
-            left: 8px; }
-            .main-wrapper .slider-wrapper .slider .slider__price p span {
-              font-family: "Intro Black", sans-serif;
-              margin-left: 14px;
-              margin-right: 9px;
-              font-size: 45px; }
-            .main-wrapper .slider-wrapper .slider .slider__price p sup {
-              font-family: "Intro", sans-serif;
-              font-size: 12px;
-              vertical-align: super; }
-        .main-wrapper .slider-wrapper .slider .slider__info {
-          clear: both;
-          width: 305px;
-          padding-top: 24px;
-          margin-left: 25px;
-          text-transform: uppercase;
-          font-family: "Proxima Nova Bold", sans-serif;
-          color: #fff;
-          line-height: 23px;
-          font-size: 19px; }
-        .main-wrapper .slider-wrapper .slider .slider__link {
-          margin-top: 20px;
-          margin-left: 25px;
-          display: block;
-          border: 2px solid white;
-          border-radius: 4px;
-          width: 225px;
-          height: 45px;
-          background: -moz-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
-          background: -webkit-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
-          background: -ms-linear-gradient(90deg, #ff4f58 0%, #fd7048 100%);
-          text-transform: uppercase;
-          color: white;
-          line-height: 46px;
+        background-image: url(../img/slider-left.png); }
+      .main-wrapper .slider-wrapper .slider .slider__arrow--right {
+        margin-left: 19px;
+        background-image: url(../img/slider-right.png); }
+      .main-wrapper .slider-wrapper .slider .slider__dots {
+        float: left;
+        margin-top: 60px;
+        margin-left: 32px; }
+      .main-wrapper .slider-wrapper .slider .slider__dot {
+        display: block;
+        float: left;
+        cursor: pointer;
+        background-image: url(../img/dot.png);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 15px;
+        margin-right: 15px; }
+      .main-wrapper .slider-wrapper .slider .slider__dot--active {
+        background-image: url(../img/dot-active.png); }
+  .main-wrapper .advantages {
+    height: 282px;
+    background-color: rgba(255, 255, 255, 0.8); }
+    .main-wrapper .advantages .advantages-wrapper {
+      margin: 0px auto;
+      width: 1180px; }
+      .main-wrapper .advantages .advantages-wrapper .advantages__block {
+        float: left;
+        width: 260px;
+        height: 270px;
+        margin-right: 20px;
+        margin-left: 15px;
+        text-align: center; }
+        .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon {
+          margin: 15px auto;
+          width: 110px;
+          height: 103px;
+          background-image: url(../img/sprite_icons.png);
+          background-repeat: no-repeat;
+          background-position: 5px 0px; }
+        .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon--size {
+          background-position: 5px -108px; }
+        .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon--day {
+          background-position: 5px -216px; }
+        .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon--middle {
+          background-position: 6px -324px; }
+        .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__header {
+          text-align: center;
+          padding-top: 3px;
+          padding-left: 7px;
           font-family: "Proxima Nova Bold", sans-serif;
           font-weight: bold;
-          font-size: 20px;
-          text-align: center;
-          letter-spacing: 2px; }
-        .main-wrapper .slider-wrapper .slider .slider__arrow {
-          display: block;
-          float: left;
-          margin-top: 48px;
-          width: 33px;
-          height: 47px;
-          background-repeat: no-repeat;
-          cursor: pointer; }
-        .main-wrapper .slider-wrapper .slider .slider__arrow--left {
-          margin-left: 21px;
-          background-image: url(../img/slider-left.png); }
-        .main-wrapper .slider-wrapper .slider .slider__arrow--right {
-          margin-left: 19px;
-          background-image: url(../img/slider-right.png); }
-        .main-wrapper .slider-wrapper .slider .slider__dots {
-          float: left;
-          margin-top: 60px;
-          margin-left: 32px; }
-        .main-wrapper .slider-wrapper .slider .slider__dot {
-          display: block;
-          float: left;
-          cursor: pointer;
-          background-image: url(../img/dot.png);
-          background-repeat: no-repeat;
-          width: 16px;
-          height: 15px;
-          margin-right: 15px; }
-        .main-wrapper .slider-wrapper .slider .slider__dot--active {
-          background-image: url(../img/dot-active.png); }
-    .main-wrapper .advantages {
-      height: 282px;
-      background-color: rgba(255, 255, 255, 0.8); }
-      .main-wrapper .advantages .advantages-wrapper {
-        margin: 0px auto;
-        width: 1180px; }
-        .main-wrapper .advantages .advantages-wrapper .advantages__block {
-          float: left;
-          width: 260px;
-          height: 270px;
-          margin-right: 20px;
-          margin-left: 15px;
-          text-align: center; }
-          .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon {
-            margin: 15px auto;
-            width: 110px;
-            height: 103px;
-            background-image: url(../img/sprite_icons.png);
-            background-repeat: no-repeat;
-            background-position: 5px 0px; }
-          .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon--size {
-            background-position: 5px -108px; }
-          .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon--day {
-            background-position: 5px -216px; }
-          .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__icon--middle {
-            background-position: 6px -324px; }
-          .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__header {
-            text-align: center;
-            padding-top: 3px;
-            padding-left: 7px;
-            font-family: "Proxima Nova Bold", sans-serif;
-            font-weight: bold;
-            font-size: 22px; }
-          .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__text {
-            font-family: "Proxima Nova Regular", sans-serif;
-            font-size: 16px;
-            padding-top: 10px;
-            padding-left: 2px;
-            line-height: 19px; }
-        .main-wrapper .advantages .advantages-wrapper .advantages__block--middle {
-          margin-right: 0;
-          margin-left: 15px; } }
+          font-size: 22px; }
+        .main-wrapper .advantages .advantages-wrapper .advantages__block .advantages__text {
+          font-family: "Proxima Nova Regular", sans-serif;
+          font-size: 16px;
+          padding-top: 10px;
+          padding-left: 2px;
+          line-height: 19px; }
+      .main-wrapper .advantages .advantages-wrapper .advantages__block--middle {
+        margin-right: 0;
+        margin-left: 15px; }

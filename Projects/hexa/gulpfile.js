@@ -19,9 +19,9 @@ gulp.task('sass', function(){
 gulp.task('concat-css', ['sass'], function () { // runs SASS before CONCAT-CSS
   return gulp.src([
     'app/css/reset.css',
-    'app/css/1920.css',
-    'app/css/768.css',
     'app/css/320.css',
+    'app/css/768.css',
+    'app/css/1920.css',
     ])
     .pipe(concatCss("style.css"))
     .pipe(gulp.dest('app/css/'));
