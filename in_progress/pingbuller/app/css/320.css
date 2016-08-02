@@ -29,7 +29,7 @@
   width: 100%;
   height: 446px;
   background-position: center top;
-  background-image: url("../img/bg-top.jpg");
+  background-image: url(../img/bg-top.jpg);
   padding-top: 70px;
   text-align: center; }
   .main .logo {
@@ -105,7 +105,7 @@
       z-index: 10000;
       width: 28px;
       height: 40px;
-      background-image: url("../img/sprite.png");
+      background-image: url(../img/sprite.png);
       cursor: pointer; }
     .main .slider-wrapper .slider .slider__arrow--left {
       background-position: -2px 1px;
@@ -152,7 +152,7 @@
       background-color: rgba(0, 0, 0, 0.5);
       cursor: pointer; }
     .main .slider-wrapper .slider__dots .slider__dot--active {
-      background-image: url("../img/sprite.png");
+      background-image: url(../img/sprite.png);
       background-position: -91px -1px; }
 
 .news {
@@ -173,7 +173,7 @@
       margin-left: 8px;
       width: 27px;
       height: 33px;
-      background-image: url("../img/sprite.png");
+      background-image: url(../img/sprite.png);
       background-position: -156px 0px; }
     .news .news__block .news__icon--middle {
       background-position: -59px 0px; }
@@ -270,7 +270,7 @@
               border-radius: 100%;
       cursor: pointer; }
     .blogs .blog__dots .blog__dot--active {
-      background-image: url("../img/sprite.png");
+      background-image: url(../img/sprite.png);
       background-position: -110px -1px; }
   .blogs .updates {
     margin: 50px auto 0;
@@ -294,7 +294,7 @@
         margin-left: 5px;
         -webkit-border-radius: 100%;
                 border-radius: 100%;
-        background-image: url("../img/image.jpg"); }
+        background-image: url(../img/image.jpg); }
       .blogs .updates .updates__block .updates__image--middle {
         background-position: -60px -30px; }
       .blogs .updates .updates__block .updates__image--bottom {
@@ -339,7 +339,7 @@
       width: 65px;
       height: 65px;
       float: left;
-      background-image: url("../img/sprite-partners.png"); }
+      background-image: url(../img/sprite-partners.png); }
     .partners .partners__container .partners__logo--blabong {
       margin-left: 63px;
       width: 69px;
@@ -379,7 +379,7 @@
 
 .footer {
   height: 201px;
-  background-image: url("../img/bg-bottom.jpg");
+  background-image: url(../img/bg-bottom.jpg);
   background-position: center bottom;
   border-top: 1px solid transparent;
   -webkit-box-shadow: inset 0px 6px 12px -8px rgba(0, 0, 0, 0.74);

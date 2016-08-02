@@ -91,8 +91,19 @@ $( document ).ready(function() {
 	}
 
 
+	function dropdown() {
+		$('.dropdown').hover(
+			function(e) {
+				$(this).children('.submenu').stop().slideToggle(300);
+				$(this).children('.menu__button').toggleClass('menu__button--hidden');
+			}
+		);
+	}
+
+
 	animateSlider();
 	switchBlog();
+	dropdown();
 
 	console.log( 'everything seems ok!' );
 });
