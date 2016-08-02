@@ -170,7 +170,7 @@ table {
   width: 100%;
   height: 446px;
   background-position: center top;
-  background-image: url("../../img/bg-top.jpg");
+  background-image: url("../img/bg-top.jpg");
   padding-top: 70px;
   text-align: center;
 }
@@ -181,6 +181,7 @@ table {
 }
 
 .main .menu {
+  position: relative;
   margin: 33px auto;
 }
 
@@ -196,6 +197,64 @@ table {
   text-transform: uppercase;
   border-bottom: 2px solid #edbfff;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.main .menu .menu__button--hidden {
+  opacity: 0;
+}
+
+.main .menu .submenu {
+  display: none;
+  position: absolute;
+  z-index: 15000;
+  margin: 0px auto;
+  top: -14px;
+  left: 0;
+  right: 0;
+  width: 245px;
+  height: 257px;
+  border: 1px solid #111b22;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: rgba(63, 51, 72, 0.7);
+}
+
+.main .menu .submenu .submenu__item {
+  width: 100%;
+  height: 43px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #36293e;
+  border-top: 1px solid #503d58;
+}
+
+.main .menu .submenu .submenu__item:first-of-type {
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.main .menu .submenu .submenu__item:last-of-type {
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.main .menu .submenu .submenu__item:hover {
+  background-color: rgba(63, 51, 72, 0.9);
+  border-bottom: #edbfff 2px solid;
+}
+
+.main .menu .submenu .submenu__item .submenu__link {
+  display: block;
+  padding-top: 12px;
+  text-align: center;
+  margin: 0px auto;
+  width: 245px;
+  height: 28px;
+  font-family: "LeagueGothicRegular", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .main .slider-wrapper .slider {
@@ -211,7 +270,7 @@ table {
   z-index: 10000;
   width: 28px;
   height: 40px;
-  background-image: url("../../img/sprite.png");
+  background-image: url("../img/sprite.png");
   cursor: pointer;
 }
 
@@ -276,7 +335,7 @@ table {
 }
 
 .main .slider-wrapper .slider__dots .slider__dot--active {
-  background-image: url("../../img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-position: -91px -1px;
 }
 
@@ -302,7 +361,7 @@ table {
   margin-left: 8px;
   width: 27px;
   height: 33px;
-  background-image: url("../../img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-position: -156px 0px;
 }
 
@@ -432,7 +491,7 @@ table {
 }
 
 .blogs .blog__dots .blog__dot--active {
-  background-image: url("../../img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-position: -110px -1px;
 }
 
@@ -464,7 +523,7 @@ table {
   margin-left: 5px;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  background-image: url("../../img/image.jpg");
+  background-image: url("../img/image.jpg");
 }
 
 .blogs .updates .updates__block .updates__image--middle {
@@ -526,7 +585,7 @@ table {
   width: 65px;
   height: 65px;
   float: left;
-  background-image: url("../../img/sprite-partners.png");
+  background-image: url("../img/sprite-partners.png");
 }
 
 .partners .partners__container .partners__logo--blabong {
@@ -579,7 +638,7 @@ table {
 
 .footer {
   height: 201px;
-  background-image: url("../../img/bg-bottom.jpg");
+  background-image: url("../img/bg-bottom.jpg");
   background-position: center bottom;
   border-top: 1px solid transparent;
   -webkit-box-shadow: inset 0px 6px 12px -8px rgba(0, 0, 0, 0.74);
