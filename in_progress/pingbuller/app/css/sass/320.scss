@@ -14,17 +14,26 @@
 	padding-top: 70px;
 	text-align: center;
 
+    .menu{
+        display: none;
+    }
+
 	.logo{
 		display: block;
 		text-align: center;
 	}
 
-	.menu{
+	.device-menu{
 		position: relative;
 		margin: 33px auto;
 
+		.dropdown{
+			margin: 0px auto;
+			width: 45px;
+		}
 
-		.menu__button{
+
+		.device-menu__button{
 			display: block;
 			text-align: center;
 			margin: 0px auto;
@@ -39,7 +48,7 @@
 			opacity: 1;
 		}
 
-		.menu__button--hidden{
+		.device-menu__button--hidden{
 			opacity: 0;
 		}
 
@@ -105,6 +114,7 @@
 
 			.slider__arrow{
 				position: absolute;
+				top: 30px;
 				z-index: 10000;
 				width: 28px;
 				height: 40px;
@@ -114,13 +124,11 @@
 
 			.slider__arrow--left{
 				background-position: -2px 1px;
-				top: 30px;
 				left: 0px;
 			}
 
 			.slider__arrow--right{
 				background-position: -25px 1px;
-				top: 30px;
 				right: 0;
 			}
 
@@ -139,6 +147,10 @@
 					text-align: center;
 					// margin: 0px auto;
 
+					.slider__iphone{
+						display: none;
+					}
+
 					.slider__header{
 						font-family: $lgr;
 						font-size: 36px;
@@ -155,6 +167,10 @@
 						text-transform: uppercase;
 						text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 					}
+
+                    .slider__text{
+                        display: none;
+                    }
 				}				
 			}			
 		}
@@ -182,7 +198,7 @@
 }
 
 
-.news{
+.about{
 	height: 526px;
 	padding-top: 72px;
 	background-image: -ms-linear-gradient(top, #765283 0%, #36293d 100%);
@@ -194,12 +210,12 @@
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 
-	.news__block{
+	.about__block{
 		width: 85%;
 		height: 130px;
 		margin: 0 auto 35px;
 
-		.news__icon{
+		.about__icon{
 			float: left;
 			margin-left: 8px;
 			width: 27px;
@@ -208,15 +224,15 @@
 			background-position: -156px 0px;			
 		}
 
-		.news__icon--middle{
+		.about__icon--middle{
 			background-position: -59px 0px;
 		}
 
-		.news__icon--last{
+		.about__icon--last{
 			background-position: -130px 0px;
 		}
 
-		.news__header{
+		.about__header{
 			float: left;
 			margin-left: 24px;
 			font-family: $lgr;
@@ -226,7 +242,7 @@
 			text-transform: uppercase;
 		}
 
-		.news__text{
+		.about__text{
 			clear: both;
 			height: 56px;
 			overflow: hidden;
@@ -238,7 +254,7 @@
 			line-height: 20px;
 		}
 
-		.news__link{
+		.about__link{
 			text-align: right;
 			margin-top: 25px;
 			float: right;
@@ -281,10 +297,7 @@ box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.74);
 			width: 69%;
 			height: 274px;
 			background-color: #FFF;
-			border-top: 1px solid transparent;
-			border-bottom: 1px solid #efefef;
-			border-left: 1px solid #f6f6f6;
-			border-right: 1px solid #f6f6f6;
+			border: 1px solid #efefef;
 
 			.blog__photo{
 				float: left;
@@ -297,7 +310,7 @@ box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.74);
 			}
 
 			.blog__header{
-				width: 100px;
+				// width: 100px;
 				margin-top: 27px;
 				font-family: $lgr;
 				font-size: 24px;
@@ -492,6 +505,10 @@ box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.74);
 	}
 }
 
+.news{
+	display: none;
+}
+
 .footer{
 	height: 201px;
 	background-image: url(../img/bg-bottom.jpg);
@@ -500,6 +517,10 @@ box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.74);
 	-webkit-box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.74);
 -moz-box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.74);
 box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.74);
+
+    .menu{
+        display: none;
+    }
 
 	.copy{
 		width: 140px;

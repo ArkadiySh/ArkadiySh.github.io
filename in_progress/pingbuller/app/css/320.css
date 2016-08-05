@@ -32,13 +32,18 @@
   background-image: url(../img/bg-top.jpg);
   padding-top: 70px;
   text-align: center; }
+  .main .menu {
+    display: none; }
   .main .logo {
     display: block;
     text-align: center; }
-  .main .menu {
+  .main .device-menu {
     position: relative;
     margin: 33px auto; }
-    .main .menu .menu__button {
+    .main .device-menu .dropdown {
+      margin: 0px auto;
+      width: 45px; }
+    .main .device-menu .device-menu__button {
       display: block;
       text-align: center;
       margin: 0px auto;
@@ -51,9 +56,9 @@
       border-bottom: 2px solid #edbfff;
       text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
       opacity: 1; }
-    .main .menu .menu__button--hidden {
+    .main .device-menu .device-menu__button--hidden {
       opacity: 0; }
-    .main .menu .submenu {
+    .main .device-menu .submenu {
       display: none;
       position: absolute;
       z-index: 15000;
@@ -67,23 +72,23 @@
       -webkit-border-radius: 10px;
               border-radius: 10px;
       background-color: rgba(63, 51, 72, 0.7); }
-      .main .menu .submenu .submenu__item {
+      .main .device-menu .submenu .submenu__item {
         width: 100%;
         height: 43px;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         border-bottom: 1px solid #36293e;
         border-top: 1px solid #503d58; }
-        .main .menu .submenu .submenu__item:first-of-type {
+        .main .device-menu .submenu .submenu__item:first-of-type {
           -webkit-border-radius: 10px 10px 0 0;
                   border-radius: 10px 10px 0 0; }
-        .main .menu .submenu .submenu__item:last-of-type {
+        .main .device-menu .submenu .submenu__item:last-of-type {
           -webkit-border-radius: 0 0 10px 10px;
                   border-radius: 0 0 10px 10px; }
-        .main .menu .submenu .submenu__item:hover {
+        .main .device-menu .submenu .submenu__item:hover {
           background-color: rgba(63, 51, 72, 0.9);
           border-bottom: #edbfff 2px solid; }
-        .main .menu .submenu .submenu__item .submenu__link {
+        .main .device-menu .submenu .submenu__item .submenu__link {
           display: block;
           padding-top: 12px;
           text-align: center;
@@ -102,6 +107,7 @@
     position: relative; }
     .main .slider-wrapper .slider .slider__arrow {
       position: absolute;
+      top: 30px;
       z-index: 10000;
       width: 28px;
       height: 40px;
@@ -109,11 +115,9 @@
       cursor: pointer; }
     .main .slider-wrapper .slider .slider__arrow--left {
       background-position: -2px 1px;
-      top: 30px;
       left: 0px; }
     .main .slider-wrapper .slider .slider__arrow--right {
       background-position: -25px 1px;
-      top: 30px;
       right: 0; }
     .main .slider-wrapper .slider .slider__container {
       position: relative;
@@ -126,6 +130,8 @@
         margin-top: 21px;
         margin-left: 22px;
         text-align: center; }
+        .main .slider-wrapper .slider .slider__container .slider__slide .slider__iphone {
+          display: none; }
         .main .slider-wrapper .slider .slider__container .slider__slide .slider__header {
           font-family: "LeagueGothicRegular", sans-serif;
           font-size: 36px;
@@ -139,6 +145,8 @@
           color: #edbfff;
           text-transform: uppercase;
           text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+        .main .slider-wrapper .slider .slider__container .slider__slide .slider__text {
+          display: none; }
   .main .slider-wrapper .slider__dots {
     width: 90px;
     margin: 54px auto; }
@@ -155,7 +163,7 @@
       background-image: url(../img/sprite.png);
       background-position: -91px -1px; }
 
-.news {
+.about {
   height: 526px;
   padding-top: 72px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #765283), color-stop(100, #36293d));
@@ -164,22 +172,22 @@
   background-image: linear-gradient(to bottom, #765283 0%, #36293d 100%);
   border-top: 1px solid black;
   border-bottom: 1px solid black; }
-  .news .news__block {
+  .about .about__block {
     width: 85%;
     height: 130px;
     margin: 0 auto 35px; }
-    .news .news__block .news__icon {
+    .about .about__block .about__icon {
       float: left;
       margin-left: 8px;
       width: 27px;
       height: 33px;
       background-image: url(../img/sprite.png);
       background-position: -156px 0px; }
-    .news .news__block .news__icon--middle {
+    .about .about__block .about__icon--middle {
       background-position: -59px 0px; }
-    .news .news__block .news__icon--last {
+    .about .about__block .about__icon--last {
       background-position: -130px 0px; }
-    .news .news__block .news__header {
+    .about .about__block .about__header {
       float: left;
       margin-left: 24px;
       font-family: "LeagueGothicRegular", sans-serif;
@@ -187,7 +195,7 @@
       color: #fff;
       text-shadow: 1px 1px 2px rgba(15, 21, 24, 0.7);
       text-transform: uppercase; }
-    .news .news__block .news__text {
+    .about .about__block .about__text {
       clear: both;
       height: 56px;
       overflow: hidden;
@@ -197,7 +205,7 @@
       color: #fff;
       text-shadow: 2px 2px 4px rgba(15, 21, 24, 0.4);
       line-height: 20px; }
-    .news .news__block .news__link {
+    .about .about__block .about__link {
       text-align: right;
       margin-top: 25px;
       float: right;
@@ -206,7 +214,7 @@
       color: #fff;
       text-transform: uppercase;
       text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.4); }
-      .news .news__block .news__link:hover {
+      .about .about__block .about__link:hover {
         text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); }
 
 .blogs {
@@ -227,17 +235,13 @@
       width: 69%;
       height: 274px;
       background-color: #FFF;
-      border-top: 1px solid transparent;
-      border-bottom: 1px solid #efefef;
-      border-left: 1px solid #f6f6f6;
-      border-right: 1px solid #f6f6f6; }
+      border: 1px solid #efefef; }
       .blogs .blog-container .blog .blog__photo {
         float: left;
         margin-top: 20px;
         margin-left: -60px;
         margin-right: 10px; }
       .blogs .blog-container .blog .blog__header {
-        width: 100px;
         margin-top: 27px;
         font-family: "LeagueGothicRegular", sans-serif;
         font-size: 24px;
@@ -377,6 +381,9 @@
       height: 61px;
       background-position: 0px -21px; }
 
+.news {
+  display: none; }
+
 .footer {
   height: 201px;
   background-image: url(../img/bg-bottom.jpg);
@@ -384,6 +391,8 @@
   border-top: 1px solid transparent;
   -webkit-box-shadow: inset 0px 6px 12px -8px rgba(0, 0, 0, 0.74);
   box-shadow: inset 0px 6px 12px -8px rgba(0, 0, 0, 0.74); }
+  .footer .menu {
+    display: none; }
   .footer .copy {
     width: 140px;
     margin: 39px auto; }

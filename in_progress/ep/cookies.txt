@@ -1,7 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-easypay.ua	TRUE	/	FALSE	1999999999	SID	kstbh0kojh3r1blxavbln0kz
-easypay.ua	TRUE	/	FALSE	1999999999	Locale	RU
-easypay.ua	TRUE	/	FALSE	1999999999	__RequestVerificationToken	9acfe-FHvTWepAKtC3ukjlPHk7VgB8mf9MW0uHvq7LP-Sj8WFSFX_Jb24fthEz1dWUb6TIfAaaiOIgsCNY41qRTPnYOcjM_LqI1j5cr6NdA1
-easypay.ua	TRUE	/	FALSE	1999999999	UrlReferrer	http://mc.yandex.ru/metrika/watch.js
-

@@ -95,7 +95,7 @@ $( document ).ready(function() {
 		$('.dropdown').hover(
 			function(e) {
 				$(this).children('.submenu').stop().slideToggle(300);
-				$(this).children('.menu__button').toggleClass('menu__button--hidden');
+				$(this).children('.device-menu__button').toggleClass('device-menu__button--hidden');
 			}
 		);
 	}

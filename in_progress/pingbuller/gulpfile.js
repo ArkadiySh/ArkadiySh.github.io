@@ -5,6 +5,7 @@ var cssmin      = require('gulp-cssmin');
 var rename      = require('gulp-rename');
 var browserSync = require('browser-sync');
 var autoprefixer = require('gulp-autoprefixer');
+var lec         = require ('gulp-line-ending-corrector');
 
 
 
@@ -12,6 +13,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function(){ 
     return gulp.src('app/css/sass/*.scss') 
         .pipe(sass())
+        .pipe(lec({verbose:true, eolc: 'CRLF'}))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('app/css'))
 });
@@ -22,8 +24,9 @@ gulp.task('concat-css', ['sass'], function () { // runs SASS before CONCAT-CSS
   return gulp.src([
     'app/css/reset.css',
     'app/css/320.css',
+    'app/css/480.css',
     'app/css/768.css',
-    'app/css/1920.css',
+    'app/css/960.css',
     ])
     .pipe(concatCss("style.css"))
     .pipe(gulp.dest('app/css/'));

@@ -1,0 +1,257 @@
+@import '_variables.scss';
+
+@media only screen and (min-width: 768px){
+	
+	.main{
+		height: 728px;
+
+		.logo{
+			text-align: left;
+			margin-left: 20px;
+		}
+
+		.device-menu{
+			display: none;
+		}
+
+		.menu{
+			display: block;
+			margin: 31px 0 0 18px;
+			width: 85%;
+			height: 30px;
+
+			.menu__item{
+				float: left;
+				margin-right: 8%;
+				height: 26px;
+
+				&:last-of-type{
+					margin-right: 0;
+				}
+
+				&:hover{
+					border-bottom: 2px solid #edbfff;
+				}
+
+				.menu__link{
+					font-family: $lgr;
+					font-size: 24px;
+					color: #fff;
+					text-transform: uppercase;
+					text-shadow: 0px 2px 2px rgba(0,0,0, 0.4);
+				}
+			}
+		}
+
+		.slider-wrapper{
+			margin-top: 71px;
+			height: 400px;
+
+			.slider{
+				margin: 0 auto;
+				overflow-y: hidden;
+				width: 768px;
+				height: 400px;
+
+				.slider__arrow{
+					top: 178px;
+				}
+
+				.slider__container{
+					.slider__slide{
+						width: 700px;
+						margin-right: 10px;
+
+						.slider__header{
+							padding-top: 4px;
+							padding-left: 3px;
+							font-size: 48px;
+						}
+
+						.slider__motto{
+							clear: both;
+							float: left;
+							margin-top: 7px;
+							margin-left: 21px;
+							font-size: 24px;
+						}
+
+						.slider__text{
+	                        display: block;
+	                        clear: both;
+	                        float: left;
+	                        width: 41%;
+	                        height: 100px;
+	                        overflow: hidden;
+	                        padding-top: 7px;
+	                        padding-left: 21px;
+	                        font-family: $osl;
+	                        font-size: 16px;
+	                        text-shadow: 2px 2px 4px rgba(15, 21, 24, 0.4);
+	                        color: #fff;
+	                        text-align: left;
+	                        line-height: 26px;
+
+	                    }
+
+						.slider__header{
+							float: left;
+							margin-top: 71px;
+							margin-left: 18px;
+						}
+
+
+						.slider__iphone{
+							margin-top: -165px;
+							width: 270px;
+						}
+					}				
+				}
+			}
+
+			.slider__dots{
+				margin: 30px auto;
+			}
+		}
+	}
+
+	.about{
+		height: 264px;
+
+		.about__block{
+			float: left;
+			width: 28%;
+			height: 210px;
+			margin-left: 40px;
+			// margin: 0 auto 35px;
+
+			&:first-of-type{
+				margin-left: 22px;
+			}
+
+			.about__text{
+				width: 75%;
+				height: 142px;
+				line-height: 20px;
+			}
+
+			.about__link{
+				margin-top: 10px;
+			}
+		}
+	}
+	
+	.blogs{
+		height: 485px;
+		.blog-container{
+
+			.blog{
+				margin-top: 34px;
+				margin-left: 42px;
+				float: left;
+				width: 35%;
+
+				.blog__photo{
+					margin-top: 17px;
+					margin-right: 0;
+					margin-left: -64px;
+				}
+
+				.blog__header{
+					margin-top: 28px;
+					float: left;
+					font-size: 24px;
+				}
+
+				.blog__header--purple{
+					clear: both;
+					// width: 120px;
+					margin-top: -14px;
+					margin-left: 0;
+				}
+
+				.blog__text{
+					padding-top: 8px;
+					width: 95%;
+					height: 150px;
+				}
+			}
+
+		}
+
+		.blog__dots{
+			// clear: both;
+			display: none;
+		}
+
+		.updates{
+			width: 375px;
+			height: 300px;
+			float: left;
+			margin-top: 48px;
+			margin-left: 4%;
+
+			.updates__link{
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.partners{
+		height: 118px;
+
+		.partners__container{
+			width: 100%;
+
+			.partners__logo--blabong{
+				margin-top: 25px;
+				margin-left: 22px;
+			}
+
+			.partners__logo--dg{
+				margin-top: 25px;
+			}
+
+			.partners__logo--wheel{
+				margin-top: 25px;
+			}
+
+			.partners__logo--awsm{
+				margin-left: 65px;
+			}
+		}
+	}
+
+	.news{
+		height: 295px;
+		padding-top: 101px;
+		padding-right: 10px;
+		padding-left: 19px;
+
+		.news__block{
+			width: 30%;
+			height: 205px;
+			float: left;
+			margin-right: 5%;
+
+			&:last-of-type{
+				margin-right: 0;
+			}
+
+			.news__text{
+				width: 100%;
+				height: 165px;
+			}
+		}
+	}
+
+	.footer{
+		.menu{
+			width: 530px;
+
+			.menu__item{
+				margin-right: 40px;
+			}
+		}
+	}
+}
