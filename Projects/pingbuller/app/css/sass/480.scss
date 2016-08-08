@@ -1,0 +1,254 @@
+@import '_variables.scss';
+
+@media only screen and (min-width: 480px){
+	
+	.main{
+		height: 478px;
+
+		.menu{
+			display: none;
+		}
+
+		.device-menu{
+			margin: 33px auto 0;
+		}
+
+		.slider-wrapper{
+			margin-top: 28px;
+			height: 245px;
+			background-color: rgba(0,0,0,0.5);
+			border-top: 1px solid transparent;
+
+			.slider{
+				margin: 0 auto;
+				width: 463px;
+				height: 277px;
+
+
+				.slider__container{
+					.slider__slide{
+						width: 425px;
+
+						.slider__motto{
+							float: left;
+							margin-left: 18px;
+						}
+
+						.slider__text{
+	                        display: none;
+	                    }
+
+						.slider__header{
+							float: left;
+							margin-top: 71px;
+							margin-left: 18px;
+						}
+
+
+						.slider__iphone{
+							display: block;
+							float: right;
+							margin-top: -148px;
+							width: 180px;
+
+							.slider__img{
+								max-width: 100%;
+							}
+						}
+					}				
+				}
+			}
+
+			.slider__dots{
+				margin: -12px auto 0;
+			}
+		}
+	}
+
+	.about{
+		padding-top: 77px;
+		height: 520px;
+
+		.about__block{
+			width: 90%;
+			margin: 0px auto 29px;
+
+			.about__text{
+				height: 62px;
+			}
+
+			.about__link{
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.blogs{
+		height: 785px;
+		.blog-container{
+			.blog{
+				width: 74%;
+				height: 275px;
+				padding-top: 0;
+				padding-left: 40px;
+
+				.blog__photo{
+					margin-top: 21px;
+					margin-left: -61px;
+				}
+
+				.blog__header{
+					margin-top: 30px;
+					float: left;
+					font-size: 30px;
+				}
+
+				.blog__header--purple{
+					width: 120px;
+					margin-left: 5px;
+				}
+
+				.blog__text{
+					padding-top: 15px;
+					line-height: 24px;
+					width: 95%;
+					height: 170px;
+				}
+			}
+		}
+
+		.updates{
+			width: 380px;
+
+			.updates__header{
+				margin-left: 34px;
+			}
+
+			.updates__block{
+				
+				.updates__title{
+					width: auto;
+				}
+
+				.updates__text{
+					width: 257px;
+				}
+
+				.updates__image{
+					margin-left: 15px;
+				}
+			}
+
+			.updates__link{
+				margin-right: 9px;
+			}
+		}
+	}
+
+	.partners{
+		height: 230px;
+		border-bottom: 1px solid #fefefe;
+
+		.partners__container{
+			width: 350px;
+			height: 220px;
+			margin: 0px auto;
+
+			.partners__logo--blabong{
+				margin-top: 36px;
+				margin-left: 19px;
+			}
+
+			.partners__logo--dg{
+				margin-top: 35px;
+			}
+
+			.partners__logo--wheel{
+				margin-top: 36px;
+				margin-left: 54px;
+			}
+
+			.partners__logo--awsm{
+				margin-top: 26px;
+				margin-left: 4px;
+			}
+
+			.partners__logo--rvca{
+				clear: none;
+				margin-top: 47px;
+				margin-left: 58px;
+			}
+
+			.partners__logo--von{
+				margin-top: 27px;
+			}
+		}
+	}
+
+	.news{
+		display: block;
+		background-color: #ececec;
+		height: 590px;
+		border-top: 1px solid #d8d8d8;
+		padding-top: 78px;
+		padding-left: 3px;
+
+		.news__block{
+			margin: 0px auto 56px;
+			width: 94%;
+			height: 130px;
+			overflow-y: hidden;
+
+			.news__header{
+				font-family: $lgr;
+				font-size: 24px;
+				color: rgb(69, 69, 69);
+				text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+			}
+
+			.news__text{
+				font-family: $osl;
+				font-size: 16px;
+				text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+				line-height: 1.5;
+				padding-top: 10px;
+				color: rgb(120,120,120);
+			}
+		}
+	}
+
+	.footer{
+		.menu{
+			display: block;
+			width: 440px;
+			height: 30px;
+			margin: 45px auto 0;
+
+			.menu__item{
+				float: left;
+				margin-right: 25px;
+
+				&:first-of-type{
+					margin-left: 3px;
+				}
+
+				&:last-of-type{
+					margin-right: 0;
+				}
+
+				.menu__link{
+					font-family: $lgr;
+					font-size: 20px;
+					color: #fff;
+					text-transform: uppercase;
+					text-shadow: 0px 2px 2px rgba(0,0,0, 0.4);
+				}
+			}
+		}
+
+		.copy{
+			margin: 24px auto;
+		}
+	}
+}
+

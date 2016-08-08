@@ -1,0 +1,148 @@
+@media only screen and (min-width: 480px) {
+  .main {
+    height: 478px; }
+    .main .menu {
+      display: none; }
+    .main .device-menu {
+      margin: 33px auto 0; }
+    .main .slider-wrapper {
+      margin-top: 28px;
+      height: 245px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid transparent; }
+      .main .slider-wrapper .slider {
+        margin: 0 auto;
+        width: 463px;
+        height: 277px; }
+        .main .slider-wrapper .slider .slider__container .slider__slide {
+          width: 425px; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__motto {
+            float: left;
+            margin-left: 18px; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__text {
+            display: none; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__header {
+            float: left;
+            margin-top: 71px;
+            margin-left: 18px; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__iphone {
+            display: block;
+            float: right;
+            margin-top: -148px;
+            width: 180px; }
+            .main .slider-wrapper .slider .slider__container .slider__slide .slider__iphone .slider__img {
+              max-width: 100%; }
+      .main .slider-wrapper .slider__dots {
+        margin: -12px auto 0; }
+  .about {
+    padding-top: 77px;
+    height: 520px; }
+    .about .about__block {
+      width: 90%;
+      margin: 0px auto 29px; }
+      .about .about__block .about__text {
+        height: 62px; }
+      .about .about__block .about__link {
+        margin-top: 20px; }
+  .blogs {
+    height: 785px; }
+    .blogs .blog-container .blog {
+      width: 74%;
+      height: 275px;
+      padding-top: 0;
+      padding-left: 40px; }
+      .blogs .blog-container .blog .blog__photo {
+        margin-top: 21px;
+        margin-left: -61px; }
+      .blogs .blog-container .blog .blog__header {
+        margin-top: 30px;
+        float: left;
+        font-size: 30px; }
+      .blogs .blog-container .blog .blog__header--purple {
+        width: 120px;
+        margin-left: 5px; }
+      .blogs .blog-container .blog .blog__text {
+        padding-top: 15px;
+        line-height: 24px;
+        width: 95%;
+        height: 170px; }
+    .blogs .updates {
+      width: 380px; }
+      .blogs .updates .updates__header {
+        margin-left: 34px; }
+      .blogs .updates .updates__block .updates__title {
+        width: auto; }
+      .blogs .updates .updates__block .updates__text {
+        width: 257px; }
+      .blogs .updates .updates__block .updates__image {
+        margin-left: 15px; }
+      .blogs .updates .updates__link {
+        margin-right: 9px; }
+  .partners {
+    height: 230px;
+    border-bottom: 1px solid #fefefe; }
+    .partners .partners__container {
+      width: 350px;
+      height: 220px;
+      margin: 0px auto; }
+      .partners .partners__container .partners__logo--blabong {
+        margin-top: 36px;
+        margin-left: 19px; }
+      .partners .partners__container .partners__logo--dg {
+        margin-top: 35px; }
+      .partners .partners__container .partners__logo--wheel {
+        margin-top: 36px;
+        margin-left: 54px; }
+      .partners .partners__container .partners__logo--awsm {
+        margin-top: 26px;
+        margin-left: 4px; }
+      .partners .partners__container .partners__logo--rvca {
+        clear: none;
+        margin-top: 47px;
+        margin-left: 58px; }
+      .partners .partners__container .partners__logo--von {
+        margin-top: 27px; }
+  .news {
+    display: block;
+    background-color: #ececec;
+    height: 590px;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 78px;
+    padding-left: 3px; }
+    .news .news__block {
+      margin: 0px auto 56px;
+      width: 94%;
+      height: 130px;
+      overflow-y: hidden; }
+      .news .news__block .news__header {
+        font-family: "LeagueGothicRegular", sans-serif;
+        font-size: 24px;
+        color: #454545;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1); }
+      .news .news__block .news__text {
+        font-family: "OpenSansLight", sans-serif;
+        font-size: 16px;
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+        line-height: 1.5;
+        padding-top: 10px;
+        color: #787878; }
+  .footer .menu {
+    display: block;
+    width: 440px;
+    height: 30px;
+    margin: 45px auto 0; }
+    .footer .menu .menu__item {
+      float: left;
+      margin-right: 25px; }
+      .footer .menu .menu__item:first-of-type {
+        margin-left: 3px; }
+      .footer .menu .menu__item:last-of-type {
+        margin-right: 0; }
+      .footer .menu .menu__item .menu__link {
+        font-family: "LeagueGothicRegular", sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); }
+  .footer .copy {
+    margin: 24px auto; } }

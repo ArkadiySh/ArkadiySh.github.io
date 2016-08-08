@@ -1,0 +1,117 @@
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    width: 960px;
+    margin: 0px auto; }
+  .main {
+    height: 776px; }
+    .main .logo {
+      margin-left: 0;
+      float: left; }
+    .main .menu {
+      float: right;
+      width: 65%;
+      margin-top: 4px;
+      margin-right: 0; }
+      .main .menu .menu__item {
+        margin-right: 50px; }
+    .main .slider-wrapper {
+      position: relative;
+      clear: both;
+      margin-top: 208px; } }
+    @media only screen and (min-width: 1024px) and (min-width: 960px) and (max-width: 1439px) {
+      .main .slider-wrapper .slider__arrow {
+        display: none; } }
+
+@media only screen and (min-width: 1024px) {
+      .main .slider-wrapper .slider__arrow--left {
+        top: 178px;
+        left: 153px; }
+      .main .slider-wrapper .slider__arrow--right {
+        top: 178px;
+        right: 153px; }
+      .main .slider-wrapper .slider {
+        width: 960px; }
+        .main .slider-wrapper .slider .slider__container .slider__slide {
+          width: 960px;
+          margin: 0; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__header {
+            font-size: 60px;
+            margin-top: 77px;
+            margin-left: 0;
+            padding: 0;
+            letter-spacing: -0.5px; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__motto {
+            padding: 0;
+            margin: 0;
+            font-size: 32px; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__text {
+            padding-top: 5px;
+            padding-left: 0;
+            margin: 0;
+            width: 54%;
+            height: 150px;
+            line-height: 24px;
+            letter-spacing: 0.8px; }
+          .main .slider-wrapper .slider .slider__container .slider__slide .slider__iphone {
+            margin-top: -160px;
+            margin-right: 71px;
+            width: 276px; }
+  .about {
+    height: 263px; }
+    .about .about__block {
+      margin-left: 65px; }
+      .about .about__block:first-of-type {
+        margin-left: 0; }
+      .about .about__block .about__header {
+        margin-left: 29px;
+        font-size: 29px;
+        letter-spacing: 0.2px; }
+      .about .about__block .about__text {
+        margin-left: 62px;
+        padding-top: 4px;
+        width: 85%;
+        height: 120px;
+        line-height: 24px; }
+      .about .about__block .about__link {
+        margin-top: 19px;
+        font-size: 19px; }
+  .blogs .blog-container .blog {
+    margin-left: 22px;
+    width: 40%;
+    height: 243px;
+    padding-top: 28px; }
+    .blogs .blog-container .blog .blog__photo {
+      margin-top: -11px; }
+    .blogs .blog-container .blog .blog__header {
+      float: none;
+      font-size: 30px; }
+    .blogs .blog-container .blog .blog__header--purple {
+      float: none; }
+    .blogs .blog-container .blog .blog__text {
+      padding-top: 2px;
+      width: 92%;
+      height: 170px; }
+  .blogs .updates {
+    width: 505px;
+    margin-right: 0; }
+    .blogs .updates .updates__block .updates__title {
+      height: auto;
+      overflow: visible; }
+    .blogs .updates .updates__block .updates__text {
+      width: auto;
+      overflow: visible; }
+    .blogs .updates .updates__header {
+      margin-left: 54px; }
+  .partners .wrapper .partners__container {
+    width: 815px; }
+    .partners .wrapper .partners__container .partners__logo {
+      margin-right: 10px; }
+  .news .news__block .news__header {
+    font-size: 32px; }
+  .footer {
+    height: 113px; }
+    .footer .wrapper .menu--bottom {
+      float: left; }
+    .footer .wrapper .copy {
+      margin: 50px auto 0;
+      float: right; } }
